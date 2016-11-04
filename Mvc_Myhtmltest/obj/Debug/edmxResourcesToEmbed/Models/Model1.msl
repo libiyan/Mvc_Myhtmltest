@@ -1,0 +1,1416 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CETModelStoreContainer" CdmEntityContainer="CETEntities">
+    <EntitySetMapping Name="CET_Syn">
+      <EntityTypeMapping TypeName="CETModel.CET_Syn">
+        <MappingFragment StoreEntitySet="CET_Syn">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SynId" ColumnName="SynId" />
+          <ScalarProperty Name="SynDate" ColumnName="SynDate" />
+          <ScalarProperty Name="SynStatus" ColumnName="SynStatus" />
+          <ScalarProperty Name="SynObjType" ColumnName="SynObjType" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EXP">
+      <EntityTypeMapping TypeName="CETModel.EXP">
+        <MappingFragment StoreEntitySet="EXP">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="USRNBR" ColumnName="USRNBR" />
+          <ScalarProperty Name="CORNBR" ColumnName="CORNBR" />
+          <ScalarProperty Name="LGNNAM" ColumnName="LGNNAM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_Financing_SMS">
+      <EntityTypeMapping TypeName="CETModel.F_Financing_SMS">
+        <MappingFragment StoreEntitySet="F_Financing_SMS">
+          <ScalarProperty Name="FinancingId" ColumnName="FinancingId" />
+          <ScalarProperty Name="ProjectCode" ColumnName="ProjectCode" />
+          <ScalarProperty Name="ProjectName" ColumnName="ProjectName" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="ValueBegin" ColumnName="ValueBegin" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PPD_Company">
+      <EntityTypeMapping TypeName="CETModel.PPD_Company">
+        <MappingFragment StoreEntitySet="PPD_Company">
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="CredibilityGrade" ColumnName="CredibilityGrade" />
+          <ScalarProperty Name="Industry" ColumnName="Industry" />
+          <ScalarProperty Name="SalesProduct" ColumnName="SalesProduct" />
+          <ScalarProperty Name="Contacts" ColumnName="Contacts" />
+          <ScalarProperty Name="Tel" ColumnName="Tel" />
+          <ScalarProperty Name="Web" ColumnName="Web" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="Province" ColumnName="Province" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="District" ColumnName="District" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Desc" ColumnName="Desc" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PPD_Contacts">
+      <EntityTypeMapping TypeName="CETModel.PPD_Contacts">
+        <MappingFragment StoreEntitySet="PPD_Contacts">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+          <ScalarProperty Name="MobilePhone" ColumnName="MobilePhone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PPD_Price_Unit">
+      <EntityTypeMapping TypeName="CETModel.PPD_Price_Unit">
+        <MappingFragment StoreEntitySet="PPD_Price_Unit">
+          <ScalarProperty Name="UnitId" ColumnName="UnitId" />
+          <ScalarProperty Name="CatalogId" ColumnName="CatalogId" />
+          <ScalarProperty Name="UnitName" ColumnName="UnitName" />
+          <ScalarProperty Name="Creator" ColumnName="Creator" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PPD_Price_UnitCatalog">
+      <EntityTypeMapping TypeName="CETModel.PPD_Price_UnitCatalog">
+        <MappingFragment StoreEntitySet="PPD_Price_UnitCatalog">
+          <ScalarProperty Name="CatalogId" ColumnName="CatalogId" />
+          <ScalarProperty Name="CatalogName" ColumnName="CatalogName" />
+          <ScalarProperty Name="Creator" ColumnName="Creator" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PPD_Product">
+      <EntityTypeMapping TypeName="CETModel.PPD_Product">
+        <MappingFragment StoreEntitySet="PPD_Product">
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="ApplicationNo" ColumnName="ApplicationNo" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="VersionOwner" ColumnName="VersionOwner" />
+          <ScalarProperty Name="VersionNo" ColumnName="VersionNo" />
+          <ScalarProperty Name="DevelopmentTechnology" ColumnName="DevelopmentTechnology" />
+          <ScalarProperty Name="DataBase" ColumnName="DataBase" />
+          <ScalarProperty Name="ProductLogo" ColumnName="ProductLogo" />
+          <ScalarProperty Name="CatalogId" ColumnName="CatalogId" />
+          <ScalarProperty Name="TechnologyFramework" ColumnName="TechnologyFramework" />
+          <ScalarProperty Name="SuccesfullCase" ColumnName="SuccesfullCase" />
+          <ScalarProperty Name="ProductUrl" ColumnName="ProductUrl" />
+          <ScalarProperty Name="TryURL" ColumnName="TryURL" />
+          <ScalarProperty Name="ProductDesc" ColumnName="ProductDesc" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="MarketTime" ColumnName="MarketTime" />
+          <ScalarProperty Name="IsTry" ColumnName="IsTry" />
+          <ScalarProperty Name="TrialWay" ColumnName="TrialWay" />
+          <ScalarProperty Name="TrialWayValue" ColumnName="TrialWayValue" />
+          <ScalarProperty Name="ProductStatus" ColumnName="ProductStatus" />
+          <ScalarProperty Name="UpperCarriageTime" ColumnName="UpperCarriageTime" />
+          <ScalarProperty Name="UnderCarriageTime" ColumnName="UnderCarriageTime" />
+          <ScalarProperty Name="AduitTime" ColumnName="AduitTime" />
+          <ScalarProperty Name="CooperativeDeadline" ColumnName="CooperativeDeadline" />
+          <ScalarProperty Name="DefaultSalesWayHTML" ColumnName="DefaultSalesWayHTML" />
+          <ScalarProperty Name="Pcode" ColumnName="Pcode" />
+          <ScalarProperty Name="OpenWay" ColumnName="OpenWay" />
+          <ScalarProperty Name="ProductDailUrl" ColumnName="ProductDailUrl" />
+          <ScalarProperty Name="BuyUrl" ColumnName="BuyUrl" />
+          <ScalarProperty Name="RechargeUrl" ColumnName="RechargeUrl" />
+          <ScalarProperty Name="ScreenshotUrl" ColumnName="ScreenshotUrl" />
+          <ScalarProperty Name="BannerImageUrl" ColumnName="BannerImageUrl" />
+          <ScalarProperty Name="ApplyWay" ColumnName="ApplyWay" />
+          <ScalarProperty Name="BuyType" ColumnName="BuyType" />
+          <ScalarProperty Name="MaxDay" ColumnName="MaxDay" />
+          <ScalarProperty Name="MaxNum" ColumnName="MaxNum" />
+          <ScalarProperty Name="IsFree" ColumnName="IsFree" />
+          <ScalarProperty Name="IsFix" ColumnName="IsFix" />
+          <ScalarProperty Name="IsOpen" ColumnName="IsOpen" />
+          <ScalarProperty Name="IsSend" ColumnName="IsSend" />
+          <ScalarProperty Name="ViewCount" ColumnName="ViewCount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PPD_Product_AnswerQuestion">
+      <EntityTypeMapping TypeName="CETModel.PPD_Product_AnswerQuestion">
+        <MappingFragment StoreEntitySet="PPD_Product_AnswerQuestion">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="Question" ColumnName="Question" />
+          <ScalarProperty Name="Answer" ColumnName="Answer" />
+          <ScalarProperty Name="PublishedDate" ColumnName="PublishedDate" />
+          <ScalarProperty Name="ReplyDate" ColumnName="ReplyDate" />
+          <ScalarProperty Name="QuestionState" ColumnName="QuestionState" />
+          <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PPD_Product_Attribute">
+      <EntityTypeMapping TypeName="CETModel.PPD_Product_Attribute">
+        <MappingFragment StoreEntitySet="PPD_Product_Attribute">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="IsIndexGroom" ColumnName="IsIndexGroom" />
+          <ScalarProperty Name="IsLeftGroom" ColumnName="IsLeftGroom" />
+          <ScalarProperty Name="ProductOrder" ColumnName="ProductOrder" />
+          <ScalarProperty Name="CataId" ColumnName="CataId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PPD_Product_Contents">
+      <EntityTypeMapping TypeName="CETModel.PPD_Product_Contents">
+        <MappingFragment StoreEntitySet="PPD_Product_Contents">
+          <ScalarProperty Name="ProductContentId" ColumnName="ProductContentId" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Contents" ColumnName="Contents" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="EditTime" ColumnName="EditTime" />
+          <ScalarProperty Name="Sort" ColumnName="Sort" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PPD_Product_PriceUnit">
+      <EntityTypeMapping TypeName="CETModel.PPD_Product_PriceUnit">
+        <MappingFragment StoreEntitySet="PPD_Product_PriceUnit">
+          <ScalarProperty Name="PriceUnitId" ColumnName="PriceUnitId" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="SalesWayId" ColumnName="SalesWayId" />
+          <ScalarProperty Name="UnitId" ColumnName="UnitId" />
+          <ScalarProperty Name="UnitName" ColumnName="UnitName" />
+          <ScalarProperty Name="UnitValue" ColumnName="UnitValue" />
+          <ScalarProperty Name="Min" ColumnName="Min" />
+          <ScalarProperty Name="IsCustom" ColumnName="IsCustom" />
+          <ScalarProperty Name="Sort" ColumnName="Sort" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PPD_Product_Recommend">
+      <EntityTypeMapping TypeName="CETModel.PPD_Product_Recommend">
+        <MappingFragment StoreEntitySet="PPD_Product_Recommend">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="PType" ColumnName="PType" />
+          <ScalarProperty Name="Sort" ColumnName="Sort" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PPD_Product_SalesWay">
+      <EntityTypeMapping TypeName="CETModel.PPD_Product_SalesWay">
+        <MappingFragment StoreEntitySet="PPD_Product_SalesWay">
+          <ScalarProperty Name="SalesWayId" ColumnName="SalesWayId" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="MinAmount" ColumnName="MinAmount" />
+          <ScalarProperty Name="SalesWay" ColumnName="SalesWay" />
+          <ScalarProperty Name="PriceUnit" ColumnName="PriceUnit" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsPackage" ColumnName="IsPackage" />
+          <ScalarProperty Name="Sort" ColumnName="Sort" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PPD_ProductApplication">
+      <EntityTypeMapping TypeName="CETModel.PPD_ProductApplication">
+        <MappingFragment StoreEntitySet="PPD_ProductApplication">
+          <ScalarProperty Name="ApplicationNo" ColumnName="ApplicationNo" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="ApplyDateTime" ColumnName="ApplyDateTime" />
+          <ScalarProperty Name="ApplicationStatus" ColumnName="ApplicationStatus" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PPD_ProductCatalogTemp">
+      <EntityTypeMapping TypeName="CETModel.PPD_ProductCatalogTemp">
+        <MappingFragment StoreEntitySet="PPD_ProductCatalogTemp">
+          <ScalarProperty Name="ProCataId" ColumnName="ProCataId" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="CatalogId" ColumnName="CatalogId" />
+          <ScalarProperty Name="OrderBy" ColumnName="OrderBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PPD_ProductGroup">
+      <EntityTypeMapping TypeName="CETModel.PPD_ProductGroup">
+        <MappingFragment StoreEntitySet="PPD_ProductGroup">
+          <ScalarProperty Name="GroupID" ColumnName="GroupID" />
+          <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+          <ScalarProperty Name="Icon" ColumnName="Icon" />
+          <ScalarProperty Name="Sort" ColumnName="Sort" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PPD_ProductGroupTemp">
+      <EntityTypeMapping TypeName="CETModel.PPD_ProductGroupTemp">
+        <MappingFragment StoreEntitySet="PPD_ProductGroupTemp">
+          <ScalarProperty Name="ProductGroupID" ColumnName="ProductGroupID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="GroupID" ColumnName="GroupID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PPD_ProductSales_Attribute">
+      <EntityTypeMapping TypeName="CETModel.PPD_ProductSales_Attribute">
+        <MappingFragment StoreEntitySet="PPD_ProductSales_Attribute">
+          <ScalarProperty Name="AttributeId" ColumnName="AttributeId" />
+          <ScalarProperty Name="SalesWayId" ColumnName="SalesWayId" />
+          <ScalarProperty Name="AttributeName" ColumnName="AttributeName" />
+          <ScalarProperty Name="AttributeHtml" ColumnName="AttributeHtml" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PPD_ProductSales_Package">
+      <EntityTypeMapping TypeName="CETModel.PPD_ProductSales_Package">
+        <MappingFragment StoreEntitySet="PPD_ProductSales_Package">
+          <ScalarProperty Name="PackageId" ColumnName="PackageId" />
+          <ScalarProperty Name="PackageTotal" ColumnName="PackageTotal" />
+          <ScalarProperty Name="PackageNumber" ColumnName="PackageNumber" />
+          <ScalarProperty Name="PackageUnit" ColumnName="PackageUnit" />
+          <ScalarProperty Name="SelectQX" ColumnName="SelectQX" />
+          <ScalarProperty Name="PackageDisplay" ColumnName="PackageDisplay" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="Sort" ColumnName="Sort" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PPD_ProductTab">
+      <EntityTypeMapping TypeName="CETModel.PPD_ProductTab">
+        <MappingFragment StoreEntitySet="PPD_ProductTab">
+          <ScalarProperty Name="TabID" ColumnName="TabID" />
+          <ScalarProperty Name="TabName" ColumnName="TabName" />
+          <ScalarProperty Name="TabUrl" ColumnName="TabUrl" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="Descript" ColumnName="Descript" />
+          <ScalarProperty Name="IsRelativeUrl" ColumnName="IsRelativeUrl" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PPD_SalesWayPackeTemp">
+      <EntityTypeMapping TypeName="CETModel.PPD_SalesWayPackeTemp">
+        <MappingFragment StoreEntitySet="PPD_SalesWayPackeTemp">
+          <ScalarProperty Name="SalesWayPackeTempId" ColumnName="SalesWayPackeTempId" />
+          <ScalarProperty Name="productId" ColumnName="productId" />
+          <ScalarProperty Name="packageId" ColumnName="packageId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PPD_UserGrade_Discount">
+      <EntityTypeMapping TypeName="CETModel.PPD_UserGrade_Discount">
+        <MappingFragment StoreEntitySet="PPD_UserGrade_Discount">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="GradeId" ColumnName="GradeId" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PPM_ProductCatalog">
+      <EntityTypeMapping TypeName="CETModel.PPM_ProductCatalog">
+        <MappingFragment StoreEntitySet="PPM_ProductCatalog">
+          <ScalarProperty Name="CatalogId" ColumnName="CatalogId" />
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="CatalogName" ColumnName="CatalogName" />
+          <ScalarProperty Name="CatalogLevel" ColumnName="CatalogLevel" />
+          <ScalarProperty Name="Sort" ColumnName="Sort" />
+          <ScalarProperty Name="PCode" ColumnName="PCode" />
+          <ScalarProperty Name="CataLogo" ColumnName="CataLogo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SHP_Advert_Info">
+      <EntityTypeMapping TypeName="CETModel.SHP_Advert_Info">
+        <MappingFragment StoreEntitySet="SHP_Advert_Info">
+          <ScalarProperty Name="AdvertID" ColumnName="AdvertID" />
+          <ScalarProperty Name="ImgName" ColumnName="ImgName" />
+          <ScalarProperty Name="AdvertImgPath" ColumnName="AdvertImgPath" />
+          <ScalarProperty Name="AdvertImgSeat" ColumnName="AdvertImgSeat" />
+          <ScalarProperty Name="AdvertImgRemark" ColumnName="AdvertImgRemark" />
+          <ScalarProperty Name="AdvertImgOrder" ColumnName="AdvertImgOrder" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="URL" ColumnName="URL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SHP_CompanyUsing">
+      <EntityTypeMapping TypeName="CETModel.SHP_CompanyUsing">
+        <MappingFragment StoreEntitySet="SHP_CompanyUsing">
+          <ScalarProperty Name="UsingId" ColumnName="UsingId" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="URL" ColumnName="URL" />
+          <ScalarProperty Name="productID" ColumnName="productID" />
+          <ScalarProperty Name="imgPath" ColumnName="imgPath" />
+          <ScalarProperty Name="ImgOrder" ColumnName="ImgOrder" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SynShopexUser">
+      <EntityTypeMapping TypeName="CETModel.SynShopexUser">
+        <MappingFragment StoreEntitySet="SynShopexUser">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CORNBR" ColumnName="CORNBR" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="CETModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="t_companyinfo_ou">
+      <EntityTypeMapping TypeName="CETModel.t_companyinfo_ou">
+        <MappingFragment StoreEntitySet="t_companyinfo_ou">
+          <ScalarProperty Name="rn" ColumnName="rn" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="cornbr" ColumnName="cornbr" />
+          <ScalarProperty Name="cornam" ColumnName="cornam" />
+          <ScalarProperty Name="companyid" ColumnName="companyid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="t_companyinfo_ou_tmp">
+      <EntityTypeMapping TypeName="CETModel.t_companyinfo_ou_tmp">
+        <MappingFragment StoreEntitySet="t_companyinfo_ou_tmp">
+          <ScalarProperty Name="rn" ColumnName="rn" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="cornbr" ColumnName="cornbr" />
+          <ScalarProperty Name="cornam" ColumnName="cornam" />
+          <ScalarProperty Name="companyid" ColumnName="companyid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="t_userinfo">
+      <EntityTypeMapping TypeName="CETModel.t_userinfo">
+        <MappingFragment StoreEntitySet="t_userinfo">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="companyid" ColumnName="companyid" />
+          <ScalarProperty Name="realname" ColumnName="realname" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UM_Administrator">
+      <EntityTypeMapping TypeName="CETModel.UM_Administrator">
+        <MappingFragment StoreEntitySet="UM_Administrator">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="LoginId" ColumnName="LoginId" />
+          <ScalarProperty Name="Pwd" ColumnName="Pwd" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="IsSuperAdmin" ColumnName="IsSuperAdmin" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UM_Advertise">
+      <EntityTypeMapping TypeName="CETModel.UM_Advertise">
+        <MappingFragment StoreEntitySet="UM_Advertise">
+          <ScalarProperty Name="AdvertiseID" ColumnName="AdvertiseID" />
+          <ScalarProperty Name="AdvertiseName" ColumnName="AdvertiseName" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="AdvertiseUrl" ColumnName="AdvertiseUrl" />
+          <ScalarProperty Name="AdvertiseImage" ColumnName="AdvertiseImage" />
+          <ScalarProperty Name="Descript" ColumnName="Descript" />
+          <ScalarProperty Name="IsOpen" ColumnName="IsOpen" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UM_AdvertiseCategory">
+      <EntityTypeMapping TypeName="CETModel.UM_AdvertiseCategory">
+        <MappingFragment StoreEntitySet="UM_AdvertiseCategory">
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Descript" ColumnName="Descript" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UM_Agent_Administrator">
+      <EntityTypeMapping TypeName="CETModel.UM_Agent_Administrator">
+        <MappingFragment StoreEntitySet="UM_Agent_Administrator">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="AgentID" ColumnName="AgentID" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UM_App">
+      <EntityTypeMapping TypeName="CETModel.UM_App">
+        <MappingFragment StoreEntitySet="UM_App">
+          <ScalarProperty Name="AppId" ColumnName="AppId" />
+          <ScalarProperty Name="AppName" ColumnName="AppName" />
+          <ScalarProperty Name="EnKey" ColumnName="EnKey" />
+          <ScalarProperty Name="URL" ColumnName="URL" />
+          <ScalarProperty Name="IsStop" ColumnName="IsStop" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="Creator" ColumnName="Creator" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UM_App_Menu">
+      <EntityTypeMapping TypeName="CETModel.UM_App_Menu">
+        <MappingFragment StoreEntitySet="UM_App_Menu">
+          <ScalarProperty Name="MenuId" ColumnName="MenuId" />
+          <ScalarProperty Name="MenuName" ColumnName="MenuName" />
+          <ScalarProperty Name="AppId" ColumnName="AppId" />
+          <ScalarProperty Name="URL" ColumnName="URL" />
+          <ScalarProperty Name="ParentMenuId" ColumnName="ParentMenuId" />
+          <ScalarProperty Name="PublishUrl" ColumnName="PublishUrl" />
+          <ScalarProperty Name="Sort" ColumnName="Sort" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UM_App_Right">
+      <EntityTypeMapping TypeName="CETModel.UM_App_Right">
+        <MappingFragment StoreEntitySet="UM_App_Right">
+          <ScalarProperty Name="RightId" ColumnName="RightId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="AppId" ColumnName="AppId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UM_Area">
+      <EntityTypeMapping TypeName="CETModel.UM_Area">
+        <MappingFragment StoreEntitySet="UM_Area">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="areaID" ColumnName="areaID" />
+          <ScalarProperty Name="area" ColumnName="area" />
+          <ScalarProperty Name="father" ColumnName="father" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UM_Attachment">
+      <EntityTypeMapping TypeName="CETModel.UM_Attachment">
+        <MappingFragment StoreEntitySet="UM_Attachment">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Creator" ColumnName="Creator" />
+          <ScalarProperty Name="LastModifier" ColumnName="LastModifier" />
+          <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+          <ScalarProperty Name="LastModTime" ColumnName="LastModTime" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="MimeType" ColumnName="MimeType" />
+          <ScalarProperty Name="FileSize" ColumnName="FileSize" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="Downloads" ColumnName="Downloads" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UM_Attachment_Entity">
+      <EntityTypeMapping TypeName="CETModel.UM_Attachment_Entity">
+        <MappingFragment StoreEntitySet="UM_Attachment_Entity">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="AttachmentId" ColumnName="AttachmentId" />
+          <ScalarProperty Name="EntityId" ColumnName="EntityId" />
+          <ScalarProperty Name="EntityType" ColumnName="EntityType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UM_City">
+      <EntityTypeMapping TypeName="CETModel.UM_City">
+        <MappingFragment StoreEntitySet="UM_City">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="cityID" ColumnName="cityID" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="father" ColumnName="father" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UM_CmsMsg">
+      <EntityTypeMapping TypeName="CETModel.UM_CmsMsg">
+        <MappingFragment StoreEntitySet="UM_CmsMsg">
+          <ScalarProperty Name="MsgId" ColumnName="MsgId" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="To" ColumnName="To" />
+          <ScalarProperty Name="Cc" ColumnName="Cc" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="ReadySendTime" ColumnName="ReadySendTime" />
+          <ScalarProperty Name="SendType" ColumnName="SendType" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="SendDateTime" ColumnName="SendDateTime" />
+          <ScalarProperty Name="SendResult" ColumnName="SendResult" />
+          <ScalarProperty Name="SystemId" ColumnName="SystemId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UM_CmsType">
+      <EntityTypeMapping TypeName="CETModel.UM_CmsType">
+        <MappingFragment StoreEntitySet="UM_CmsType">
+          <ScalarProperty Name="MsgCode" ColumnName="MsgCode" />
+          <ScalarProperty Name="CmsTypeName" ColumnName="CmsTypeName" />
+          <ScalarProperty Name="IsToCustomer" ColumnName="IsToCustomer" />
+          <ScalarProperty Name="MsgType" ColumnName="MsgType" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Msg" ColumnName="Msg" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="ToEmail" ColumnName="ToEmail" />
+          <ScalarProperty Name="CcEmail" ColumnName="CcEmail" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UM_Dictionary">
+      <EntityTypeMapping TypeName="CETModel.UM_Dictionary">
+        <MappingFragment StoreEntitySet="UM_Dictionary">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UM_DictionaryItem">
+      <EntityTypeMapping TypeName="CETModel.UM_DictionaryItem">
+        <MappingFragment StoreEntitySet="UM_DictionaryItem">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="DictionaryID" ColumnName="DictionaryID" />
+          <ScalarProperty Name="IsAvailable" ColumnName="IsAvailable" />
+          <ScalarProperty Name="Sort" ColumnName="Sort" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UM_ErrorLog">
+      <EntityTypeMapping TypeName="CETModel.UM_ErrorLog">
+        <MappingFragment StoreEntitySet="UM_ErrorLog">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="LogMessage" ColumnName="LogMessage" />
+          <ScalarProperty Name="LogException" ColumnName="LogException" />
+          <ScalarProperty Name="LogDate" ColumnName="LogDate" />
+          <ScalarProperty Name="Source" ColumnName="Source" />
+          <ScalarProperty Name="LogLevel" ColumnName="LogLevel" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="LogModule" ColumnName="LogModule" />
+          <ScalarProperty Name="ServerIp" ColumnName="ServerIp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UM_Function">
+      <EntityTypeMapping TypeName="CETModel.UM_Function">
+        <MappingFragment StoreEntitySet="UM_Function">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="MenuID" ColumnName="MenuID" />
+          <ScalarProperty Name="ControlID" ColumnName="ControlID" />
+          <ScalarProperty Name="SortNum" ColumnName="SortNum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UM_Menu">
+      <EntityTypeMapping TypeName="CETModel.UM_Menu">
+        <MappingFragment StoreEntitySet="UM_Menu">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Desciption" ColumnName="Desciption" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="Visible" ColumnName="Visible" />
+          <ScalarProperty Name="SortNumber" ColumnName="SortNumber" />
+          <ScalarProperty Name="URL" ColumnName="URL" />
+          <ScalarProperty Name="SystemId" ColumnName="SystemId" />
+          <ScalarProperty Name="IsActionPage" ColumnName="IsActionPage" />
+          <ScalarProperty Name="ShortCutIcon" ColumnName="ShortCutIcon" />
+          <ScalarProperty Name="SysCategory" ColumnName="SysCategory" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UM_MsgType">
+      <EntityTypeMapping TypeName="CETModel.UM_MsgType">
+        <MappingFragment StoreEntitySet="UM_MsgType">
+          <ScalarProperty Name="MsgTypeCode" ColumnName="MsgTypeCode" />
+          <ScalarProperty Name="MsgTypeName" ColumnName="MsgTypeName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UM_Order">
+      <EntityTypeMapping TypeName="CETModel.UM_Order">
+        <MappingFragment StoreEntitySet="UM_Order">
+          <ScalarProperty Name="OrderNo" ColumnName="OrderNo" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="OrderAmount" ColumnName="OrderAmount" />
+          <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+          <ScalarProperty Name="OrderType" ColumnName="OrderType" />
+          <ScalarProperty Name="OrderStatus" ColumnName="OrderStatus" />
+          <ScalarProperty Name="TakeDate" ColumnName="TakeDate" />
+          <ScalarProperty Name="FailureDate" ColumnName="FailureDate" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="SalesUnit" ColumnName="SalesUnit" />
+          <ScalarProperty Name="Surplus" ColumnName="Surplus" />
+          <ScalarProperty Name="SelectValue" ColumnName="SelectValue" />
+          <ScalarProperty Name="PayDate" ColumnName="PayDate" />
+          <ScalarProperty Name="IsSum" ColumnName="IsSum" />
+          <ScalarProperty Name="completedState" ColumnName="completedState" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="OrderPayType" ColumnName="OrderPayType" />
+          <ScalarProperty Name="OrderFrom" ColumnName="OrderFrom" />
+          <ScalarProperty Name="RunningNO" ColumnName="RunningNO" />
+          <ScalarProperty Name="IsOnline" ColumnName="IsOnline" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UM_Order_CashCoupon">
+      <EntityTypeMapping TypeName="CETModel.UM_Order_CashCoupon">
+        <MappingFragment StoreEntitySet="UM_Order_CashCoupon">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CashCouponID" ColumnName="CashCouponID" />
+          <ScalarProperty Name="OrderNo" ColumnName="OrderNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UM_Order_Follow_Info">
+      <EntityTypeMapping TypeName="CETModel.UM_Order_Follow_Info">
+        <MappingFragment StoreEntitySet="UM_Order_Follow_Info">
+          <ScalarProperty Name="FollowId" ColumnName="FollowId" />
+          <ScalarProperty Name="FollowDate" ColumnName="FollowDate" />
+          <ScalarProperty Name="FollowUserId" ColumnName="FollowUserId" />
+          <ScalarProperty Name="FollowContent" ColumnName="FollowContent" />
+          <ScalarProperty Name="OrderNo" ColumnName="OrderNo" />
+          <ScalarProperty Name="FollowCateatDate" ColumnName="FollowCateatDate" />
+          <ScalarProperty Name="FollowType" ColumnName="FollowType" />
+          <ScalarProperty Name="FollowStatus" ColumnName="FollowStatus" />
+          <ScalarProperty Name="ext1" ColumnName="ext1" />
+          <ScalarProperty Name="ext2" ColumnName="ext2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UM_Order_PriceUnit">
+      <EntityTypeMapping TypeName="CETModel.UM_Order_PriceUnit">
+        <MappingFragment StoreEntitySet="UM_Order_PriceUnit">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="OrderNo" ColumnName="OrderNo" />
+          <ScalarProperty Name="UnitName" ColumnName="UnitName" />
+          <ScalarProperty Name="UnitValue" ColumnName="UnitValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UM_OrderBill">
+      <EntityTypeMapping TypeName="CETModel.UM_OrderBill">
+        <MappingFragment StoreEntitySet="UM_OrderBill">
+          <ScalarProperty Name="BillId" ColumnName="BillId" />
+          <ScalarProperty Name="BillRise" ColumnName="BillRise" />
+          <ScalarProperty Name="BillToAddress" ColumnName="BillToAddress" />
+          <ScalarProperty Name="BillGetUser" ColumnName="BillGetUser" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="OrderNo" ColumnName="OrderNo" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="BillRiseType" ColumnName="BillRiseType" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UM_OrderPayRecord">
+      <EntityTypeMapping TypeName="CETModel.UM_OrderPayRecord">
+        <MappingFragment StoreEntitySet="UM_OrderPayRecord">
+          <ScalarProperty Name="OrderPayRecord" ColumnName="OrderPayRecord" />
+          <ScalarProperty Name="OrderNo" ColumnName="OrderNo" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="PayAccount" ColumnName="PayAccount" />
+          <ScalarProperty Name="PayOnline" ColumnName="PayOnline" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UM_Privilege">
+      <EntityTypeMapping TypeName="CETModel.UM_Privilege">
+        <MappingFragment StoreEntitySet="UM_Privilege">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MasterValue" ColumnName="MasterValue" />
+          <ScalarProperty Name="AccessValue" ColumnName="AccessValue" />
+          <ScalarProperty Name="Operation" ColumnName="Operation" />
+          <ScalarProperty Name="MasterCategory" ColumnName="MasterCategory" />
+          <ScalarProperty Name="AccessCategory" ColumnName="AccessCategory" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UM_Province">
+      <EntityTypeMapping TypeName="CETModel.UM_Province">
+        <MappingFragment StoreEntitySet="UM_Province">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="provinceID" ColumnName="provinceID" />
+          <ScalarProperty Name="province" ColumnName="province" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UM_Role">
+      <EntityTypeMapping TypeName="CETModel.UM_Role">
+        <MappingFragment StoreEntitySet="UM_Role">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UM_SysLog">
+      <EntityTypeMapping TypeName="CETModel.UM_SysLog">
+        <MappingFragment StoreEntitySet="UM_SysLog">
+          <ScalarProperty Name="SysLogId" ColumnName="SysLogId" />
+          <ScalarProperty Name="SysCode" ColumnName="SysCode" />
+          <ScalarProperty Name="LogType" ColumnName="LogType" />
+          <ScalarProperty Name="RefId" ColumnName="RefId" />
+          <ScalarProperty Name="LogContent" ColumnName="LogContent" />
+          <ScalarProperty Name="LogTime" ColumnName="LogTime" />
+          <ScalarProperty Name="UserLoginId" ColumnName="UserLoginId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UM_SysModule">
+      <EntityTypeMapping TypeName="CETModel.UM_SysModule">
+        <MappingFragment StoreEntitySet="UM_SysModule">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="APIKey" ColumnName="APIKey" />
+          <ScalarProperty Name="AppUrl" ColumnName="AppUrl" />
+          <ScalarProperty Name="CallBackUrl" ColumnName="CallBackUrl" />
+          <ScalarProperty Name="LogOutUrl" ColumnName="LogOutUrl" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UM_Trial_Order_Temp">
+      <EntityTypeMapping TypeName="CETModel.UM_Trial_Order_Temp">
+        <MappingFragment StoreEntitySet="UM_Trial_Order_Temp">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="orderId" ColumnName="orderId" />
+          <ScalarProperty Name="trialId" ColumnName="trialId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UM_TrialProduct">
+      <EntityTypeMapping TypeName="CETModel.UM_TrialProduct">
+        <MappingFragment StoreEntitySet="UM_TrialProduct">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="ApplyCount" ColumnName="ApplyCount" />
+          <ScalarProperty Name="ApplyDay" ColumnName="ApplyDay" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UM_TrialUser_Trace">
+      <EntityTypeMapping TypeName="CETModel.UM_TrialUser_Trace">
+        <MappingFragment StoreEntitySet="UM_TrialUser_Trace">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="Creator" ColumnName="Creator" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UM_User_Agent">
+      <EntityTypeMapping TypeName="CETModel.UM_User_Agent">
+        <MappingFragment StoreEntitySet="UM_User_Agent">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="AgentType" ColumnName="AgentType" />
+          <ScalarProperty Name="AgentID" ColumnName="AgentID" />
+          <ScalarProperty Name="UserAutoGuid" ColumnName="UserAutoGuid" />
+          <ScalarProperty Name="OrderNo" ColumnName="OrderNo" />
+          <ScalarProperty Name="Descript" ColumnName="Descript" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UM_User_Role">
+      <EntityTypeMapping TypeName="CETModel.UM_User_Role">
+        <MappingFragment StoreEntitySet="UM_User_Role">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UUM_Agent">
+      <EntityTypeMapping TypeName="CETModel.UUM_Agent">
+        <MappingFragment StoreEntitySet="UUM_Agent">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="PassWord" ColumnName="PassWord" />
+          <ScalarProperty Name="Isvailable" ColumnName="Isvailable" />
+          <ScalarProperty Name="ValidateCode" ColumnName="ValidateCode" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="MobileTel" ColumnName="MobileTel" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="regTime" ColumnName="regTime" />
+          <ScalarProperty Name="UCSName" ColumnName="UCSName" />
+          <ScalarProperty Name="DeputyName" ColumnName="DeputyName" />
+          <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+          <ScalarProperty Name="QQ" ColumnName="QQ" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="MSN" ColumnName="MSN" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="DistributorID" ColumnName="DistributorID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UUM_AgentNotice">
+      <EntityTypeMapping TypeName="CETModel.UUM_AgentNotice">
+        <MappingFragment StoreEntitySet="UUM_AgentNotice">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="Creator" ColumnName="Creator" />
+          <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UUM_AgentNotice_Receive">
+      <EntityTypeMapping TypeName="CETModel.UUM_AgentNotice_Receive">
+        <MappingFragment StoreEntitySet="UUM_AgentNotice_Receive">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NoticeID" ColumnName="NoticeID" />
+          <ScalarProperty Name="AgentID" ColumnName="AgentID" />
+          <ScalarProperty Name="IsRead" ColumnName="IsRead" />
+          <ScalarProperty Name="ReadDate" ColumnName="ReadDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UUM_App">
+      <EntityTypeMapping TypeName="CETModel.UUM_App">
+        <MappingFragment StoreEntitySet="UUM_App">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="AppClassID" ColumnName="AppClassID" />
+          <ScalarProperty Name="IsLeaf" ColumnName="IsLeaf" />
+          <ScalarProperty Name="LinkPath" ColumnName="LinkPath" />
+          <ScalarProperty Name="IconPath" ColumnName="IconPath" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Sort" ColumnName="Sort" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="Creator" ColumnName="Creator" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="AppStatus" ColumnName="AppStatus" />
+          <ScalarProperty Name="TempletContent" ColumnName="TempletContent" />
+          <ScalarProperty Name="Pcode" ColumnName="Pcode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UUM_AppClass">
+      <EntityTypeMapping TypeName="CETModel.UUM_AppClass">
+        <MappingFragment StoreEntitySet="UUM_AppClass">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="LinkPath" ColumnName="LinkPath" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="CreatDate" ColumnName="CreatDate" />
+          <ScalarProperty Name="Creator" ColumnName="Creator" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UUM_CAddrBook">
+      <EntityTypeMapping TypeName="CETModel.UUM_CAddrBook">
+        <MappingFragment StoreEntitySet="UUM_CAddrBook">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="UUM_UserName" ColumnName="UUM_UserName" />
+          <ScalarProperty Name="OrganizationID" ColumnName="OrganizationID" />
+          <ScalarProperty Name="Depart" ColumnName="Depart" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Creator" ColumnName="Creator" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UUM_CashCoupon">
+      <EntityTypeMapping TypeName="CETModel.UUM_CashCoupon">
+        <MappingFragment StoreEntitySet="UUM_CashCoupon">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CashCouponId" ColumnName="CashCouponId" />
+          <ScalarProperty Name="AgentId" ColumnName="AgentId" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="BeginTime" ColumnName="BeginTime" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+          <ScalarProperty Name="UpdaTime" ColumnName="UpdaTime" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="FoundName" ColumnName="FoundName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UUM_CashCoupon_BAK">
+      <EntityTypeMapping TypeName="CETModel.UUM_CashCoupon_BAK">
+        <MappingFragment StoreEntitySet="UUM_CashCoupon_BAK">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CashCouponId" ColumnName="CashCouponId" />
+          <ScalarProperty Name="AgentId" ColumnName="AgentId" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="BeginTime" ColumnName="BeginTime" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="FoundName" ColumnName="FoundName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UUM_CmbchinaOU">
+      <EntityTypeMapping TypeName="CETModel.UUM_CmbchinaOU">
+        <MappingFragment StoreEntitySet="UUM_CmbchinaOU">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CORNBR" ColumnName="CORNBR" />
+          <ScalarProperty Name="CORNAM" ColumnName="CORNAM" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="PVCNAM" ColumnName="PVCNAM" />
+          <ScalarProperty Name="CTYNAM" ColumnName="CTYNAM" />
+          <ScalarProperty Name="TELCOD" ColumnName="TELCOD" />
+          <ScalarProperty Name="FAXCOD" ColumnName="FAXCOD" />
+          <ScalarProperty Name="CORADR" ColumnName="CORADR" />
+          <ScalarProperty Name="OPNFLG" ColumnName="OPNFLG" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UUM_CmbchinaUser">
+      <EntityTypeMapping TypeName="CETModel.UUM_CmbchinaUser">
+        <MappingFragment StoreEntitySet="UUM_CmbchinaUser">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="USRNBR" ColumnName="USRNBR" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="CORNBR" ColumnName="CORNBR" />
+          <ScalarProperty Name="USRNAM" ColumnName="USRNAM" />
+          <ScalarProperty Name="LGNNAM" ColumnName="LGNNAM" />
+          <ScalarProperty Name="GENDER" ColumnName="GENDER" />
+          <ScalarProperty Name="USRSTS" ColumnName="USRSTS" />
+          <ScalarProperty Name="USRMOB" ColumnName="USRMOB" />
+          <ScalarProperty Name="USRTEL" ColumnName="USRTEL" />
+          <ScalarProperty Name="USREML" ColumnName="USREML" />
+          <ScalarProperty Name="USRTYP" ColumnName="USRTYP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UUM_Company">
+      <EntityTypeMapping TypeName="CETModel.UUM_Company">
+        <MappingFragment StoreEntitySet="UUM_Company">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="AutoGuid" ColumnName="AutoGuid" />
+          <ScalarProperty Name="UserLoginName" ColumnName="UserLoginName" />
+          <ScalarProperty Name="UcsmyName" ColumnName="UcsmyName" />
+          <ScalarProperty Name="UserPass" ColumnName="UserPass" />
+          <ScalarProperty Name="NickName" ColumnName="NickName" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="regTime" ColumnName="regTime" />
+          <ScalarProperty Name="LastTime" ColumnName="LastTime" />
+          <ScalarProperty Name="LastIp" ColumnName="LastIp" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="QQ" ColumnName="QQ" />
+          <ScalarProperty Name="ChiefUser" ColumnName="ChiefUser" />
+          <ScalarProperty Name="MSN" ColumnName="MSN" />
+          <ScalarProperty Name="ProvinceCity" ColumnName="ProvinceCity" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+          <ScalarProperty Name="MobileTel" ColumnName="MobileTel" />
+          <ScalarProperty Name="Integral" ColumnName="Integral" />
+          <ScalarProperty Name="HomePage" ColumnName="HomePage" />
+          <ScalarProperty Name="Logo" ColumnName="Logo" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="UserTotal" ColumnName="UserTotal" />
+          <ScalarProperty Name="Is_Sms" ColumnName="Is_Sms" />
+          <ScalarProperty Name="Is_SmsCountLimit" ColumnName="Is_SmsCountLimit" />
+          <ScalarProperty Name="Sms_Account" ColumnName="Sms_Account" />
+          <ScalarProperty Name="Sms_Password" ColumnName="Sms_Password" />
+          <ScalarProperty Name="Sms_Count" ColumnName="Sms_Count" />
+          <ScalarProperty Name="Sms_SendCount" ColumnName="Sms_SendCount" />
+          <ScalarProperty Name="Is_VideoMeeting" ColumnName="Is_VideoMeeting" />
+          <ScalarProperty Name="Is_CallCenter" ColumnName="Is_CallCenter" />
+          <ScalarProperty Name="IndustryID" ColumnName="IndustryID" />
+          <ScalarProperty Name="StausActive" ColumnName="StausActive" />
+          <ScalarProperty Name="SynDataStatus" ColumnName="SynDataStatus" />
+          <ScalarProperty Name="StrID" ColumnName="StrID" />
+          <ScalarProperty Name="BusinessLimit" ColumnName="BusinessLimit" />
+          <ScalarProperty Name="OperativeBank" ColumnName="OperativeBank" />
+          <ScalarProperty Name="CompanyPosition" ColumnName="CompanyPosition" />
+          <ScalarProperty Name="PublicizeImg" ColumnName="PublicizeImg" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UUM_Company_Member">
+      <EntityTypeMapping TypeName="CETModel.UUM_Company_Member">
+        <MappingFragment StoreEntitySet="UUM_Company_Member">
+          <ScalarProperty Name="AutoID" ColumnName="AutoID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="MemberGradeID" ColumnName="MemberGradeID" />
+          <ScalarProperty Name="License" ColumnName="License" />
+          <ScalarProperty Name="OrgCode" ColumnName="OrgCode" />
+          <ScalarProperty Name="IsAudit" ColumnName="IsAudit" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+          <ScalarProperty Name="AuditDate" ColumnName="AuditDate" />
+          <ScalarProperty Name="LicenseChangeDate" ColumnName="LicenseChangeDate" />
+          <ScalarProperty Name="AuditContent" ColumnName="AuditContent" />
+          <ScalarProperty Name="LicenseUpdateUserId" ColumnName="LicenseUpdateUserId" />
+          <ScalarProperty Name="PrintCount" ColumnName="PrintCount" />
+          <ScalarProperty Name="LicenseAuditDate" ColumnName="LicenseAuditDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UUM_CompanyDoc">
+      <EntityTypeMapping TypeName="CETModel.UUM_CompanyDoc">
+        <MappingFragment StoreEntitySet="UUM_CompanyDoc">
+          <ScalarProperty Name="CompanyDocId" ColumnName="CompanyDocId" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="DocSource" ColumnName="DocSource" />
+          <ScalarProperty Name="DocType" ColumnName="DocType" />
+          <ScalarProperty Name="DocStatus" ColumnName="DocStatus" />
+          <ScalarProperty Name="DocDescription" ColumnName="DocDescription" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+          <ScalarProperty Name="CreateUser" ColumnName="CreateUser" />
+          <ScalarProperty Name="UpdateUser" ColumnName="UpdateUser" />
+          <ScalarProperty Name="AuditAdminId" ColumnName="AuditAdminId" />
+          <ScalarProperty Name="AuditAdminName" ColumnName="AuditAdminName" />
+          <ScalarProperty Name="AuditDate" ColumnName="AuditDate" />
+          <ScalarProperty Name="AuditContent" ColumnName="AuditContent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UUM_Competitive_Info">
+      <EntityTypeMapping TypeName="CETModel.UUM_Competitive_Info">
+        <MappingFragment StoreEntitySet="UUM_Competitive_Info">
+          <ScalarProperty Name="CompetitiveId" ColumnName="CompetitiveId" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="CompetitiveUserName" ColumnName="CompetitiveUserName" />
+          <ScalarProperty Name="CompetitivePhone" ColumnName="CompetitivePhone" />
+          <ScalarProperty Name="CompetitiveAddress" ColumnName="CompetitiveAddress" />
+          <ScalarProperty Name="CompetitiveMsg" ColumnName="CompetitiveMsg" />
+          <ScalarProperty Name="CompetitiveDate" ColumnName="CompetitiveDate" />
+          <ScalarProperty Name="JpAmount" ColumnName="JpAmount" />
+          <ScalarProperty Name="SalesAmount" ColumnName="SalesAmount" />
+          <ScalarProperty Name="SQAmount" ColumnName="SQAmount" />
+          <ScalarProperty Name="Zzc" ColumnName="Zzc" />
+          <ScalarProperty Name="Zfz" ColumnName="Zfz" />
+          <ScalarProperty Name="Cwfy" ColumnName="Cwfy" />
+          <ScalarProperty Name="Jynx" ColumnName="Jynx" />
+          <ScalarProperty Name="JynxDesc" ColumnName="JynxDesc" />
+          <ScalarProperty Name="Yyfc" ColumnName="Yyfc" />
+          <ScalarProperty Name="Cqjz" ColumnName="Cqjz" />
+          <ScalarProperty Name="Yysx" ColumnName="Yysx" />
+          <ScalarProperty Name="QtGrzc" ColumnName="QtGrzc" />
+          <ScalarProperty Name="JpProductType" ColumnName="JpProductType" />
+          <ScalarProperty Name="JpProduct" ColumnName="JpProduct" />
+          <ScalarProperty Name="IsJp" ColumnName="IsJp" />
+          <ScalarProperty Name="StarGrade" ColumnName="StarGrade" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UUM_Consume">
+      <EntityTypeMapping TypeName="CETModel.UUM_Consume">
+        <MappingFragment StoreEntitySet="UUM_Consume">
+          <ScalarProperty Name="AutoId" ColumnName="AutoId" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="PayAccount" ColumnName="PayAccount" />
+          <ScalarProperty Name="PayOnline" ColumnName="PayOnline" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="BusinessType" ColumnName="BusinessType" />
+          <ScalarProperty Name="ConsumeType" ColumnName="ConsumeType" />
+          <ScalarProperty Name="ConsumeTime" ColumnName="ConsumeTime" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UUM_EAccount">
+      <EntityTypeMapping TypeName="CETModel.UUM_EAccount">
+        <MappingFragment StoreEntitySet="UUM_EAccount">
+          <ScalarProperty Name="AutoId" ColumnName="AutoId" />
+          <ScalarProperty Name="AccountId" ColumnName="AccountId" />
+          <ScalarProperty Name="AccountPassword" ColumnName="AccountPassword" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="Balance" ColumnName="Balance" />
+          <ScalarProperty Name="MoneyOut" ColumnName="MoneyOut" />
+          <ScalarProperty Name="MoneyIn" ColumnName="MoneyIn" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UUM_EAccount_Order">
+      <EntityTypeMapping TypeName="CETModel.UUM_EAccount_Order">
+        <MappingFragment StoreEntitySet="UUM_EAccount_Order">
+          <ScalarProperty Name="orderCode" ColumnName="orderCode" />
+          <ScalarProperty Name="orderTime" ColumnName="orderTime" />
+          <ScalarProperty Name="signType" ColumnName="signType" />
+          <ScalarProperty Name="orderId" ColumnName="orderId" />
+          <ScalarProperty Name="orderAmount" ColumnName="orderAmount" />
+          <ScalarProperty Name="ext1" ColumnName="ext1" />
+          <ScalarProperty Name="ext2" ColumnName="ext2" />
+          <ScalarProperty Name="bgUrl" ColumnName="bgUrl" />
+          <ScalarProperty Name="orderStata" ColumnName="orderStata" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="merchantsId" ColumnName="merchantsId" />
+          <ScalarProperty Name="orderType" ColumnName="orderType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UUM_EclubPackage">
+      <EntityTypeMapping TypeName="CETModel.UUM_EclubPackage">
+        <MappingFragment StoreEntitySet="UUM_EclubPackage">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="YearLimit" ColumnName="YearLimit" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="MemberGrade" ColumnName="MemberGrade" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UUM_EPay_Account">
+      <EntityTypeMapping TypeName="CETModel.UUM_EPay_Account">
+        <MappingFragment StoreEntitySet="UUM_EPay_Account">
+          <ScalarProperty Name="EAN" ColumnName="EAN" />
+          <ScalarProperty Name="UserAutoGuid" ColumnName="UserAutoGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UUM_Group_Member">
+      <EntityTypeMapping TypeName="CETModel.UUM_Group_Member">
+        <MappingFragment StoreEntitySet="UUM_Group_Member">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CompanyAutoID" ColumnName="CompanyAutoID" />
+          <ScalarProperty Name="ToMemberGradeID" ColumnName="ToMemberGradeID" />
+          <ScalarProperty Name="ApplyMemberID" ColumnName="ApplyMemberID" />
+          <ScalarProperty Name="ApplyUserID" ColumnName="ApplyUserID" />
+          <ScalarProperty Name="ApplyUserName" ColumnName="ApplyUserName" />
+          <ScalarProperty Name="ApplyDate" ColumnName="ApplyDate" />
+          <ScalarProperty Name="AuditUserID" ColumnName="AuditUserID" />
+          <ScalarProperty Name="AuditUserName" ColumnName="AuditUserName" />
+          <ScalarProperty Name="AuditDate" ColumnName="AuditDate" />
+          <ScalarProperty Name="GroupStatus" ColumnName="GroupStatus" />
+          <ScalarProperty Name="Descript" ColumnName="Descript" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UUM_LoanBase">
+      <EntityTypeMapping TypeName="CETModel.UUM_LoanBase">
+        <MappingFragment StoreEntitySet="UUM_LoanBase">
+          <ScalarProperty Name="LoanBaseID" ColumnName="LoanBaseID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="TotalAssets" ColumnName="TotalAssets" />
+          <ScalarProperty Name="TotalLiabilities" ColumnName="TotalLiabilities" />
+          <ScalarProperty Name="SalesRevenue" ColumnName="SalesRevenue" />
+          <ScalarProperty Name="GrossProfit" ColumnName="GrossProfit" />
+          <ScalarProperty Name="OperationTime" ColumnName="OperationTime" />
+          <ScalarProperty Name="IsEstate" ColumnName="IsEstate" />
+          <ScalarProperty Name="IsLocal" ColumnName="IsLocal" />
+          <ScalarProperty Name="IsOtherCredit" ColumnName="IsOtherCredit" />
+          <ScalarProperty Name="PersonalAssets" ColumnName="PersonalAssets" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UUM_Member_Grade">
+      <EntityTypeMapping TypeName="CETModel.UUM_Member_Grade">
+        <MappingFragment StoreEntitySet="UUM_Member_Grade">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="GradeId" ColumnName="GradeId" />
+          <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UUM_Member_Order">
+      <EntityTypeMapping TypeName="CETModel.UUM_Member_Order">
+        <MappingFragment StoreEntitySet="UUM_Member_Order">
+          <ScalarProperty Name="OrderNo" ColumnName="OrderNo" />
+          <ScalarProperty Name="MemberGradeID" ColumnName="MemberGradeID" />
+          <ScalarProperty Name="MemberGradeName" ColumnName="MemberGradeName" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="OrderAmount" ColumnName="OrderAmount" />
+          <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+          <ScalarProperty Name="OrderStatus" ColumnName="OrderStatus" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="PayDate" ColumnName="PayDate" />
+          <ScalarProperty Name="ProxyCode" ColumnName="ProxyCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UUM_MemberGrade">
+      <EntityTypeMapping TypeName="CETModel.UUM_MemberGrade">
+        <MappingFragment StoreEntitySet="UUM_MemberGrade">
+          <ScalarProperty Name="MemberGradeId" ColumnName="MemberGradeId" />
+          <ScalarProperty Name="MemberGradeName" ColumnName="MemberGradeName" />
+          <ScalarProperty Name="GradeLevel" ColumnName="GradeLevel" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="YearLimit" ColumnName="YearLimit" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="GroupNum" ColumnName="GroupNum" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UUM_MemberModify">
+      <EntityTypeMapping TypeName="CETModel.UUM_MemberModify">
+        <MappingFragment StoreEntitySet="UUM_MemberModify">
+          <ScalarProperty Name="AutoID" ColumnName="AutoID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="MemberGradeID" ColumnName="MemberGradeID" />
+          <ScalarProperty Name="MemberName" ColumnName="MemberName" />
+          <ScalarProperty Name="Action" ColumnName="Action" />
+          <ScalarProperty Name="OldMemberGradeID" ColumnName="OldMemberGradeID" />
+          <ScalarProperty Name="OldMemberName" ColumnName="OldMemberName" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="MemberType" ColumnName="MemberType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UUM_PAddrBook">
+      <EntityTypeMapping TypeName="CETModel.UUM_PAddrBook">
+        <MappingFragment StoreEntitySet="UUM_PAddrBook">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="NickName" ColumnName="NickName" />
+          <ScalarProperty Name="Enterprise" ColumnName="Enterprise" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="Creator" ColumnName="Creator" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UUM_PAddrBookType">
+      <EntityTypeMapping TypeName="CETModel.UUM_PAddrBookType">
+        <MappingFragment StoreEntitySet="UUM_PAddrBookType">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UUM_R_User_App">
+      <EntityTypeMapping TypeName="CETModel.UUM_R_User_App">
+        <MappingFragment StoreEntitySet="UUM_R_User_App">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="IconPath" ColumnName="IconPath" />
+          <ScalarProperty Name="LinkPath" ColumnName="LinkPath" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="AppID" ColumnName="AppID" />
+          <ScalarProperty Name="Sort" ColumnName="Sort" />
+          <ScalarProperty Name="ScreenID" ColumnName="ScreenID" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="CollectType" ColumnName="CollectType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UUM_Screen">
+      <EntityTypeMapping TypeName="CETModel.UUM_Screen">
+        <MappingFragment StoreEntitySet="UUM_Screen">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ScreenName" ColumnName="ScreenName" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsCollect" ColumnName="IsCollect" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UUM_SingleMemberApply">
+      <EntityTypeMapping TypeName="CETModel.UUM_SingleMemberApply">
+        <MappingFragment StoreEntitySet="UUM_SingleMemberApply">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Group_MemberID" ColumnName="Group_MemberID" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="MobleTel" ColumnName="MobleTel" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ApplyUserID" ColumnName="ApplyUserID" />
+          <ScalarProperty Name="ApplyUserName" ColumnName="ApplyUserName" />
+          <ScalarProperty Name="AuditDate" ColumnName="AuditDate" />
+          <ScalarProperty Name="Descript" ColumnName="Descript" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UUM_UMemberGrade">
+      <EntityTypeMapping TypeName="CETModel.UUM_UMemberGrade">
+        <MappingFragment StoreEntitySet="UUM_UMemberGrade">
+          <ScalarProperty Name="GradeId" ColumnName="GradeId" />
+          <ScalarProperty Name="GradeName" ColumnName="GradeName" />
+          <ScalarProperty Name="Grade" ColumnName="Grade" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="Creator" ColumnName="Creator" />
+          <ScalarProperty Name="CreatorId" ColumnName="CreatorId" />
+          <ScalarProperty Name="ImageUrl" ColumnName="ImageUrl" />
+          <ScalarProperty Name="YearLimit" ColumnName="YearLimit" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UUM_User">
+      <EntityTypeMapping TypeName="CETModel.UUM_User">
+        <MappingFragment StoreEntitySet="UUM_User">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="AutoGuid" ColumnName="AutoGuid" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="RealName" ColumnName="RealName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="DealPassword" ColumnName="DealPassword" />
+          <ScalarProperty Name="LoginNum" ColumnName="LoginNum" />
+          <ScalarProperty Name="LastLoginTime" ColumnName="LastLoginTime" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="IDCard" ColumnName="IDCard" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="PortalType" ColumnName="PortalType" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
+          <ScalarProperty Name="SkinID" ColumnName="SkinID" />
+          <ScalarProperty Name="PageSize" ColumnName="PageSize" />
+          <ScalarProperty Name="MyIcon" ColumnName="MyIcon" />
+          <ScalarProperty Name="LastLoginIP" ColumnName="LastLoginIP" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="ExpiryDate" ColumnName="ExpiryDate" />
+          <ScalarProperty Name="IsVedioMeeting" ColumnName="IsVedioMeeting" />
+          <ScalarProperty Name="IsAdmin" ColumnName="IsAdmin" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="IsSms" ColumnName="IsSms" />
+          <ScalarProperty Name="SmsCount" ColumnName="SmsCount" />
+          <ScalarProperty Name="IMLogin" ColumnName="IMLogin" />
+          <ScalarProperty Name="IsAvailable" ColumnName="IsAvailable" />
+          <ScalarProperty Name="IsEmail" ColumnName="IsEmail" />
+          <ScalarProperty Name="EmpCode" ColumnName="EmpCode" />
+          <ScalarProperty Name="User_Log" ColumnName="User_Log" />
+          <ScalarProperty Name="StrID" ColumnName="StrID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

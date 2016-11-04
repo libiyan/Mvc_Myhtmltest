@@ -1,0 +1,53 @@
+﻿正在安装程序集“F:\libi\Mytest\Mvc_Myhtmltest\WinSchedule.Services\bin\Debug\WinSchedule.Services.exe”。
+受影响的参数是:
+   logtoconsole = 
+   assemblypath = F:\libi\Mytest\Mvc_Myhtmltest\WinSchedule.Services\bin\Debug\WinSchedule.Services.exe
+   logfile = F:\libi\Mytest\Mvc_Myhtmltest\WinSchedule.Services\bin\Debug\WinSchedule.Services.InstallLog
+无法创建 WinSchedule.Services.ProjectInstaller 安装程序类型的实例。
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。
+引发了内部异常 System.IO.FileNotFoundException，错误消息如下: 未能找到服务名称配置文件 ServiceNameSetting.xml！。
+正在回滚程序集“F:\libi\Mytest\Mvc_Myhtmltest\WinSchedule.Services\bin\Debug\WinSchedule.Services.exe”。
+受影响的参数是:
+   logtoconsole = 
+   assemblypath = F:\libi\Mytest\Mvc_Myhtmltest\WinSchedule.Services\bin\Debug\WinSchedule.Services.exe
+   logfile = F:\libi\Mytest\Mvc_Myhtmltest\WinSchedule.Services\bin\Debug\WinSchedule.Services.InstallLog
+无法创建 WinSchedule.Services.ProjectInstaller 安装程序类型的实例。
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。
+引发了内部异常 System.IO.FileNotFoundException，错误消息如下: 未能找到服务名称配置文件 ServiceNameSetting.xml！。
+正在卸载程序集“F:\libi\Mytest\Mvc_Myhtmltest\WinSchedule.Services\bin\Debug\WinSchedule.Services.exe”。
+受影响的参数是:
+   logtoconsole = 
+   assemblypath = F:\libi\Mytest\Mvc_Myhtmltest\WinSchedule.Services\bin\Debug\WinSchedule.Services.exe
+   logfile = F:\libi\Mytest\Mvc_Myhtmltest\WinSchedule.Services\bin\Debug\WinSchedule.Services.InstallLog
+无法创建 WinSchedule.Services.ProjectInstaller 安装程序类型的实例。
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。
+引发了内部异常 System.IO.FileNotFoundException，错误消息如下: 未能找到服务名称配置文件 ServiceNameSetting.xml！。
+正在安装程序集“F:\libi\Mytest\Mvc_Myhtmltest\WinSchedule.Services\bin\Debug\WinSchedule.Services.exe”。
+受影响的参数是:
+   logtoconsole = 
+   assemblypath = F:\libi\Mytest\Mvc_Myhtmltest\WinSchedule.Services\bin\Debug\WinSchedule.Services.exe
+   logfile = F:\libi\Mytest\Mvc_Myhtmltest\WinSchedule.Services\bin\Debug\WinSchedule.Services.InstallLog
+无法创建 WinSchedule.Services.ProjectInstaller 安装程序类型的实例。
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。
+引发了内部异常 System.IO.FileNotFoundException，错误消息如下: 未能找到服务名称配置文件 ServiceNameSetting.xml！。
+正在回滚程序集“F:\libi\Mytest\Mvc_Myhtmltest\WinSchedule.Services\bin\Debug\WinSchedule.Services.exe”。
+受影响的参数是:
+   logtoconsole = 
+   assemblypath = F:\libi\Mytest\Mvc_Myhtmltest\WinSchedule.Services\bin\Debug\WinSchedule.Services.exe
+   logfile = F:\libi\Mytest\Mvc_Myhtmltest\WinSchedule.Services\bin\Debug\WinSchedule.Services.InstallLog
+无法创建 WinSchedule.Services.ProjectInstaller 安装程序类型的实例。
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。
+引发了内部异常 System.IO.FileNotFoundException，错误消息如下: 未能找到服务名称配置文件 ServiceNameSetting.xml！。
+正在安装程序集“F:\libi\Mytest\Mvc_Myhtmltest\WinSchedule.Services\bin\Debug\WinSchedule.Services.exe”。
+受影响的参数是:
+   logtoconsole = 
+   assemblypath = F:\libi\Mytest\Mvc_Myhtmltest\WinSchedule.Services\bin\Debug\WinSchedule.Services.exe
+   logfile = F:\libi\Mytest\Mvc_Myhtmltest\WinSchedule.Services\bin\Debug\WinSchedule.Services.InstallLog
+正在安装服务 MyscheduleService...
+已成功安装服务 MyscheduleService。
+正在日志 Application 中创建 EventLog 源 MyscheduleService...
+正在提交程序集“F:\libi\Mytest\Mvc_Myhtmltest\WinSchedule.Services\bin\Debug\WinSchedule.Services.exe”。
+受影响的参数是:
+   logtoconsole = 
+   assemblypath = F:\libi\Mytest\Mvc_Myhtmltest\WinSchedule.Services\bin\Debug\WinSchedule.Services.exe
+   logfile = F:\libi\Mytest\Mvc_Myhtmltest\WinSchedule.Services\bin\Debug\WinSchedule.Services.InstallLog

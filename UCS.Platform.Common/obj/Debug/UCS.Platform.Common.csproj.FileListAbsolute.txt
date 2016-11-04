@@ -1,0 +1,6 @@
+F:\libi\Mytest\Mvc_Myhtmltest\UCS.Platform.Common\bin\Debug\UCS.Platform.Common.dll
+F:\libi\Mytest\Mvc_Myhtmltest\UCS.Platform.Common\bin\Debug\UCS.Platform.Common.pdb
+F:\libi\Mytest\Mvc_Myhtmltest\UCS.Platform.Common\bin\Debug\log4net.dll
+F:\libi\Mytest\Mvc_Myhtmltest\UCS.Platform.Common\obj\Debug\UCS.Platform.Common.dll
+F:\libi\Mytest\Mvc_Myhtmltest\UCS.Platform.Common\obj\Debug\UCS.Platform.Common.pdb
+F:\libi\Mytest\Mvc_Myhtmltest\UCS.Platform.Common\obj\Debug\UCS.Platform.Common.csprojResolveAssemblyReference.cache

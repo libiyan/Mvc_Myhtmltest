@@ -1,0 +1,58 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>锚点位置偏移</title>
+<style>
+body,h2,p{
+margin:0;
+padding:0;
+}
+h2,p{
+width:500px;
+position:relative;
+}
+p{
+height:400px;
+background:#CCC;
+z-index:2;
+}
+p.extra{
+margin:0 0 500px;
+}
+h2{
+margin:-200px 0 0;
+border-top:200px solid #000;
+@*z-index:1;
+background:#06F;*@
+}
+#anchor1{
+margin:0;
+}
+span{
+position:fixed !important; position:absolute;
+top:200px;
+left:510px;
+}
+#menu{ background:#CCC; position:fixed !important; position:absolute;left:510px; top:2px; }
+</style>
+</head>
+<body>
+<h2 id="anchor1">锚点111111111111111111111</h2>
+<p>有一定高度的层</p>
+<h2 id="anchor2">锚点222222222222222222222</h2>
+<p>有一定高度的层</p>
+<h2 id="anchor3">锚点333333333333333333333</h2>
+<p>有一定高度的层</p>
+<h2 id="anchor4">锚点444444444444444444444</h2>
+<p>有一定高度的层</p>
+<h2 id="anchor5">锚点555555555555555555555</h2>
+<p class="extra">底端需要一定高度才可以保证滚动条有足够高度让标题5到达指定位置</p>
+<div id="menu"><a href="#anchor1">去往锚点1</a> <a href="#anchor2">去往锚点2</a> <a href="#anchor3">去往锚点3</a> <a href="#anchor4">去往锚点4</a> <a href="#anchor5">去往锚点5</a></div>
+<span>&larr;目标在这里</span>
+</body>
+</html>
+

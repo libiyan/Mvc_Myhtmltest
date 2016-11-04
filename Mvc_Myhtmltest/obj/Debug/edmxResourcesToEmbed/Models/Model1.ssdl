@@ -1,0 +1,1749 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CETModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="CETModelStoreContainer">
+    <EntitySet Name="CET_Syn" EntityType="CETModel.Store.CET_Syn" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EXP" EntityType="CETModel.Store.EXP" store:Type="Tables" store:Schema="dbo" store:Name="EXP">
+      <DefiningQuery>SELECT 
+      [EXP].[ID] AS [ID], 
+      [EXP].[USRNBR] AS [USRNBR], 
+      [EXP].[CORNBR] AS [CORNBR], 
+      [EXP].[LGNNAM] AS [LGNNAM]
+      FROM [dbo].[EXP] AS [EXP]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="F_Financing_SMS" EntityType="CETModel.Store.F_Financing_SMS" store:Type="Tables" store:Schema="dbo" store:Name="F_Financing_SMS">
+      <DefiningQuery>SELECT 
+      [F_Financing_SMS].[FinancingId] AS [FinancingId], 
+      [F_Financing_SMS].[ProjectCode] AS [ProjectCode], 
+      [F_Financing_SMS].[ProjectName] AS [ProjectName], 
+      [F_Financing_SMS].[Mobile] AS [Mobile], 
+      [F_Financing_SMS].[Email] AS [Email], 
+      [F_Financing_SMS].[ValueBegin] AS [ValueBegin], 
+      [F_Financing_SMS].[UserId] AS [UserId], 
+      [F_Financing_SMS].[CreateTime] AS [CreateTime]
+      FROM [dbo].[F_Financing_SMS] AS [F_Financing_SMS]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="PPD_Company" EntityType="CETModel.Store.PPD_Company" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PPD_Contacts" EntityType="CETModel.Store.PPD_Contacts" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PPD_Price_Unit" EntityType="CETModel.Store.PPD_Price_Unit" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PPD_Price_UnitCatalog" EntityType="CETModel.Store.PPD_Price_UnitCatalog" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PPD_Product" EntityType="CETModel.Store.PPD_Product" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PPD_Product_AnswerQuestion" EntityType="CETModel.Store.PPD_Product_AnswerQuestion" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PPD_Product_Attribute" EntityType="CETModel.Store.PPD_Product_Attribute" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PPD_Product_Contents" EntityType="CETModel.Store.PPD_Product_Contents" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PPD_Product_PriceUnit" EntityType="CETModel.Store.PPD_Product_PriceUnit" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PPD_Product_Recommend" EntityType="CETModel.Store.PPD_Product_Recommend" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PPD_Product_SalesWay" EntityType="CETModel.Store.PPD_Product_SalesWay" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PPD_ProductApplication" EntityType="CETModel.Store.PPD_ProductApplication" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PPD_ProductCatalogTemp" EntityType="CETModel.Store.PPD_ProductCatalogTemp" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PPD_ProductGroup" EntityType="CETModel.Store.PPD_ProductGroup" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PPD_ProductGroupTemp" EntityType="CETModel.Store.PPD_ProductGroupTemp" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PPD_ProductSales_Attribute" EntityType="CETModel.Store.PPD_ProductSales_Attribute" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PPD_ProductSales_Package" EntityType="CETModel.Store.PPD_ProductSales_Package" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PPD_ProductTab" EntityType="CETModel.Store.PPD_ProductTab" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PPD_SalesWayPackeTemp" EntityType="CETModel.Store.PPD_SalesWayPackeTemp" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PPD_UserGrade_Discount" EntityType="CETModel.Store.PPD_UserGrade_Discount" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PPM_ProductCatalog" EntityType="CETModel.Store.PPM_ProductCatalog" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SHP_Advert_Info" EntityType="CETModel.Store.SHP_Advert_Info" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SHP_CompanyUsing" EntityType="CETModel.Store.SHP_CompanyUsing" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SynShopexUser" EntityType="CETModel.Store.SynShopexUser" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sysdiagrams" EntityType="CETModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="t_companyinfo_ou" EntityType="CETModel.Store.t_companyinfo_ou" store:Type="Tables" store:Schema="dbo" store:Name="t_companyinfo_ou">
+      <DefiningQuery>SELECT 
+      [t_companyinfo_ou].[rn] AS [rn], 
+      [t_companyinfo_ou].[id] AS [id], 
+      [t_companyinfo_ou].[cornbr] AS [cornbr], 
+      [t_companyinfo_ou].[cornam] AS [cornam], 
+      [t_companyinfo_ou].[companyid] AS [companyid]
+      FROM [dbo].[t_companyinfo_ou] AS [t_companyinfo_ou]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="t_companyinfo_ou_tmp" EntityType="CETModel.Store.t_companyinfo_ou_tmp" store:Type="Tables" store:Schema="dbo" store:Name="t_companyinfo_ou_tmp">
+      <DefiningQuery>SELECT 
+      [t_companyinfo_ou_tmp].[rn] AS [rn], 
+      [t_companyinfo_ou_tmp].[id] AS [id], 
+      [t_companyinfo_ou_tmp].[cornbr] AS [cornbr], 
+      [t_companyinfo_ou_tmp].[cornam] AS [cornam], 
+      [t_companyinfo_ou_tmp].[companyid] AS [companyid]
+      FROM [dbo].[t_companyinfo_ou_tmp] AS [t_companyinfo_ou_tmp]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="t_userinfo" EntityType="CETModel.Store.t_userinfo" store:Type="Tables" store:Schema="dbo" store:Name="t_userinfo">
+      <DefiningQuery>SELECT 
+      [t_userinfo].[id] AS [id], 
+      [t_userinfo].[username] AS [username], 
+      [t_userinfo].[companyid] AS [companyid], 
+      [t_userinfo].[realname] AS [realname]
+      FROM [dbo].[t_userinfo] AS [t_userinfo]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="UM_Administrator" EntityType="CETModel.Store.UM_Administrator" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UM_Advertise" EntityType="CETModel.Store.UM_Advertise" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UM_AdvertiseCategory" EntityType="CETModel.Store.UM_AdvertiseCategory" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UM_Agent_Administrator" EntityType="CETModel.Store.UM_Agent_Administrator" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UM_App" EntityType="CETModel.Store.UM_App" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UM_App_Menu" EntityType="CETModel.Store.UM_App_Menu" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UM_App_Right" EntityType="CETModel.Store.UM_App_Right" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UM_Area" EntityType="CETModel.Store.UM_Area" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UM_Attachment" EntityType="CETModel.Store.UM_Attachment" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UM_Attachment_Entity" EntityType="CETModel.Store.UM_Attachment_Entity" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UM_City" EntityType="CETModel.Store.UM_City" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UM_CmsMsg" EntityType="CETModel.Store.UM_CmsMsg" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UM_CmsType" EntityType="CETModel.Store.UM_CmsType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UM_Dictionary" EntityType="CETModel.Store.UM_Dictionary" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UM_DictionaryItem" EntityType="CETModel.Store.UM_DictionaryItem" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UM_ErrorLog" EntityType="CETModel.Store.UM_ErrorLog" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UM_Function" EntityType="CETModel.Store.UM_Function" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UM_Menu" EntityType="CETModel.Store.UM_Menu" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UM_MsgType" EntityType="CETModel.Store.UM_MsgType" store:Type="Tables" store:Schema="dbo" store:Name="UM_MsgType">
+      <DefiningQuery>SELECT 
+      [UM_MsgType].[MsgTypeCode] AS [MsgTypeCode], 
+      [UM_MsgType].[MsgTypeName] AS [MsgTypeName]
+      FROM [dbo].[UM_MsgType] AS [UM_MsgType]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="UM_Order" EntityType="CETModel.Store.UM_Order" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UM_Order_CashCoupon" EntityType="CETModel.Store.UM_Order_CashCoupon" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UM_Order_Follow_Info" EntityType="CETModel.Store.UM_Order_Follow_Info" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UM_Order_PriceUnit" EntityType="CETModel.Store.UM_Order_PriceUnit" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UM_OrderBill" EntityType="CETModel.Store.UM_OrderBill" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UM_OrderPayRecord" EntityType="CETModel.Store.UM_OrderPayRecord" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UM_Privilege" EntityType="CETModel.Store.UM_Privilege" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UM_Province" EntityType="CETModel.Store.UM_Province" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UM_Role" EntityType="CETModel.Store.UM_Role" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UM_SysLog" EntityType="CETModel.Store.UM_SysLog" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UM_SysModule" EntityType="CETModel.Store.UM_SysModule" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UM_Trial_Order_Temp" EntityType="CETModel.Store.UM_Trial_Order_Temp" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UM_TrialProduct" EntityType="CETModel.Store.UM_TrialProduct" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UM_TrialUser_Trace" EntityType="CETModel.Store.UM_TrialUser_Trace" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UM_User_Agent" EntityType="CETModel.Store.UM_User_Agent" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UM_User_Role" EntityType="CETModel.Store.UM_User_Role" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UUM_Agent" EntityType="CETModel.Store.UUM_Agent" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UUM_AgentNotice" EntityType="CETModel.Store.UUM_AgentNotice" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UUM_AgentNotice_Receive" EntityType="CETModel.Store.UUM_AgentNotice_Receive" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UUM_App" EntityType="CETModel.Store.UUM_App" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UUM_AppClass" EntityType="CETModel.Store.UUM_AppClass" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UUM_CAddrBook" EntityType="CETModel.Store.UUM_CAddrBook" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UUM_CashCoupon" EntityType="CETModel.Store.UUM_CashCoupon" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UUM_CashCoupon_BAK" EntityType="CETModel.Store.UUM_CashCoupon_BAK" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UUM_CmbchinaOU" EntityType="CETModel.Store.UUM_CmbchinaOU" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UUM_CmbchinaUser" EntityType="CETModel.Store.UUM_CmbchinaUser" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UUM_Company" EntityType="CETModel.Store.UUM_Company" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UUM_Company_Member" EntityType="CETModel.Store.UUM_Company_Member" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UUM_CompanyDoc" EntityType="CETModel.Store.UUM_CompanyDoc" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UUM_Competitive_Info" EntityType="CETModel.Store.UUM_Competitive_Info" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UUM_Consume" EntityType="CETModel.Store.UUM_Consume" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UUM_EAccount" EntityType="CETModel.Store.UUM_EAccount" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UUM_EAccount_Order" EntityType="CETModel.Store.UUM_EAccount_Order" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UUM_EclubPackage" EntityType="CETModel.Store.UUM_EclubPackage" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UUM_EPay_Account" EntityType="CETModel.Store.UUM_EPay_Account" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UUM_Group_Member" EntityType="CETModel.Store.UUM_Group_Member" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UUM_LoanBase" EntityType="CETModel.Store.UUM_LoanBase" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UUM_Member_Grade" EntityType="CETModel.Store.UUM_Member_Grade" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UUM_Member_Order" EntityType="CETModel.Store.UUM_Member_Order" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UUM_MemberGrade" EntityType="CETModel.Store.UUM_MemberGrade" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UUM_MemberModify" EntityType="CETModel.Store.UUM_MemberModify" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UUM_PAddrBook" EntityType="CETModel.Store.UUM_PAddrBook" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UUM_PAddrBookType" EntityType="CETModel.Store.UUM_PAddrBookType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UUM_R_User_App" EntityType="CETModel.Store.UUM_R_User_App" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UUM_Screen" EntityType="CETModel.Store.UUM_Screen" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UUM_SingleMemberApply" EntityType="CETModel.Store.UUM_SingleMemberApply" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UUM_UMemberGrade" EntityType="CETModel.Store.UUM_UMemberGrade" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UUM_User" EntityType="CETModel.Store.UUM_User" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_PPD_PRIC_REFERENCE_PPD_PRIC" Association="CETModel.Store.FK_PPD_PRIC_REFERENCE_PPD_PRIC">
+      <End Role="PPD_Price_UnitCatalog" EntitySet="PPD_Price_UnitCatalog" />
+      <End Role="PPD_Price_Unit" EntitySet="PPD_Price_Unit" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PPD_PROD_REFERENCE_PPD_PRIC" Association="CETModel.Store.FK_PPD_PROD_REFERENCE_PPD_PRIC">
+      <End Role="PPD_Price_Unit" EntitySet="PPD_Price_Unit" />
+      <End Role="PPD_Product_PriceUnit" EntitySet="PPD_Product_PriceUnit" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PPD_PROD_REFERENCE_PPD_PROD" Association="CETModel.Store.FK_PPD_PROD_REFERENCE_PPD_PROD">
+      <End Role="PPD_Product" EntitySet="PPD_Product" />
+      <End Role="PPD_Product_PriceUnit" EntitySet="PPD_Product_PriceUnit" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PPD_Product_PriceUnit_PPD_Product_SalesWay" Association="CETModel.Store.FK_PPD_Product_PriceUnit_PPD_Product_SalesWay">
+      <End Role="PPD_Product_SalesWay" EntitySet="PPD_Product_SalesWay" />
+      <End Role="PPD_Product_PriceUnit" EntitySet="PPD_Product_PriceUnit" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PPD_Product_SalesWay_PPD_Product" Association="CETModel.Store.FK_PPD_Product_SalesWay_PPD_Product">
+      <End Role="PPD_Product" EntitySet="PPD_Product" />
+      <End Role="PPD_Product_SalesWay" EntitySet="PPD_Product_SalesWay" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PPD_USER_REFERENCE_PPD_PROD" Association="CETModel.Store.FK_PPD_USER_REFERENCE_PPD_PROD">
+      <End Role="PPD_Product" EntitySet="PPD_Product" />
+      <End Role="PPD_UserGrade_Discount" EntitySet="PPD_UserGrade_Discount" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PPD_USER_REFERENCE_UUM_USER" Association="CETModel.Store.FK_PPD_USER_REFERENCE_UUM_USER">
+      <End Role="UUM_UMemberGrade" EntitySet="UUM_UMemberGrade" />
+      <End Role="PPD_UserGrade_Discount" EntitySet="PPD_UserGrade_Discount" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UM_ORDER_REFERENCE_UM_ORDER" Association="CETModel.Store.FK_UM_ORDER_REFERENCE_UM_ORDER">
+      <End Role="UM_Order" EntitySet="UM_Order" />
+      <End Role="UM_Order_PriceUnit" EntitySet="UM_Order_PriceUnit" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UUM_Company_Member_UUM_Company" Association="CETModel.Store.FK_UUM_Company_Member_UUM_Company">
+      <End Role="UUM_Company" EntitySet="UUM_Company" />
+      <End Role="UUM_Company_Member" EntitySet="UUM_Company_Member" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UUM_Company_Member_UUM_MemberGrade" Association="CETModel.Store.FK_UUM_Company_Member_UUM_MemberGrade">
+      <End Role="UUM_MemberGrade" EntitySet="UUM_MemberGrade" />
+      <End Role="UUM_Company_Member" EntitySet="UUM_Company_Member" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UUM_CompanyDoc_UUM_Company" Association="CETModel.Store.FK_UUM_CompanyDoc_UUM_Company">
+      <End Role="UUM_Company" EntitySet="UUM_Company" />
+      <End Role="UUM_CompanyDoc" EntitySet="UUM_CompanyDoc" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UUM_Group_Member_UUM_MemberGrade" Association="CETModel.Store.FK_UUM_Group_Member_UUM_MemberGrade">
+      <End Role="UUM_MemberGrade" EntitySet="UUM_MemberGrade" />
+      <End Role="UUM_Group_Member" EntitySet="UUM_Group_Member" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UUM_Group_Member_UUM_User" Association="CETModel.Store.FK_UUM_Group_Member_UUM_User">
+      <End Role="UUM_User" EntitySet="UUM_User" />
+      <End Role="UUM_Group_Member" EntitySet="UUM_Group_Member" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UUM_SingleMemberApply_UUM_Group_Member" Association="CETModel.Store.FK_UUM_SingleMemberApply_UUM_Group_Member">
+      <End Role="UUM_Group_Member" EntitySet="UUM_Group_Member" />
+      <End Role="UUM_SingleMemberApply" EntitySet="UUM_SingleMemberApply" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UUM_User_UUM_Company" Association="CETModel.Store.FK_UUM_User_UUM_Company">
+      <End Role="UUM_Company" EntitySet="UUM_Company" />
+      <End Role="UUM_User" EntitySet="UUM_User" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="CET_Syn">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SynId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="SynDate" Type="datetime" />
+    <Property Name="SynStatus" Type="int" />
+    <Property Name="SynObjType" Type="int" />
+    <Property Name="CreateTime" Type="datetime" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“CET.dbo.EXP”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="EXP">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="USRNBR" Type="varchar" MaxLength="50" />
+    <Property Name="CORNBR" Type="varchar" MaxLength="50" />
+    <Property Name="LGNNAM" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“CET.dbo.F_Financing_SMS”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="F_Financing_SMS">
+    <Key>
+      <PropertyRef Name="FinancingId" />
+      <PropertyRef Name="ProjectCode" />
+      <PropertyRef Name="ProjectName" />
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="CreateTime" />
+    </Key>
+    <Property Name="FinancingId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ProjectCode" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ProjectName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Mobile" Type="nvarchar" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="ValueBegin" Type="datetime" />
+    <Property Name="UserId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CreateTime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PPD_Company">
+    <Key>
+      <PropertyRef Name="CompanyId" />
+    </Key>
+    <Property Name="CompanyId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CompanyName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CredibilityGrade" Type="int" Nullable="false" />
+    <Property Name="Industry" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="SalesProduct" Type="nvarchar" Nullable="false" MaxLength="500" />
+    <Property Name="Contacts" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Tel" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Web" Type="nvarchar" MaxLength="50" />
+    <Property Name="Fax" Type="nvarchar" MaxLength="50" />
+    <Property Name="Province" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="City" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="District" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="Address" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="Desc" Type="nvarchar" MaxLength="500" />
+    <Property Name="CreateTime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PPD_Contacts">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyId" Type="nvarchar" MaxLength="50" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Telephone" Type="nvarchar" MaxLength="20" />
+    <Property Name="MobilePhone" Type="nvarchar" MaxLength="20" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="PPD_Price_Unit">
+    <Key>
+      <PropertyRef Name="UnitId" />
+    </Key>
+    <Property Name="UnitId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CatalogId" Type="nvarchar" MaxLength="50" />
+    <Property Name="UnitName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Creator" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CreateTime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PPD_Price_UnitCatalog">
+    <Key>
+      <PropertyRef Name="CatalogId" />
+    </Key>
+    <Property Name="CatalogId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CatalogName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Creator" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CreateTime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PPD_Product">
+    <Key>
+      <PropertyRef Name="ProductId" />
+    </Key>
+    <Property Name="ProductId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ApplicationNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="CompanyId" Type="nvarchar" MaxLength="50" />
+    <Property Name="ProductName" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="VersionOwner" Type="nvarchar" MaxLength="50" />
+    <Property Name="VersionNo" Type="int" />
+    <Property Name="DevelopmentTechnology" Type="nvarchar" MaxLength="100" />
+    <Property Name="DataBase" Type="nvarchar" MaxLength="30" />
+    <Property Name="ProductLogo" Type="nvarchar" MaxLength="512" />
+    <Property Name="CatalogId" Type="varchar" MaxLength="50" />
+    <Property Name="TechnologyFramework" Type="nvarchar" MaxLength="10" />
+    <Property Name="SuccesfullCase" Type="varchar" MaxLength="1000" />
+    <Property Name="ProductUrl" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="TryURL" Type="varchar" MaxLength="500" />
+    <Property Name="ProductDesc" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="CreateTime" Type="datetime" />
+    <Property Name="MarketTime" Type="datetime" />
+    <Property Name="IsTry" Type="bit" Nullable="false" />
+    <Property Name="TrialWay" Type="int" />
+    <Property Name="TrialWayValue" Type="int" />
+    <Property Name="ProductStatus" Type="int" Nullable="false" />
+    <Property Name="UpperCarriageTime" Type="datetime" />
+    <Property Name="UnderCarriageTime" Type="datetime" />
+    <Property Name="AduitTime" Type="datetime" />
+    <Property Name="CooperativeDeadline" Type="datetime" />
+    <Property Name="DefaultSalesWayHTML" Type="nvarchar" MaxLength="2000" />
+    <Property Name="Pcode" Type="nvarchar" MaxLength="64" />
+    <Property Name="OpenWay" Type="int" />
+    <Property Name="ProductDailUrl" Type="nvarchar" MaxLength="512" />
+    <Property Name="BuyUrl" Type="nvarchar" MaxLength="1000" />
+    <Property Name="RechargeUrl" Type="nvarchar" MaxLength="1000" />
+    <Property Name="ScreenshotUrl" Type="nvarchar" MaxLength="1000" />
+    <Property Name="BannerImageUrl" Type="nvarchar" MaxLength="1000" />
+    <Property Name="ApplyWay" Type="int" Nullable="false" />
+    <Property Name="BuyType" Type="int" Nullable="false" />
+    <Property Name="MaxDay" Type="int" Nullable="false" />
+    <Property Name="MaxNum" Type="int" Nullable="false" />
+    <Property Name="IsFree" Type="bit" />
+    <Property Name="IsFix" Type="int" Nullable="false" />
+    <Property Name="IsOpen" Type="int" Nullable="false" />
+    <Property Name="IsSend" Type="int" Nullable="false" />
+    <Property Name="ViewCount" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PPD_Product_AnswerQuestion">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ProductID" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Question" Type="nvarchar" />
+    <Property Name="Answer" Type="nvarchar(max)" />
+    <Property Name="PublishedDate" Type="datetime" />
+    <Property Name="ReplyDate" Type="datetime" />
+    <Property Name="QuestionState" Type="int" />
+    <Property Name="IsDelete" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PPD_Product_Attribute">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ProductID" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="IsIndexGroom" Type="int" Nullable="false" />
+    <Property Name="IsLeftGroom" Type="int" Nullable="false" />
+    <Property Name="ProductOrder" Type="int" />
+    <Property Name="CataId" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="PPD_Product_Contents">
+    <Key>
+      <PropertyRef Name="ProductContentId" />
+    </Key>
+    <Property Name="ProductContentId" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Title" Type="nvarchar" MaxLength="200" />
+    <Property Name="Contents" Type="varchar(max)" />
+    <Property Name="ProductId" Type="varchar" MaxLength="50" />
+    <Property Name="EditTime" Type="datetime" />
+    <Property Name="Sort" Type="int" />
+  </EntityType>
+  <EntityType Name="PPD_Product_PriceUnit">
+    <Key>
+      <PropertyRef Name="PriceUnitId" />
+    </Key>
+    <Property Name="PriceUnitId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ProductId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="SalesWayId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="UnitId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="UnitName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="UnitValue" Type="int" Nullable="false" />
+    <Property Name="Min" Type="int" Nullable="false" />
+    <Property Name="IsCustom" Type="int" Nullable="false" />
+    <Property Name="Sort" Type="int" />
+  </EntityType>
+  <EntityType Name="PPD_Product_Recommend">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ProductId" Type="nvarchar" MaxLength="50" />
+    <Property Name="PType" Type="int" />
+    <Property Name="Sort" Type="int" />
+  </EntityType>
+  <EntityType Name="PPD_Product_SalesWay">
+    <Key>
+      <PropertyRef Name="SalesWayId" />
+    </Key>
+    <Property Name="SalesWayId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ProductId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Price" Type="decimal" Nullable="false" Scale="2" />
+    <Property Name="MinAmount" Type="int" />
+    <Property Name="SalesWay" Type="nvarchar" MaxLength="50" />
+    <Property Name="PriceUnit" Type="nchar" MaxLength="50" />
+    <Property Name="Description" Type="nvarchar" MaxLength="300" />
+    <Property Name="IsPackage" Type="int" Nullable="false" />
+    <Property Name="Sort" Type="int" />
+  </EntityType>
+  <EntityType Name="PPD_ProductApplication">
+    <Key>
+      <PropertyRef Name="ApplicationNo" />
+    </Key>
+    <Property Name="ApplicationNo" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="UserId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CompanyId" Type="nvarchar" MaxLength="50" />
+    <Property Name="ApplyDateTime" Type="datetime" Nullable="false" />
+    <Property Name="ApplicationStatus" Type="int" Nullable="false" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="PPD_ProductCatalogTemp">
+    <Key>
+      <PropertyRef Name="ProCataId" />
+    </Key>
+    <Property Name="ProCataId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ProductId" Type="nvarchar" MaxLength="50" />
+    <Property Name="CatalogId" Type="nvarchar" MaxLength="50" />
+    <Property Name="OrderBy" Type="int" />
+  </EntityType>
+  <EntityType Name="PPD_ProductGroup">
+    <Key>
+      <PropertyRef Name="GroupID" />
+    </Key>
+    <Property Name="GroupID" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="GroupName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Icon" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Sort" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PPD_ProductGroupTemp">
+    <Key>
+      <PropertyRef Name="ProductGroupID" />
+    </Key>
+    <Property Name="ProductGroupID" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ProductID" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="GroupID" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="PPD_ProductSales_Attribute">
+    <Key>
+      <PropertyRef Name="AttributeId" />
+    </Key>
+    <Property Name="AttributeId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="SalesWayId" Type="nvarchar" MaxLength="50" />
+    <Property Name="AttributeName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="AttributeHtml" Type="nvarchar" Nullable="false" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="PPD_ProductSales_Package">
+    <Key>
+      <PropertyRef Name="PackageId" />
+    </Key>
+    <Property Name="PackageId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="PackageTotal" Type="money" Nullable="false" />
+    <Property Name="PackageNumber" Type="int" Nullable="false" />
+    <Property Name="PackageUnit" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="SelectQX" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="PackageDisplay" Type="nvarchar" MaxLength="100" />
+    <Property Name="ProductId" Type="nvarchar" MaxLength="50" />
+    <Property Name="Sort" Type="int" />
+  </EntityType>
+  <EntityType Name="PPD_ProductTab">
+    <Key>
+      <PropertyRef Name="TabID" />
+    </Key>
+    <Property Name="TabID" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="TabName" Type="nvarchar" MaxLength="128" />
+    <Property Name="TabUrl" Type="nvarchar" MaxLength="256" />
+    <Property Name="ProductId" Type="nvarchar" MaxLength="128" />
+    <Property Name="Descript" Type="nvarchar" MaxLength="512" />
+    <Property Name="IsRelativeUrl" Type="int" />
+  </EntityType>
+  <EntityType Name="PPD_SalesWayPackeTemp">
+    <Key>
+      <PropertyRef Name="SalesWayPackeTempId" />
+    </Key>
+    <Property Name="SalesWayPackeTempId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="productId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="packageId" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="PPD_UserGrade_Discount">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ProductId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="GradeId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Discount" Type="decimal" Nullable="false" Precision="4" Scale="2" />
+  </EntityType>
+  <EntityType Name="PPM_ProductCatalog">
+    <Key>
+      <PropertyRef Name="CatalogId" />
+    </Key>
+    <Property Name="CatalogId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ParentId" Type="nvarchar" MaxLength="50" />
+    <Property Name="CatalogName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CatalogLevel" Type="nvarchar" Nullable="false" MaxLength="300" />
+    <Property Name="Sort" Type="int" />
+    <Property Name="PCode" Type="nvarchar" MaxLength="64" />
+    <Property Name="CataLogo" Type="nvarchar" MaxLength="128" />
+  </EntityType>
+  <EntityType Name="SHP_Advert_Info">
+    <Key>
+      <PropertyRef Name="AdvertID" />
+    </Key>
+    <Property Name="AdvertID" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ImgName" Type="nvarchar" MaxLength="50" />
+    <Property Name="AdvertImgPath" Type="nvarchar" MaxLength="300" />
+    <Property Name="AdvertImgSeat" Type="int" />
+    <Property Name="AdvertImgRemark" Type="nvarchar" MaxLength="500" />
+    <Property Name="AdvertImgOrder" Type="int" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="URL" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="SHP_CompanyUsing">
+    <Key>
+      <PropertyRef Name="UsingId" />
+    </Key>
+    <Property Name="UsingId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="title" Type="nvarchar" MaxLength="50" />
+    <Property Name="URL" Type="nvarchar" MaxLength="200" />
+    <Property Name="productID" Type="nvarchar" MaxLength="50" />
+    <Property Name="imgPath" Type="nvarchar" MaxLength="50" />
+    <Property Name="ImgOrder" Type="int" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="SynShopexUser">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CORNBR" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CreateTime" Type="datetime" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“CET.dbo.t_companyinfo_ou”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="t_companyinfo_ou">
+    <Key>
+      <PropertyRef Name="rn" />
+      <PropertyRef Name="id" />
+      <PropertyRef Name="cornbr" />
+      <PropertyRef Name="cornam" />
+      <PropertyRef Name="companyid" />
+    </Key>
+    <Property Name="rn" Type="int" Nullable="false" />
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="cornbr" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="cornam" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="companyid" Type="int" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“CET.dbo.t_companyinfo_ou_tmp”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="t_companyinfo_ou_tmp">
+    <Key>
+      <PropertyRef Name="rn" />
+      <PropertyRef Name="id" />
+      <PropertyRef Name="cornbr" />
+      <PropertyRef Name="cornam" />
+      <PropertyRef Name="companyid" />
+    </Key>
+    <Property Name="rn" Type="int" Nullable="false" />
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="cornbr" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="cornam" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="companyid" Type="int" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“CET.dbo.t_userinfo”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="t_userinfo">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="username" />
+      <PropertyRef Name="companyid" />
+      <PropertyRef Name="realname" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="username" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="companyid" Type="int" Nullable="false" />
+    <Property Name="realname" Type="nvarchar" Nullable="false" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="UM_Administrator">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="LoginId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Pwd" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="UserName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Telephone" Type="nvarchar" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="Mobile" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsSuperAdmin" Type="int" Nullable="false" />
+    <Property Name="Status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UM_Advertise">
+    <Key>
+      <PropertyRef Name="AdvertiseID" />
+    </Key>
+    <Property Name="AdvertiseID" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="AdvertiseName" Type="nvarchar" MaxLength="256" />
+    <Property Name="CategoryID" Type="nvarchar" MaxLength="256" />
+    <Property Name="AdvertiseUrl" Type="nvarchar" />
+    <Property Name="AdvertiseImage" Type="nvarchar" MaxLength="512" />
+    <Property Name="Descript" Type="nvarchar(max)" />
+    <Property Name="IsOpen" Type="int" Nullable="false" />
+    <Property Name="CreateTime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UM_AdvertiseCategory">
+    <Key>
+      <PropertyRef Name="CategoryID" />
+    </Key>
+    <Property Name="CategoryID" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="Name" Type="nvarchar" MaxLength="128" />
+    <Property Name="Descript" Type="nvarchar" MaxLength="512" />
+  </EntityType>
+  <EntityType Name="UM_Agent_Administrator">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="AgentID" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="UserId" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="UM_App">
+    <Key>
+      <PropertyRef Name="AppId" />
+    </Key>
+    <Property Name="AppId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="AppName" Type="nvarchar" MaxLength="50" />
+    <Property Name="EnKey" Type="nvarchar" MaxLength="50" />
+    <Property Name="URL" Type="nvarchar" MaxLength="300" />
+    <Property Name="IsStop" Type="int" />
+    <Property Name="CreateTime" Type="datetime" />
+    <Property Name="Creator" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="UM_App_Menu">
+    <Key>
+      <PropertyRef Name="MenuId" />
+    </Key>
+    <Property Name="MenuId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="MenuName" Type="nvarchar" MaxLength="50" />
+    <Property Name="AppId" Type="nvarchar" MaxLength="50" />
+    <Property Name="URL" Type="nvarchar" MaxLength="1000" />
+    <Property Name="ParentMenuId" Type="nvarchar" MaxLength="50" />
+    <Property Name="PublishUrl" Type="nvarchar" MaxLength="1000" />
+    <Property Name="Sort" Type="int" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="UM_App_Right">
+    <Key>
+      <PropertyRef Name="RightId" />
+    </Key>
+    <Property Name="RightId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="UserId" Type="int" />
+    <Property Name="AppId" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="UM_Area">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="areaID" Type="varchar" MaxLength="50" />
+    <Property Name="area" Type="varchar" MaxLength="60" />
+    <Property Name="father" Type="varchar" MaxLength="6" />
+  </EntityType>
+  <EntityType Name="UM_Attachment">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Creator" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="LastModifier" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CreatedTime" Type="datetime" Nullable="false" />
+    <Property Name="LastModTime" Type="datetime" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="FileName" Type="nvarchar" MaxLength="255" />
+    <Property Name="MimeType" Type="nvarchar" MaxLength="255" />
+    <Property Name="FileSize" Type="numeric" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="255" />
+    <Property Name="Downloads" Type="int" />
+  </EntityType>
+  <EntityType Name="UM_Attachment_Entity">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="AttachmentId" Type="int" Nullable="false" />
+    <Property Name="EntityId" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="EntityType" Type="nvarchar" Nullable="false" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="UM_City">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="money" Nullable="false" />
+    <Property Name="cityID" Type="varchar" MaxLength="6" />
+    <Property Name="city" Type="varchar" MaxLength="50" />
+    <Property Name="father" Type="varchar" MaxLength="6" />
+  </EntityType>
+  <EntityType Name="UM_CmsMsg">
+    <Key>
+      <PropertyRef Name="MsgId" />
+    </Key>
+    <Property Name="MsgId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Title" Type="nvarchar" MaxLength="100" />
+    <Property Name="Content" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="To" Type="nvarchar" Nullable="false" MaxLength="1000" />
+    <Property Name="Cc" Type="nvarchar" MaxLength="1000" />
+    <Property Name="CreateTime" Type="datetime" Nullable="false" />
+    <Property Name="ReadySendTime" Type="datetime" />
+    <Property Name="SendType" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Status" Type="int" Nullable="false" />
+    <Property Name="SendDateTime" Type="datetime" />
+    <Property Name="SendResult" Type="nvarchar" MaxLength="1000" />
+    <Property Name="SystemId" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="UM_CmsType">
+    <Key>
+      <PropertyRef Name="MsgCode" />
+    </Key>
+    <Property Name="MsgCode" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="CmsTypeName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="IsToCustomer" Type="int" Nullable="false" />
+    <Property Name="MsgType" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Title" Type="nvarchar" MaxLength="100" />
+    <Property Name="Msg" Type="nvarchar(max)" />
+    <Property Name="Mobile" Type="nvarchar" MaxLength="1000" />
+    <Property Name="ToEmail" Type="nvarchar" MaxLength="1000" />
+    <Property Name="CcEmail" Type="nvarchar" MaxLength="1000" />
+    <Property Name="CreateTime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UM_Dictionary">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Keyword" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="UM_DictionaryItem">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="200" />
+    <Property Name="DictionaryID" Type="int" Nullable="false" />
+    <Property Name="IsAvailable" Type="int" Nullable="false" />
+    <Property Name="Sort" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UM_ErrorLog">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="LogMessage" Type="nvarchar(max)" />
+    <Property Name="LogException" Type="varchar(max)" />
+    <Property Name="LogDate" Type="datetime" />
+    <Property Name="Source" Type="nvarchar" MaxLength="2000" />
+    <Property Name="LogLevel" Type="nvarchar" MaxLength="10" />
+    <Property Name="UserId" Type="nvarchar" MaxLength="50" />
+    <Property Name="LogModule" Type="int" />
+    <Property Name="ServerIp" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="UM_Function">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="200" />
+    <Property Name="MenuID" Type="int" Nullable="false" />
+    <Property Name="ControlID" Type="nvarchar" MaxLength="100" />
+    <Property Name="SortNum" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UM_Menu">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" />
+    <Property Name="Desciption" Type="nvarchar" MaxLength="400" />
+    <Property Name="ParentID" Type="nvarchar" MaxLength="50" />
+    <Property Name="Visible" Type="nvarchar" MaxLength="250" />
+    <Property Name="SortNumber" Type="int" />
+    <Property Name="URL" Type="nvarchar" MaxLength="100" />
+    <Property Name="SystemId" Type="int" />
+    <Property Name="IsActionPage" Type="int" />
+    <Property Name="ShortCutIcon" Type="nvarchar" MaxLength="250" />
+    <Property Name="SysCategory" Type="int" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“CET.dbo.UM_MsgType”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="UM_MsgType">
+    <Key>
+      <PropertyRef Name="MsgTypeCode" />
+      <PropertyRef Name="MsgTypeName" />
+    </Key>
+    <Property Name="MsgTypeCode" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="MsgTypeName" Type="nvarchar" Nullable="false" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="UM_Order">
+    <Key>
+      <PropertyRef Name="OrderNo" />
+    </Key>
+    <Property Name="OrderNo" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ProductId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="CompanyId" Type="int" />
+    <Property Name="ProductName" Type="nvarchar" Nullable="false" MaxLength="500" />
+    <Property Name="OrderAmount" Type="decimal" Nullable="false" Scale="2" />
+    <Property Name="OrderDate" Type="datetime" Nullable="false" />
+    <Property Name="OrderType" Type="int" Nullable="false" />
+    <Property Name="OrderStatus" Type="int" Nullable="false" />
+    <Property Name="TakeDate" Type="date" />
+    <Property Name="FailureDate" Type="date" />
+    <Property Name="Number" Type="int" />
+    <Property Name="Price" Type="decimal" Scale="2" />
+    <Property Name="SalesUnit" Type="nvarchar" MaxLength="50" />
+    <Property Name="Surplus" Type="int" />
+    <Property Name="SelectValue" Type="int" />
+    <Property Name="PayDate" Type="datetime" />
+    <Property Name="IsSum" Type="int" Nullable="false" />
+    <Property Name="completedState" Type="int" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="2000" />
+    <Property Name="OrderPayType" Type="int" Nullable="false" />
+    <Property Name="OrderFrom" Type="int" Nullable="false" />
+    <Property Name="RunningNO" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsOnline" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UM_Order_CashCoupon">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CashCouponID" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="OrderNo" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="UM_Order_Follow_Info">
+    <Key>
+      <PropertyRef Name="FollowId" />
+    </Key>
+    <Property Name="FollowId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="FollowDate" Type="datetime" Nullable="false" />
+    <Property Name="FollowUserId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="FollowContent" Type="nvarchar" MaxLength="1000" />
+    <Property Name="OrderNo" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="FollowCateatDate" Type="datetime" Nullable="false" />
+    <Property Name="FollowType" Type="int" Nullable="false" />
+    <Property Name="FollowStatus" Type="int" Nullable="false" />
+    <Property Name="ext1" Type="nvarchar" MaxLength="500" />
+    <Property Name="ext2" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="UM_Order_PriceUnit">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="OrderNo" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="UnitName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="UnitValue" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UM_OrderBill">
+    <Key>
+      <PropertyRef Name="BillId" />
+    </Key>
+    <Property Name="BillId" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="BillRise" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="BillToAddress" Type="nvarchar" Nullable="false" MaxLength="300" />
+    <Property Name="BillGetUser" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CreateDate" Type="datetime" Nullable="false" />
+    <Property Name="OrderNo" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="Phone" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Mobile" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="BillRiseType" Type="int" Nullable="false" />
+    <Property Name="CompanyId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UM_OrderPayRecord">
+    <Key>
+      <PropertyRef Name="OrderPayRecord" />
+    </Key>
+    <Property Name="OrderPayRecord" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="OrderNo" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="Amount" Type="decimal" Nullable="false" Scale="2" />
+    <Property Name="PayAccount" Type="decimal" Nullable="false" Scale="2" />
+    <Property Name="PayOnline" Type="decimal" Nullable="false" Scale="2" />
+  </EntityType>
+  <EntityType Name="UM_Privilege">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="MasterValue" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="AccessValue" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Operation" Type="int" Nullable="false" />
+    <Property Name="MasterCategory" Type="int" Nullable="false" />
+    <Property Name="AccessCategory" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UM_Province">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="provinceID" Type="varchar" MaxLength="6" />
+    <Property Name="province" Type="varchar" MaxLength="40" />
+  </EntityType>
+  <EntityType Name="UM_Role">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="400" />
+    <Property Name="Note" Type="nvarchar" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="UM_SysLog">
+    <Key>
+      <PropertyRef Name="SysLogId" />
+    </Key>
+    <Property Name="SysLogId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SysCode" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="LogType" Type="int" Nullable="false" />
+    <Property Name="RefId" Type="nvarchar" MaxLength="50" />
+    <Property Name="LogContent" Type="nvarchar" Nullable="false" MaxLength="200" />
+    <Property Name="LogTime" Type="datetime" Nullable="false" />
+    <Property Name="UserLoginId" Type="nvarchar" MaxLength="50" />
+    <Property Name="UserName" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="UM_SysModule">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" />
+    <Property Name="Description" Type="nvarchar" MaxLength="500" />
+    <Property Name="APIKey" Type="nvarchar" MaxLength="100" />
+    <Property Name="AppUrl" Type="nvarchar" MaxLength="100" />
+    <Property Name="CallBackUrl" Type="nvarchar" MaxLength="100" />
+    <Property Name="LogOutUrl" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="UM_Trial_Order_Temp">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="orderId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="trialId" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="UM_TrialProduct">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ProductId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CompanyId" Type="int" Nullable="false" />
+    <Property Name="ApplyCount" Type="int" />
+    <Property Name="ApplyDay" Type="int" />
+    <Property Name="CreateDate" Type="datetime" Nullable="false" />
+    <Property Name="Status" Type="int" Nullable="false" />
+    <Property Name="IsDelete" Type="int" Nullable="false" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="UM_TrialUser_Trace">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CreateTime" Type="datetime" Nullable="false" />
+    <Property Name="Creator" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="UserId" Type="int" />
+    <Property Name="Remark" Type="varchar" Nullable="false" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="UM_User_Agent">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="AgentType" Type="nvarchar" MaxLength="50" />
+    <Property Name="AgentID" Type="nvarchar" MaxLength="50" />
+    <Property Name="UserAutoGuid" Type="nvarchar" MaxLength="50" />
+    <Property Name="OrderNo" Type="nvarchar" MaxLength="128" />
+    <Property Name="Descript" Type="nvarchar" MaxLength="512" />
+  </EntityType>
+  <EntityType Name="UM_User_Role">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="UserID" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="RoleID" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="UUM_Agent">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="128" />
+    <Property Name="PassWord" Type="nvarchar" MaxLength="128" />
+    <Property Name="Isvailable" Type="int" />
+    <Property Name="ValidateCode" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="CompanyName" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="Address" Type="varchar" MaxLength="350" />
+    <Property Name="MobileTel" Type="varchar" MaxLength="50" />
+    <Property Name="Fax" Type="varchar" MaxLength="50" />
+    <Property Name="regTime" Type="datetime" Nullable="false" />
+    <Property Name="UCSName" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="DeputyName" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Telephone" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="QQ" Type="varchar" MaxLength="20" />
+    <Property Name="Email" Type="varchar" MaxLength="100" />
+    <Property Name="MSN" Type="varchar" MaxLength="50" />
+    <Property Name="Status" Type="int" Nullable="false" />
+    <Property Name="Remark" Type="nvarchar(max)" />
+    <Property Name="DistributorID" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="UUM_AgentNotice">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Title" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="Content" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CreateDate" Type="datetime" Nullable="false" />
+    <Property Name="Creator" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="IsDelete" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UUM_AgentNotice_Receive">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="NoticeID" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="AgentID" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="IsRead" Type="int" Nullable="false" />
+    <Property Name="ReadDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="UUM_App">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="150" />
+    <Property Name="ParentID" Type="int" Nullable="false" />
+    <Property Name="AppClassID" Type="int" Nullable="false" />
+    <Property Name="IsLeaf" Type="int" Nullable="false" />
+    <Property Name="LinkPath" Type="nvarchar" MaxLength="250" />
+    <Property Name="IconPath" Type="nvarchar" MaxLength="250" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="Sort" Type="int" Nullable="false" />
+    <Property Name="CreateDate" Type="datetime" Nullable="false" />
+    <Property Name="Creator" Type="int" Nullable="false" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="AppStatus" Type="bit" />
+    <Property Name="TempletContent" Type="varchar(max)" />
+    <Property Name="Pcode" Type="nvarchar" MaxLength="64" />
+  </EntityType>
+  <EntityType Name="UUM_AppClass">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="150" />
+    <Property Name="LinkPath" Type="nvarchar" MaxLength="250" />
+    <Property Name="ParentID" Type="int" Nullable="false" />
+    <Property Name="CreatDate" Type="datetime" Nullable="false" />
+    <Property Name="Creator" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UUM_CAddrBook">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="150" />
+    <Property Name="UUM_UserName" Type="nvarchar" MaxLength="100" />
+    <Property Name="OrganizationID" Type="int" Nullable="false" />
+    <Property Name="Depart" Type="nvarchar" MaxLength="150" />
+    <Property Name="Email" Type="nvarchar" MaxLength="100" />
+    <Property Name="Mobile" Type="nvarchar" MaxLength="100" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="100" />
+    <Property Name="Fax" Type="nvarchar" MaxLength="100" />
+    <Property Name="Address" Type="nvarchar" MaxLength="250" />
+    <Property Name="Creator" Type="int" Nullable="false" />
+    <Property Name="CreateDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UUM_CashCoupon">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CashCouponId" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="AgentId" Type="nvarchar" MaxLength="50" />
+    <Property Name="Price" Type="money" Nullable="false" />
+    <Property Name="BeginTime" Type="datetime" Nullable="false" />
+    <Property Name="EndTime" Type="datetime" Nullable="false" />
+    <Property Name="UpdaTime" Type="datetime" />
+    <Property Name="State" Type="int" Nullable="false" />
+    <Property Name="FoundName" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="UUM_CashCoupon_BAK">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CashCouponId" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="AgentId" Type="nvarchar" MaxLength="50" />
+    <Property Name="Price" Type="money" Nullable="false" />
+    <Property Name="BeginTime" Type="datetime" Nullable="false" />
+    <Property Name="EndTime" Type="datetime" Nullable="false" />
+    <Property Name="State" Type="int" Nullable="false" />
+    <Property Name="FoundName" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="UUM_CmbchinaOU">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CORNBR" Type="nchar" MaxLength="50" />
+    <Property Name="CORNAM" Type="varchar" MaxLength="60" />
+    <Property Name="CompanyId" Type="int" Nullable="false" />
+    <Property Name="PVCNAM" Type="varchar" MaxLength="20" />
+    <Property Name="CTYNAM" Type="varchar" MaxLength="20" />
+    <Property Name="TELCOD" Type="varchar" MaxLength="20" />
+    <Property Name="FAXCOD" Type="varchar" MaxLength="20" />
+    <Property Name="CORADR" Type="varchar" MaxLength="80" />
+    <Property Name="OPNFLG" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="UUM_CmbchinaUser">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="USRNBR" Type="nchar" MaxLength="50" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="CORNBR" Type="nchar" MaxLength="50" />
+    <Property Name="USRNAM" Type="varchar" MaxLength="30" />
+    <Property Name="LGNNAM" Type="varchar" MaxLength="50" />
+    <Property Name="GENDER" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="USRSTS" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="USRMOB" Type="varchar" MaxLength="20" />
+    <Property Name="USRTEL" Type="varchar" MaxLength="50" />
+    <Property Name="USREML" Type="varchar" MaxLength="40" />
+    <Property Name="USRTYP" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="UUM_Company">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="AutoGuid" Type="nvarchar" MaxLength="50" />
+    <Property Name="UserLoginName" Type="varchar" MaxLength="250" />
+    <Property Name="UcsmyName" Type="varchar" MaxLength="250" />
+    <Property Name="UserPass" Type="varchar" MaxLength="250" />
+    <Property Name="NickName" Type="varchar" MaxLength="150" />
+    <Property Name="FullName" Type="varchar" MaxLength="250" />
+    <Property Name="Email" Type="varchar" MaxLength="100" />
+    <Property Name="Status" Type="int" Nullable="false" />
+    <Property Name="regTime" Type="datetime" Nullable="false" />
+    <Property Name="LastTime" Type="datetime" />
+    <Property Name="LastIp" Type="varchar" MaxLength="50" />
+    <Property Name="Fax" Type="varchar" MaxLength="50" />
+    <Property Name="QQ" Type="varchar" MaxLength="20" />
+    <Property Name="ChiefUser" Type="varchar" MaxLength="250" />
+    <Property Name="MSN" Type="varchar" MaxLength="50" />
+    <Property Name="ProvinceCity" Type="varchar" MaxLength="50" />
+    <Property Name="Address" Type="varchar" MaxLength="350" />
+    <Property Name="Telephone" Type="varchar" MaxLength="50" />
+    <Property Name="MobileTel" Type="varchar" MaxLength="50" />
+    <Property Name="Integral" Type="int" Nullable="false" />
+    <Property Name="HomePage" Type="varchar" MaxLength="250" />
+    <Property Name="Logo" Type="varchar" MaxLength="250" />
+    <Property Name="Note" Type="varchar" MaxLength="500" />
+    <Property Name="UserTotal" Type="int" Nullable="false" />
+    <Property Name="Is_Sms" Type="int" Nullable="false" />
+    <Property Name="Is_SmsCountLimit" Type="int" Nullable="false" />
+    <Property Name="Sms_Account" Type="varchar" MaxLength="50" />
+    <Property Name="Sms_Password" Type="varchar" MaxLength="50" />
+    <Property Name="Sms_Count" Type="int" Nullable="false" />
+    <Property Name="Sms_SendCount" Type="int" Nullable="false" />
+    <Property Name="Is_VideoMeeting" Type="int" Nullable="false" />
+    <Property Name="Is_CallCenter" Type="int" Nullable="false" />
+    <Property Name="IndustryID" Type="int" Nullable="false" />
+    <Property Name="StausActive" Type="bit" />
+    <Property Name="SynDataStatus" Type="nchar" MaxLength="10" />
+    <Property Name="StrID" Type="nvarchar" MaxLength="100" />
+    <Property Name="BusinessLimit" Type="nvarchar" MaxLength="50" />
+    <Property Name="OperativeBank" Type="nvarchar" MaxLength="100" />
+    <Property Name="CompanyPosition" Type="nvarchar" MaxLength="200" />
+    <Property Name="PublicizeImg" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="UUM_Company_Member">
+    <Key>
+      <PropertyRef Name="AutoID" />
+    </Key>
+    <Property Name="AutoID" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="MemberGradeID" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="License" Type="nvarchar" MaxLength="200" />
+    <Property Name="OrgCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsAudit" Type="int" Nullable="false" />
+    <Property Name="CreateDate" Type="datetime" Nullable="false" />
+    <Property Name="UpdateDate" Type="datetime" Nullable="false" />
+    <Property Name="AuditDate" Type="datetime" />
+    <Property Name="LicenseChangeDate" Type="datetime" />
+    <Property Name="AuditContent" Type="nvarchar" MaxLength="2000" />
+    <Property Name="LicenseUpdateUserId" Type="int" />
+    <Property Name="PrintCount" Type="int" Nullable="false" />
+    <Property Name="LicenseAuditDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="UUM_CompanyDoc">
+    <Key>
+      <PropertyRef Name="CompanyDocId" />
+    </Key>
+    <Property Name="CompanyDocId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyId" Type="int" Nullable="false" />
+    <Property Name="DocSource" Type="nvarchar" Nullable="false" MaxLength="200" />
+    <Property Name="DocType" Type="tinyint" Nullable="false" />
+    <Property Name="DocStatus" Type="tinyint" Nullable="false" />
+    <Property Name="DocDescription" Type="nvarchar" MaxLength="2000" />
+    <Property Name="CreateDate" Type="datetime" Nullable="false" />
+    <Property Name="UpdateDate" Type="datetime" Nullable="false" />
+    <Property Name="CreateUser" Type="int" Nullable="false" />
+    <Property Name="UpdateUser" Type="int" Nullable="false" />
+    <Property Name="AuditAdminId" Type="nvarchar" MaxLength="50" />
+    <Property Name="AuditAdminName" Type="nvarchar" MaxLength="50" />
+    <Property Name="AuditDate" Type="datetime" />
+    <Property Name="AuditContent" Type="nvarchar" MaxLength="2000" />
+  </EntityType>
+  <EntityType Name="UUM_Competitive_Info">
+    <Key>
+      <PropertyRef Name="CompetitiveId" />
+    </Key>
+    <Property Name="CompetitiveId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CompanyName" Type="nvarchar" Nullable="false" MaxLength="200" />
+    <Property Name="CompetitiveUserName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CompetitivePhone" Type="nvarchar" Nullable="false" MaxLength="11" />
+    <Property Name="CompetitiveAddress" Type="nvarchar" Nullable="false" MaxLength="500" />
+    <Property Name="CompetitiveMsg" Type="nvarchar" Nullable="false" MaxLength="500" />
+    <Property Name="CompetitiveDate" Type="datetime" Nullable="false" />
+    <Property Name="JpAmount" Type="decimal" Nullable="false" Scale="2" />
+    <Property Name="SalesAmount" Type="decimal" Nullable="false" Scale="2" />
+    <Property Name="SQAmount" Type="decimal" Nullable="false" Scale="2" />
+    <Property Name="Zzc" Type="decimal" Nullable="false" Scale="2" />
+    <Property Name="Zfz" Type="decimal" Nullable="false" Scale="2" />
+    <Property Name="Cwfy" Type="decimal" Nullable="false" Scale="2" />
+    <Property Name="Jynx" Type="int" />
+    <Property Name="JynxDesc" Type="nchar" MaxLength="100" />
+    <Property Name="Yyfc" Type="int" />
+    <Property Name="Cqjz" Type="int" />
+    <Property Name="Yysx" Type="int" />
+    <Property Name="QtGrzc" Type="nvarchar" MaxLength="1000" />
+    <Property Name="JpProductType" Type="int" />
+    <Property Name="JpProduct" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsJp" Type="int" Nullable="false" />
+    <Property Name="StarGrade" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UUM_Consume">
+    <Key>
+      <PropertyRef Name="AutoId" />
+    </Key>
+    <Property Name="AutoId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Amount" Type="decimal" Nullable="false" Scale="2" />
+    <Property Name="PayAccount" Type="decimal" Nullable="false" Scale="2" />
+    <Property Name="PayOnline" Type="decimal" Nullable="false" Scale="2" />
+    <Property Name="CompanyId" Type="int" Nullable="false" />
+    <Property Name="BusinessType" Type="int" Nullable="false" />
+    <Property Name="ConsumeType" Type="int" Nullable="false" />
+    <Property Name="ConsumeTime" Type="datetime" Nullable="false" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="UUM_EAccount">
+    <Key>
+      <PropertyRef Name="AutoId" />
+    </Key>
+    <Property Name="AutoId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="AccountId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="AccountPassword" Type="nvarchar" MaxLength="50" />
+    <Property Name="CompanyId" Type="int" Nullable="false" />
+    <Property Name="Balance" Type="decimal" Nullable="false" Scale="2" />
+    <Property Name="MoneyOut" Type="decimal" Nullable="false" Scale="2" />
+    <Property Name="MoneyIn" Type="decimal" Nullable="false" Scale="2" />
+    <Property Name="CreateTime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UUM_EAccount_Order">
+    <Key>
+      <PropertyRef Name="orderCode" />
+    </Key>
+    <Property Name="orderCode" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="orderTime" Type="datetime" Nullable="false" />
+    <Property Name="signType" Type="int" Nullable="false" />
+    <Property Name="orderId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="orderAmount" Type="decimal" Nullable="false" Scale="2" />
+    <Property Name="ext1" Type="nvarchar" MaxLength="1000" />
+    <Property Name="ext2" Type="nvarchar" MaxLength="1000" />
+    <Property Name="bgUrl" Type="nvarchar" Nullable="false" MaxLength="500" />
+    <Property Name="orderStata" Type="int" Nullable="false" />
+    <Property Name="CompanyId" Type="int" Nullable="false" />
+    <Property Name="merchantsId" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="orderType" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UUM_EclubPackage">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Price" Type="decimal" Nullable="false" Scale="2" />
+    <Property Name="YearLimit" Type="int" Nullable="false" />
+    <Property Name="Level" Type="int" Nullable="false" />
+    <Property Name="MemberGrade" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="UUM_EPay_Account">
+    <Key>
+      <PropertyRef Name="UserAutoGuid" />
+    </Key>
+    <Property Name="EAN" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="UserAutoGuid" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="UUM_Group_Member">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CompanyAutoID" Type="nvarchar(max)" />
+    <Property Name="ToMemberGradeID" Type="nvarchar" MaxLength="50" />
+    <Property Name="ApplyMemberID" Type="int" />
+    <Property Name="ApplyUserID" Type="nvarchar" MaxLength="50" />
+    <Property Name="ApplyUserName" Type="nvarchar" MaxLength="100" />
+    <Property Name="ApplyDate" Type="datetime" />
+    <Property Name="AuditUserID" Type="nvarchar" MaxLength="50" />
+    <Property Name="AuditUserName" Type="nvarchar" MaxLength="50" />
+    <Property Name="AuditDate" Type="datetime" />
+    <Property Name="GroupStatus" Type="int" />
+    <Property Name="Descript" Type="nvarchar" MaxLength="512" />
+  </EntityType>
+  <EntityType Name="UUM_LoanBase">
+    <Key>
+      <PropertyRef Name="LoanBaseID" />
+    </Key>
+    <Property Name="LoanBaseID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="TotalAssets" Type="decimal" Nullable="false" />
+    <Property Name="TotalLiabilities" Type="decimal" Nullable="false" />
+    <Property Name="SalesRevenue" Type="decimal" Nullable="false" />
+    <Property Name="GrossProfit" Type="decimal" Nullable="false" />
+    <Property Name="OperationTime" Type="int" Nullable="false" />
+    <Property Name="IsEstate" Type="int" Nullable="false" />
+    <Property Name="IsLocal" Type="int" Nullable="false" />
+    <Property Name="IsOtherCredit" Type="int" Nullable="false" />
+    <Property Name="PersonalAssets" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="UUM_Member_Grade">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyId" Type="nvarchar" MaxLength="50" />
+    <Property Name="GradeId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="UpdateTime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UUM_Member_Order">
+    <Key>
+      <PropertyRef Name="OrderNo" />
+    </Key>
+    <Property Name="OrderNo" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="MemberGradeID" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="MemberGradeName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="UserID" Type="int" Nullable="false" />
+    <Property Name="OrderAmount" Type="decimal" Nullable="false" Scale="2" />
+    <Property Name="OrderDate" Type="datetime" Nullable="false" />
+    <Property Name="OrderStatus" Type="int" Nullable="false" />
+    <Property Name="Price" Type="decimal" Nullable="false" Scale="2" />
+    <Property Name="PayDate" Type="datetime" />
+    <Property Name="ProxyCode" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="UUM_MemberGrade">
+    <Key>
+      <PropertyRef Name="MemberGradeId" />
+    </Key>
+    <Property Name="MemberGradeId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="MemberGradeName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="GradeLevel" Type="int" Nullable="false" />
+    <Property Name="Discount" Type="float" Nullable="false" />
+    <Property Name="Price" Type="decimal" Nullable="false" Scale="2" />
+    <Property Name="YearLimit" Type="int" Nullable="false" />
+    <Property Name="Status" Type="int" Nullable="false" />
+    <Property Name="GroupNum" Type="int" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="UUM_MemberModify">
+    <Key>
+      <PropertyRef Name="AutoID" />
+    </Key>
+    <Property Name="AutoID" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="CompanyName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="MemberGradeID" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="MemberName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Action" Type="int" Nullable="false" />
+    <Property Name="OldMemberGradeID" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="OldMemberName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CreateDate" Type="datetime" Nullable="false" />
+    <Property Name="MemberType" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UUM_PAddrBook">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="NickName" Type="nvarchar" MaxLength="100" />
+    <Property Name="Enterprise" Type="nvarchar" MaxLength="150" />
+    <Property Name="Email" Type="nvarchar" MaxLength="150" />
+    <Property Name="Mobile" Type="nvarchar" MaxLength="100" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="150" />
+    <Property Name="Fax" Type="nvarchar" MaxLength="150" />
+    <Property Name="Address" Type="nvarchar" MaxLength="250" />
+    <Property Name="Type" Type="int" Nullable="false" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="400" />
+    <Property Name="Creator" Type="int" Nullable="false" />
+    <Property Name="CreateDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UUM_PAddrBookType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="150" />
+    <Property Name="UserID" Type="int" Nullable="false" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="400" />
+  </EntityType>
+  <EntityType Name="UUM_R_User_App">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="150" />
+    <Property Name="IconPath" Type="nvarchar" MaxLength="250" />
+    <Property Name="LinkPath" Type="nvarchar" MaxLength="250" />
+    <Property Name="Description" Type="nvarchar" MaxLength="500" />
+    <Property Name="UserID" Type="int" />
+    <Property Name="AppID" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="Sort" Type="int" Nullable="false" />
+    <Property Name="ScreenID" Type="int" Nullable="false" />
+    <Property Name="Type" Type="int" Nullable="false" />
+    <Property Name="CollectType" Type="int" />
+  </EntityType>
+  <EntityType Name="UUM_Screen">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ScreenName" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="UserID" Type="int" />
+    <Property Name="Description" Type="nvarchar" MaxLength="256" />
+    <Property Name="IsCollect" Type="int" />
+  </EntityType>
+  <EntityType Name="UUM_SingleMemberApply">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Group_MemberID" Type="nvarchar" MaxLength="50" />
+    <Property Name="CompanyName" Type="nvarchar" MaxLength="256" />
+    <Property Name="MobleTel" Type="nvarchar" MaxLength="50" />
+    <Property Name="Status" Type="int" />
+    <Property Name="ApplyUserID" Type="nvarchar" MaxLength="50" />
+    <Property Name="ApplyUserName" Type="nvarchar" MaxLength="50" />
+    <Property Name="AuditDate" Type="datetime" />
+    <Property Name="Descript" Type="nvarchar" MaxLength="512" />
+  </EntityType>
+  <EntityType Name="UUM_UMemberGrade">
+    <Key>
+      <PropertyRef Name="GradeId" />
+    </Key>
+    <Property Name="GradeId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="GradeName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Grade" Type="int" Nullable="false" />
+    <Property Name="Price" Type="decimal" Nullable="false" Scale="2" />
+    <Property Name="CreateTime" Type="datetime" Nullable="false" />
+    <Property Name="Creator" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CreatorId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ImageUrl" Type="nvarchar" MaxLength="128" />
+    <Property Name="YearLimit" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UUM_User">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="AutoGuid" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="100" />
+    <Property Name="RealName" Type="nvarchar" MaxLength="100" />
+    <Property Name="Password" Type="nvarchar" MaxLength="100" />
+    <Property Name="DealPassword" Type="nvarchar" MaxLength="100" />
+    <Property Name="LoginNum" Type="int" Nullable="false" />
+    <Property Name="LastLoginTime" Type="datetime" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="50" />
+    <Property Name="Mobile" Type="nvarchar" MaxLength="50" />
+    <Property Name="Address" Type="nvarchar" MaxLength="200" />
+    <Property Name="IDCard" Type="nvarchar" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" MaxLength="100" />
+    <Property Name="PortalType" Type="int" Nullable="false" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="500" />
+    <Property Name="CreateTime" Type="datetime" Nullable="false" />
+    <Property Name="UpdateTime" Type="datetime" Nullable="false" />
+    <Property Name="SkinID" Type="int" Nullable="false" />
+    <Property Name="PageSize" Type="int" Nullable="false" />
+    <Property Name="MyIcon" Type="nvarchar" MaxLength="200" />
+    <Property Name="LastLoginIP" Type="nvarchar" MaxLength="50" />
+    <Property Name="StartDate" Type="datetime" />
+    <Property Name="ExpiryDate" Type="datetime" />
+    <Property Name="IsVedioMeeting" Type="int" Nullable="false" />
+    <Property Name="IsAdmin" Type="int" Nullable="false" />
+    <Property Name="Level" Type="int" Nullable="false" />
+    <Property Name="IsSms" Type="int" Nullable="false" />
+    <Property Name="SmsCount" Type="int" Nullable="false" />
+    <Property Name="IMLogin" Type="varchar" MaxLength="50" />
+    <Property Name="IsAvailable" Type="int" Nullable="false" />
+    <Property Name="IsEmail" Type="int" Nullable="false" />
+    <Property Name="EmpCode" Type="nchar" MaxLength="20" />
+    <Property Name="User_Log" Type="nvarchar" MaxLength="128" />
+    <Property Name="StrID" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <Association Name="FK_PPD_PRIC_REFERENCE_PPD_PRIC">
+    <End Role="PPD_Price_UnitCatalog" Type="CETModel.Store.PPD_Price_UnitCatalog" Multiplicity="0..1" />
+    <End Role="PPD_Price_Unit" Type="CETModel.Store.PPD_Price_Unit" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PPD_Price_UnitCatalog">
+        <PropertyRef Name="CatalogId" />
+      </Principal>
+      <Dependent Role="PPD_Price_Unit">
+        <PropertyRef Name="CatalogId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PPD_PROD_REFERENCE_PPD_PRIC">
+    <End Role="PPD_Price_Unit" Type="CETModel.Store.PPD_Price_Unit" Multiplicity="1" />
+    <End Role="PPD_Product_PriceUnit" Type="CETModel.Store.PPD_Product_PriceUnit" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PPD_Price_Unit">
+        <PropertyRef Name="UnitId" />
+      </Principal>
+      <Dependent Role="PPD_Product_PriceUnit">
+        <PropertyRef Name="UnitId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PPD_PROD_REFERENCE_PPD_PROD">
+    <End Role="PPD_Product" Type="CETModel.Store.PPD_Product" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="PPD_Product_PriceUnit" Type="CETModel.Store.PPD_Product_PriceUnit" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PPD_Product">
+        <PropertyRef Name="ProductId" />
+      </Principal>
+      <Dependent Role="PPD_Product_PriceUnit">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PPD_Product_PriceUnit_PPD_Product_SalesWay">
+    <End Role="PPD_Product_SalesWay" Type="CETModel.Store.PPD_Product_SalesWay" Multiplicity="1" />
+    <End Role="PPD_Product_PriceUnit" Type="CETModel.Store.PPD_Product_PriceUnit" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PPD_Product_SalesWay">
+        <PropertyRef Name="SalesWayId" />
+      </Principal>
+      <Dependent Role="PPD_Product_PriceUnit">
+        <PropertyRef Name="SalesWayId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PPD_Product_SalesWay_PPD_Product">
+    <End Role="PPD_Product" Type="CETModel.Store.PPD_Product" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="PPD_Product_SalesWay" Type="CETModel.Store.PPD_Product_SalesWay" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PPD_Product">
+        <PropertyRef Name="ProductId" />
+      </Principal>
+      <Dependent Role="PPD_Product_SalesWay">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PPD_USER_REFERENCE_PPD_PROD">
+    <End Role="PPD_Product" Type="CETModel.Store.PPD_Product" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="PPD_UserGrade_Discount" Type="CETModel.Store.PPD_UserGrade_Discount" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PPD_Product">
+        <PropertyRef Name="ProductId" />
+      </Principal>
+      <Dependent Role="PPD_UserGrade_Discount">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PPD_USER_REFERENCE_UUM_USER">
+    <End Role="UUM_UMemberGrade" Type="CETModel.Store.UUM_UMemberGrade" Multiplicity="1" />
+    <End Role="PPD_UserGrade_Discount" Type="CETModel.Store.PPD_UserGrade_Discount" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UUM_UMemberGrade">
+        <PropertyRef Name="GradeId" />
+      </Principal>
+      <Dependent Role="PPD_UserGrade_Discount">
+        <PropertyRef Name="GradeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UM_ORDER_REFERENCE_UM_ORDER">
+    <End Role="UM_Order" Type="CETModel.Store.UM_Order" Multiplicity="1" />
+    <End Role="UM_Order_PriceUnit" Type="CETModel.Store.UM_Order_PriceUnit" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UM_Order">
+        <PropertyRef Name="OrderNo" />
+      </Principal>
+      <Dependent Role="UM_Order_PriceUnit">
+        <PropertyRef Name="OrderNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UUM_Company_Member_UUM_Company">
+    <End Role="UUM_Company" Type="CETModel.Store.UUM_Company" Multiplicity="1" />
+    <End Role="UUM_Company_Member" Type="CETModel.Store.UUM_Company_Member" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UUM_Company">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="UUM_Company_Member">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UUM_Company_Member_UUM_MemberGrade">
+    <End Role="UUM_MemberGrade" Type="CETModel.Store.UUM_MemberGrade" Multiplicity="1" />
+    <End Role="UUM_Company_Member" Type="CETModel.Store.UUM_Company_Member" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UUM_MemberGrade">
+        <PropertyRef Name="MemberGradeId" />
+      </Principal>
+      <Dependent Role="UUM_Company_Member">
+        <PropertyRef Name="MemberGradeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UUM_CompanyDoc_UUM_Company">
+    <End Role="UUM_Company" Type="CETModel.Store.UUM_Company" Multiplicity="1" />
+    <End Role="UUM_CompanyDoc" Type="CETModel.Store.UUM_CompanyDoc" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UUM_Company">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="UUM_CompanyDoc">
+        <PropertyRef Name="CompanyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UUM_Group_Member_UUM_MemberGrade">
+    <End Role="UUM_MemberGrade" Type="CETModel.Store.UUM_MemberGrade" Multiplicity="0..1" />
+    <End Role="UUM_Group_Member" Type="CETModel.Store.UUM_Group_Member" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UUM_MemberGrade">
+        <PropertyRef Name="MemberGradeId" />
+      </Principal>
+      <Dependent Role="UUM_Group_Member">
+        <PropertyRef Name="ToMemberGradeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UUM_Group_Member_UUM_User">
+    <End Role="UUM_User" Type="CETModel.Store.UUM_User" Multiplicity="0..1" />
+    <End Role="UUM_Group_Member" Type="CETModel.Store.UUM_Group_Member" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UUM_User">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="UUM_Group_Member">
+        <PropertyRef Name="ApplyMemberID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UUM_SingleMemberApply_UUM_Group_Member">
+    <End Role="UUM_Group_Member" Type="CETModel.Store.UUM_Group_Member" Multiplicity="0..1" />
+    <End Role="UUM_SingleMemberApply" Type="CETModel.Store.UUM_SingleMemberApply" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UUM_Group_Member">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="UUM_SingleMemberApply">
+        <PropertyRef Name="Group_MemberID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UUM_User_UUM_Company">
+    <End Role="UUM_Company" Type="CETModel.Store.UUM_Company" Multiplicity="1" />
+    <End Role="UUM_User" Type="CETModel.Store.UUM_User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UUM_Company">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="UUM_User">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <!--生成过程中发现错误:
+      警告 6013: 表/视图“CET.dbo.SynProduct”未定义主键，并且无法推断有效的主键。已排除了此表/视图。若要使用实体，将需要检查您的架构、添加正确的键并取消对实体的注释。
+      
+      <EntityType Name="SynProduct">
+        <Property Name="ProductId" Type="nvarchar" MaxLength="50" />
+        <Property Name="ProductName" Type="nvarchar" MaxLength="50" />
+      </EntityType>-->
+</Schema>

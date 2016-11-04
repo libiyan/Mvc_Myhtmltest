@@ -1,0 +1,9 @@
+F:\libi\Mytest\Mvc_Myhtmltest\My.DataAccess\bin\Debug\My.DataAccess.dll.config
+F:\libi\Mytest\Mvc_Myhtmltest\My.DataAccess\bin\Debug\My.DataAccess.dll
+F:\libi\Mytest\Mvc_Myhtmltest\My.DataAccess\bin\Debug\My.DataAccess.pdb
+F:\libi\Mytest\Mvc_Myhtmltest\My.DataAccess\bin\Debug\EntityFramework.dll
+F:\libi\Mytest\Mvc_Myhtmltest\My.DataAccess\bin\Debug\Ucsmy.Framework.dll
+F:\libi\Mytest\Mvc_Myhtmltest\My.DataAccess\bin\Debug\LitJson.dll
+F:\libi\Mytest\Mvc_Myhtmltest\My.DataAccess\obj\Debug\My.DataAccess.dll
+F:\libi\Mytest\Mvc_Myhtmltest\My.DataAccess\obj\Debug\My.DataAccess.pdb
+F:\libi\Mytest\Mvc_Myhtmltest\My.DataAccess\obj\Debug\My.DataAccess.csprojResolveAssemblyReference.cache

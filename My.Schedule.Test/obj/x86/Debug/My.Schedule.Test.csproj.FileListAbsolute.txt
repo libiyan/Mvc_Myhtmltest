@@ -1,0 +1,11 @@
+F:\libi\Mytest\Mvc_Myhtmltest\My.Schedule.Test\bin\Debug\My.Schedule.Test.exe.config
+F:\libi\Mytest\Mvc_Myhtmltest\My.Schedule.Test\bin\Debug\My.Schedule.Test.exe
+F:\libi\Mytest\Mvc_Myhtmltest\My.Schedule.Test\bin\Debug\My.Schedule.Test.pdb
+F:\libi\Mytest\Mvc_Myhtmltest\My.Schedule.Test\bin\Debug\My.DataAccess.dll
+F:\libi\Mytest\Mvc_Myhtmltest\My.Schedule.Test\bin\Debug\Ucsmy.Framework.dll
+F:\libi\Mytest\Mvc_Myhtmltest\My.Schedule.Test\bin\Debug\EntityFramework.dll
+F:\libi\Mytest\Mvc_Myhtmltest\My.Schedule.Test\bin\Debug\LitJson.dll
+F:\libi\Mytest\Mvc_Myhtmltest\My.Schedule.Test\bin\Debug\My.DataAccess.pdb
+F:\libi\Mytest\Mvc_Myhtmltest\My.Schedule.Test\obj\x86\Debug\My.Schedule.Test.csprojResolveAssemblyReference.cache
+F:\libi\Mytest\Mvc_Myhtmltest\My.Schedule.Test\obj\x86\Debug\My.Schedule.Test.exe
+F:\libi\Mytest\Mvc_Myhtmltest\My.Schedule.Test\obj\x86\Debug\My.Schedule.Test.pdb

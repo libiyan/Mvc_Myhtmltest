@@ -1,0 +1,17 @@
+F:\libi\小练习项目\Mvc_Myhtmltest\My.DataAccess\obj\Release\My.DataAccess.csprojResolveAssemblyReference.cache
+F:\libi\小练习项目\Mvc_Myhtmltest\My.DataAccess\bin\Release\My.DataAccess.dll.config
+F:\libi\小练习项目\Mvc_Myhtmltest\My.DataAccess\bin\Release\My.DataAccess.dll
+F:\libi\小练习项目\Mvc_Myhtmltest\My.DataAccess\bin\Release\My.DataAccess.pdb
+F:\libi\小练习项目\Mvc_Myhtmltest\My.DataAccess\bin\Release\EntityFramework.dll
+F:\libi\小练习项目\Mvc_Myhtmltest\My.DataAccess\bin\Release\Ucsmy.Framework.dll
+F:\libi\小练习项目\Mvc_Myhtmltest\My.DataAccess\bin\Release\LitJson.dll
+F:\libi\小练习项目\Mvc_Myhtmltest\My.DataAccess\obj\Release\My.DataAccess.dll
+F:\libi\小练习项目\Mvc_Myhtmltest\My.DataAccess\obj\Release\My.DataAccess.pdb
+F:\libi\Mytest\Mvc_Myhtmltest\My.DataAccess\bin\Release\My.DataAccess.dll.config
+F:\libi\Mytest\Mvc_Myhtmltest\My.DataAccess\bin\Release\My.DataAccess.dll
+F:\libi\Mytest\Mvc_Myhtmltest\My.DataAccess\bin\Release\My.DataAccess.pdb
+F:\libi\Mytest\Mvc_Myhtmltest\My.DataAccess\bin\Release\EntityFramework.dll
+F:\libi\Mytest\Mvc_Myhtmltest\My.DataAccess\bin\Release\Ucsmy.Framework.dll
+F:\libi\Mytest\Mvc_Myhtmltest\My.DataAccess\bin\Release\LitJson.dll
+F:\libi\Mytest\Mvc_Myhtmltest\My.DataAccess\obj\Release\My.DataAccess.dll
+F:\libi\Mytest\Mvc_Myhtmltest\My.DataAccess\obj\Release\My.DataAccess.pdb

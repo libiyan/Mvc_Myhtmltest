@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FinancePlatformModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="FinancePlatformEntity" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="F_BankAccount" EntityType="FinancePlatformModel.F_BankAccount" />
+    <EntitySet Name="F_Financing" EntityType="FinancePlatformModel.F_Financing" />
+    <EntitySet Name="F_Investment_Order" EntityType="FinancePlatformModel.F_Investment_Order" />
+    <EntitySet Name="F_Project_Content" EntityType="FinancePlatformModel.F_Project_Content" />
+    <EntitySet Name="F_User" EntityType="FinancePlatformModel.F_User" />
+    <EntitySet Name="FinaceDic" EntityType="FinancePlatformModel.FinaceDic" />
+    <EntitySet Name="SaleInstitution" EntityType="FinancePlatformModel.SaleInstitution" />
+    <EntitySet Name="SaleInstitutionBackList" EntityType="FinancePlatformModel.SaleInstitutionBackList" />
+    <EntitySet Name="SaleInstitutionPermit" EntityType="FinancePlatformModel.SaleInstitutionPermit" />
+    <AssociationSet Name="FK_F_INVEST_REFERENCE_F_FINANC" Association="FinancePlatformModel.FK_F_INVEST_REFERENCE_F_FINANC">
+      <End Role="F_Financing" EntitySet="F_Financing" />
+      <End Role="F_Investment_Order" EntitySet="F_Investment_Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_F_PROJEC_REFERENCE_F_FINANC" Association="FinancePlatformModel.FK_F_PROJEC_REFERENCE_F_FINANC">
+      <End Role="F_Financing" EntitySet="F_Financing" />
+      <End Role="F_Project_Content" EntitySet="F_Project_Content" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="F_BankAccount">
+    <Key>
+      <PropertyRef Name="AccountId" />
+    </Key>
+    <Property Name="AccountId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="AccountName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="AccountNO" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="AccountBank" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="BranchBankCode" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="BranchBankName" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="BankCode" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="BankType" Type="Int32" Nullable="false" />
+    <Property Name="BankProvince" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="BankCity" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="BankProvinceCode" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="BankCityCode" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Brdnbr" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="UserId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="BindType" Type="Int32" Nullable="false" />
+    <Property Name="BindCode" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CreateTime" Type="DateTime" Nullable="false" />
+    <Property Name="IDcard" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Ctftyp" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Sigtim" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Sigdat" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Sigtyp" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CmbcAccountId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Usrnbr" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="AccountFrom" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="F_Financing">
+    <Key>
+      <PropertyRef Name="FinancingId" />
+    </Key>
+    <Property Name="FinancingId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ProjectCode" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="ProjectName" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Amount" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="PartsCount" Type="Int32" Nullable="false" />
+    <Property Name="MinInvestPartsCount" Type="Int32" Nullable="false" />
+    <Property Name="Progress" Type="Decimal" Nullable="false" Precision="8" Scale="2" />
+    <Property Name="BankInterest" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="InvestmentInterest" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="YMInterest" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="Duration" Type="Int32" Nullable="false" />
+    <Property Name="RepayType" Type="Int32" Nullable="false" />
+    <Property Name="RepaySourceType" Type="Int32" Nullable="false" />
+    <Property Name="ValueBegin" Type="DateTime" Nullable="false" />
+    <Property Name="RepayBegin" Type="DateTime" Nullable="false" />
+    <Property Name="ProjectBeginTime" Type="DateTime" Nullable="false" />
+    <Property Name="ReadyBeginTime" Type="DateTime" Nullable="false" />
+    <Property Name="JMBeginTime" Type="DateTime" Nullable="false" />
+    <Property Name="ToFinancingTime" Type="DateTime" Nullable="false" />
+    <Property Name="ActualToFinancingTime" Type="DateTime" />
+    <Property Name="ToInvestmentTime" Type="DateTime" Nullable="false" />
+    <Property Name="ActualToInvestmentTime" Type="DateTime" />
+    <Property Name="ProjectStatus" Type="Int32" Nullable="false" />
+    <Property Name="CreditLevel" Type="Int32" Nullable="false" />
+    <Property Name="BindUserId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="BindCompanyId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CreateUserId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CreateUserName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CreateCompanyId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CreateCompanyName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CreateTime" Type="DateTime" Nullable="false" />
+    <Property Name="UpdateUserId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="UpdateTime" Type="DateTime" Nullable="false" />
+    <Property Name="BindUserName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="BindCompanyName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="AreaCode" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="Year" Type="String" Nullable="false" MaxLength="4" Unicode="false" FixedLength="false" />
+    <Property Name="YearIndex" Type="Int32" Nullable="false" />
+    <Property Name="ProjectType" Type="Int32" Nullable="false" />
+    <Property Name="SettlementType" Type="Int32" Nullable="false" />
+    <Property Name="IsShow" Type="Boolean" Nullable="false" />
+    <Property Name="IsExclusivePublic" Type="Boolean" Nullable="false" />
+    <Property Name="ExclusiveCode" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="FCode" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="FPrjType" Type="Int32" Nullable="false" />
+    <Property Name="FPayType" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="F_Investment_Order" Relationship="FinancePlatformModel.FK_F_INVEST_REFERENCE_F_FINANC" FromRole="F_Financing" ToRole="F_Investment_Order" />
+    <NavigationProperty Name="F_Project_Content" Relationship="FinancePlatformModel.FK_F_PROJEC_REFERENCE_F_FINANC" FromRole="F_Financing" ToRole="F_Project_Content" />
+  </EntityType>
+  <EntityType Name="F_Investment_Order">
+    <Key>
+      <PropertyRef Name="OrderNo" />
+    </Key>
+    <Property Name="OrderNo" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="FinancingId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ProjectName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PartsCount" Type="Int32" Nullable="false" />
+    <Property Name="PayAmount" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="PayStatus" Type="Int32" Nullable="false" />
+    <Property Name="PayTime" Type="DateTime" />
+    <Property Name="PayUserId" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PayUserName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PayType" Type="Int32" />
+    <Property Name="PayChannel" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CreateUserId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CreateUserName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CreateCompanyId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CreateCompanyName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CreateTime" Type="DateTime" Nullable="false" />
+    <Property Name="RunningNO" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="SendCmdStaus" Type="Int32" Nullable="false" />
+    <Property Name="Actualpayments" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="IsExcess" Type="Int32" Nullable="false" />
+    <Property Name="OrderFrom" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="F_Financing" Relationship="FinancePlatformModel.FK_F_INVEST_REFERENCE_F_FINANC" FromRole="F_Investment_Order" ToRole="F_Financing" />
+  </EntityType>
+  <EntityType Name="F_Project_Content">
+    <Key>
+      <PropertyRef Name="Project_ContentId" />
+    </Key>
+    <Property Name="Project_ContentId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="FinancingId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Type" Type="Int32" Nullable="false" />
+    <Property Name="Title" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Content" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="F_Financing" Relationship="FinancePlatformModel.FK_F_PROJEC_REFERENCE_F_FINANC" FromRole="F_Project_Content" ToRole="F_Financing" />
+  </EntityType>
+  <EntityType Name="F_User">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="Usrnbr" />
+    </Key>
+    <Property Name="UserId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Usrnbr" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Mobile" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="FinaceDic">
+    <Key>
+      <PropertyRef Name="FCode" />
+      <PropertyRef Name="FPrjType" />
+      <PropertyRef Name="FPayType" />
+    </Key>
+    <Property Name="FCode" Type="String" Nullable="false" MaxLength="16" Unicode="false" FixedLength="true" />
+    <Property Name="FPrjType" Type="String" Nullable="false" MaxLength="8" Unicode="false" FixedLength="true" />
+    <Property Name="FPayType" Type="String" Nullable="false" MaxLength="8" Unicode="false" FixedLength="true" />
+    <Property Name="FDesc" Type="String" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="InstitutionID" Type="String" MaxLength="16" Unicode="false" FixedLength="true" />
+    <Property Name="ConnectString" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="AddressUrl" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="NotifyFlag" Type="Byte" />
+  </EntityType>
+  <EntityType Name="SaleInstitution">
+    <Key>
+      <PropertyRef Name="SourceID" />
+    </Key>
+    <Property Name="SourceID" Type="String" Nullable="false" MaxLength="16" Unicode="true" FixedLength="false" />
+    <Property Name="SourceName" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="EffectTime" Type="DateTime" />
+    <Property Name="FailureTime" Type="DateTime" />
+    <Property Name="CreateTime" Type="DateTime" />
+    <Property Name="CreateUser" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="DelFlag" Type="Byte" />
+  </EntityType>
+  <EntityType Name="SaleInstitutionBackList">
+    <Key>
+      <PropertyRef Name="ListID" />
+    </Key>
+    <Property Name="ListID" Type="Guid" Nullable="false" />
+    <Property Name="SourceID" Type="String" MaxLength="16" Unicode="true" FixedLength="false" />
+    <Property Name="FinancingId" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="FCode" Type="String" MaxLength="16" Unicode="false" FixedLength="true" />
+    <Property Name="FPrjType" Type="String" Nullable="false" MaxLength="8" Unicode="false" FixedLength="true" />
+    <Property Name="RuleFlag" Type="Int32" />
+    <Property Name="DelFlag" Type="Byte" />
+  </EntityType>
+  <EntityType Name="SaleInstitutionPermit">
+    <Key>
+      <PropertyRef Name="PermitID" />
+    </Key>
+    <Property Name="PermitID" Type="Guid" Nullable="false" />
+    <Property Name="SourceID" Type="String" MaxLength="16" Unicode="true" FixedLength="false" />
+    <Property Name="FCode" Type="String" MaxLength="16" Unicode="false" FixedLength="true" />
+    <Property Name="FPrjType" Type="String" Nullable="false" MaxLength="8" Unicode="false" FixedLength="true" />
+    <Property Name="FPayType" Type="String" Nullable="false" MaxLength="8" Unicode="false" FixedLength="true" />
+    <Property Name="EffectTime" Type="DateTime" />
+    <Property Name="FailureTime" Type="DateTime" />
+    <Property Name="AccessRuleFlag" Type="Int32" />
+    <Property Name="TradeRuleFlag" Type="Int32" />
+    <Property Name="DelFlag" Type="Byte" />
+  </EntityType>
+  <Association Name="FK_F_INVEST_REFERENCE_F_FINANC">
+    <End Role="F_Financing" Type="FinancePlatformModel.F_Financing" Multiplicity="1" />
+    <End Role="F_Investment_Order" Type="FinancePlatformModel.F_Investment_Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="F_Financing">
+        <PropertyRef Name="FinancingId" />
+      </Principal>
+      <Dependent Role="F_Investment_Order">
+        <PropertyRef Name="FinancingId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_F_PROJEC_REFERENCE_F_FINANC">
+    <End Role="F_Financing" Type="FinancePlatformModel.F_Financing" Multiplicity="1" />
+    <End Role="F_Project_Content" Type="FinancePlatformModel.F_Project_Content" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="F_Financing">
+        <PropertyRef Name="FinancingId" />
+      </Principal>
+      <Dependent Role="F_Project_Content">
+        <PropertyRef Name="FinancingId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

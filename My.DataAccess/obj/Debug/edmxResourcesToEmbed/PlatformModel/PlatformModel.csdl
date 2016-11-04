@@ -1,0 +1,451 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PlatformModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="PlatformEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ErrorLog" EntityType="PlatformModel.ErrorLog" />
+    <EntitySet Name="FinanceDic" EntityType="PlatformModel.FinanceDic" />
+    <EntitySet Name="ODS_BankAccount" EntityType="PlatformModel.ODS_BankAccount" />
+    <EntitySet Name="ODS_Financing" EntityType="PlatformModel.ODS_Financing" />
+    <EntitySet Name="ODS_Guarantee" EntityType="PlatformModel.ODS_Guarantee" />
+    <EntitySet Name="ODS_Investment_Order" EntityType="PlatformModel.ODS_Investment_Order" />
+    <EntitySet Name="ODS_Order_RunningNO" EntityType="PlatformModel.ODS_Order_RunningNO" />
+    <EntitySet Name="ODS_Project_Content" EntityType="PlatformModel.ODS_Project_Content" />
+    <EntitySet Name="ODS_User" EntityType="PlatformModel.ODS_User" />
+    <EntitySet Name="PayStatusNotifyTask" EntityType="PlatformModel.PayStatusNotifyTask" />
+    <EntitySet Name="QtUser_SourceUser" EntityType="PlatformModel.QtUser_SourceUser" />
+    <EntitySet Name="SaleInstitution" EntityType="PlatformModel.SaleInstitution" />
+    <EntitySet Name="SaleInstitutionBlackList" EntityType="PlatformModel.SaleInstitutionBlackList" />
+    <EntitySet Name="SaleInstitutionOrderRecord" EntityType="PlatformModel.SaleInstitutionOrderRecord" />
+    <EntitySet Name="SaleInstitutionPayLog" EntityType="PlatformModel.SaleInstitutionPayLog" />
+    <EntitySet Name="SaleInstitutionPermit" EntityType="PlatformModel.SaleInstitutionPermit" />
+    <EntitySet Name="V_ODS_Financing" EntityType="PlatformModel.V_ODS_Financing" />
+    <EntitySet Name="V_ODS_FinancingDetail" EntityType="PlatformModel.V_ODS_FinancingDetail" />
+    <EntitySet Name="V_ODS_UserOrderInfo" EntityType="PlatformModel.V_ODS_UserOrderInfo" />
+  </EntityContainer>
+  <EntityType Name="ErrorLog">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="LogMessage" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="LogException" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="LogDate" Type="DateTime" />
+    <Property Name="Source" Type="String" MaxLength="2000" Unicode="true" FixedLength="false" />
+    <Property Name="LogLevel" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="UserId" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="LogModule" Type="Int32" />
+    <Property Name="ServerIp" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="FinanceDic">
+    <Key>
+      <PropertyRef Name="FCode" />
+      <PropertyRef Name="FPrjType" />
+      <PropertyRef Name="FPayType" />
+    </Key>
+    <Property Name="FCode" Type="String" Nullable="false" MaxLength="16" Unicode="false" FixedLength="true" />
+    <Property Name="FPrjType" Type="Int32" Nullable="false" />
+    <Property Name="FPayType" Type="Int32" Nullable="false" />
+    <Property Name="FDesc" Type="String" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="InstitutionID" Type="String" MaxLength="16" Unicode="false" FixedLength="true" />
+    <Property Name="ConnectString" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="AddressUrl" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="NotifyFlag" Type="Byte" />
+  </EntityType>
+  <EntityType Name="ODS_BankAccount">
+    <Key>
+      <PropertyRef Name="AccountId" />
+    </Key>
+    <Property Name="AccountId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="AccountName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="AccountNO" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="AccountBank" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="BranchBankCode" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="BranchBankName" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="BankCode" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="BankType" Type="Int32" Nullable="false" />
+    <Property Name="BankProvince" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="BankCity" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="BankProvinceCode" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="BankCityCode" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Brdnbr" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="UserId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="BindType" Type="Int32" Nullable="false" />
+    <Property Name="BindCode" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CreateTime" Type="DateTime" Nullable="false" />
+    <Property Name="IDcard" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Ctftyp" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Sigtim" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Sigdat" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Sigtyp" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CmbcAccountId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Usrnbr" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="AccountFrom" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ODS_Financing">
+    <Key>
+      <PropertyRef Name="FinancingId" />
+    </Key>
+    <Property Name="FinancingId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ProjectCode" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="ProjectName" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Amount" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="PartsCount" Type="Int32" Nullable="false" />
+    <Property Name="MinInvestPartsCount" Type="Int32" Nullable="false" />
+    <Property Name="Progress" Type="Decimal" Nullable="false" Precision="8" Scale="2" />
+    <Property Name="BankInterest" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="InvestmentInterest" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="YMInterest" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="Duration" Type="Int32" Nullable="false" />
+    <Property Name="RepayType" Type="Int32" Nullable="false" />
+    <Property Name="RepaySourceType" Type="Int32" Nullable="false" />
+    <Property Name="ValueBegin" Type="DateTime" Nullable="false" />
+    <Property Name="RepayBegin" Type="DateTime" Nullable="false" />
+    <Property Name="ProjectBeginTime" Type="DateTime" Nullable="false" />
+    <Property Name="ReadyBeginTime" Type="DateTime" Nullable="false" />
+    <Property Name="JMBeginTime" Type="DateTime" Nullable="false" />
+    <Property Name="ToFinancingTime" Type="DateTime" Nullable="false" />
+    <Property Name="ActualToFinancingTime" Type="DateTime" />
+    <Property Name="ToInvestmentTime" Type="DateTime" Nullable="false" />
+    <Property Name="ActualToInvestmentTime" Type="DateTime" />
+    <Property Name="ProjectStatus" Type="Int32" Nullable="false" />
+    <Property Name="CreditLevel" Type="Int32" Nullable="false" />
+    <Property Name="BindUserId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="BindCompanyId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CreateUserId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CreateUserName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CreateCompanyId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CreateCompanyName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CreateTime" Type="DateTime" Nullable="false" />
+    <Property Name="UpdateUserId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="UpdateTime" Type="DateTime" Nullable="false" />
+    <Property Name="BindUserName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="BindCompanyName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="AreaCode" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="Year" Type="String" Nullable="false" MaxLength="6" Unicode="false" FixedLength="false" />
+    <Property Name="YearIndex" Type="Int32" Nullable="false" />
+    <Property Name="ProjectType" Type="Int32" Nullable="false" />
+    <Property Name="SettlementType" Type="Int32" Nullable="false" />
+    <Property Name="IsShow" Type="Boolean" Nullable="false" />
+    <Property Name="IsExclusivePublic" Type="Boolean" Nullable="false" />
+    <Property Name="ExclusiveCode" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="FCode" Type="String" Nullable="false" MaxLength="16" Unicode="true" FixedLength="false" />
+    <Property Name="FPrjType" Type="Int32" Nullable="false" />
+    <Property Name="FPayType" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ODS_Guarantee">
+    <Key>
+      <PropertyRef Name="GuaranteeId" />
+    </Key>
+    <Property Name="GuaranteeId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="FinancingId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="TypeCode" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Title" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Content" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="ODS_Investment_Order">
+    <Key>
+      <PropertyRef Name="OrderNo" />
+    </Key>
+    <Property Name="OrderNo" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="FinancingId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ProjectName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PartsCount" Type="Int32" Nullable="false" />
+    <Property Name="PayAmount" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="PayStatus" Type="Int32" Nullable="false" />
+    <Property Name="PayTime" Type="DateTime" />
+    <Property Name="PayUserId" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PayUserName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PayType" Type="Int32" />
+    <Property Name="PayChannel" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CreateUserId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CreateUserName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CreateCompanyId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CreateCompanyName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CreateTime" Type="DateTime" Nullable="false" />
+    <Property Name="RunningNO" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="SendCmdStaus" Type="Int32" Nullable="false" />
+    <Property Name="Actualpayments" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="IsExcess" Type="Int32" Nullable="false" />
+    <Property Name="OrderFrom" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ODS_Order_RunningNO">
+    <Key>
+      <PropertyRef Name="RunningNo" />
+    </Key>
+    <Property Name="RunningNo" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="OrderNo" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="OrderAmount" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="CreateTime" Type="DateTime" Nullable="false" />
+    <Property Name="CreateUserId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CreateUserName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="ODS_Project_Content">
+    <Key>
+      <PropertyRef Name="Project_ContentId" />
+    </Key>
+    <Property Name="Project_ContentId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="FinancingId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Type" Type="Int32" Nullable="false" />
+    <Property Name="Title" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Content" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="ODS_User">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="Usrnbr" />
+    </Key>
+    <Property Name="UserId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Usrnbr" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Mobile" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="FCode" Type="String" Nullable="false" MaxLength="16" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="PayStatusNotifyTask">
+    <Key>
+      <PropertyRef Name="TaskID" />
+    </Key>
+    <Property Name="TaskID" Type="Guid" Nullable="false" />
+    <Property Name="SourceID" Type="String" MaxLength="16" Unicode="true" FixedLength="false" />
+    <Property Name="PaymentNo" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="Amount" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Status" Type="Int32" />
+    <Property Name="PayTime" Type="DateTime" />
+    <Property Name="TaskStatus" Type="Boolean" />
+    <Property Name="TaskNum" Type="Int32" />
+    <Property Name="DelFlag" Type="Boolean" />
+    <Property Name="BandCODFlag" Type="Int32" />
+  </EntityType>
+  <EntityType Name="QtUser_SourceUser">
+    <Key>
+      <PropertyRef Name="QtUserId" />
+    </Key>
+    <Property Name="QtUserId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="SourceID" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="SourceUsrnbr" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="SourceUsrnam" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="SourceUsrMobile" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="SourceUsrMail" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CreateTime" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SaleInstitution">
+    <Key>
+      <PropertyRef Name="SourceID" />
+    </Key>
+    <Property Name="SourceID" Type="String" Nullable="false" MaxLength="16" Unicode="true" FixedLength="false" />
+    <Property Name="SourceName" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="EffectTime" Type="DateTime" />
+    <Property Name="FailureTime" Type="DateTime" />
+    <Property Name="CreateTime" Type="DateTime" />
+    <Property Name="CreateUser" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="DelFlag" Type="Byte" />
+  </EntityType>
+  <EntityType Name="SaleInstitutionBlackList">
+    <Key>
+      <PropertyRef Name="ListID" />
+    </Key>
+    <Property Name="ListID" Type="Guid" Nullable="false" />
+    <Property Name="SourceID" Type="String" MaxLength="16" Unicode="true" FixedLength="false" />
+    <Property Name="FinancingId" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="FCode" Type="String" MaxLength="16" Unicode="false" FixedLength="true" />
+    <Property Name="FPrjType" Type="String" Nullable="false" MaxLength="8" Unicode="false" FixedLength="true" />
+    <Property Name="RuleFlag" Type="Int32" />
+    <Property Name="DelFlag" Type="Byte" />
+  </EntityType>
+  <EntityType Name="SaleInstitutionOrderRecord">
+    <Key>
+      <PropertyRef Name="OrderNo" />
+    </Key>
+    <Property Name="OrderNo" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="FinancingId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ProjectCode" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ProjectName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PartsCount" Type="Int32" Nullable="false" />
+    <Property Name="PayAmount" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="PayStatus" Type="Int32" Nullable="false" />
+    <Property Name="PayUserId" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CreateUserId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CreateTime" Type="DateTime" Nullable="false" />
+    <Property Name="RunningNo" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="IsExcess" Type="Int32" Nullable="false" />
+    <Property Name="AccountName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="AccountNo" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="AccountBank" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="BankCode" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="BankProvince" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="BankProvinceCode" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="BankCity" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="BankCityCode" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="BranchBankName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Brdnbr" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Ctfidc" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Ctftyp" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Usage" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="Remark" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="SourceID" Type="String" MaxLength="16" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="SaleInstitutionPayLog">
+    <Key>
+      <PropertyRef Name="PayLogId" />
+    </Key>
+    <Property Name="PayLogId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="SourceID" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="BizCode" Type="Int32" Nullable="false" />
+    <Property Name="OrderNo" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PaymentNo" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="NotificationURL" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="BankID" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Usrnbr" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Usrnam" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="AccountType" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CreateTime" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SaleInstitutionPermit">
+    <Key>
+      <PropertyRef Name="PermitID" />
+    </Key>
+    <Property Name="PermitID" Type="Guid" Nullable="false" />
+    <Property Name="SourceID" Type="String" MaxLength="16" Unicode="true" FixedLength="false" />
+    <Property Name="FCode" Type="String" MaxLength="16" Unicode="false" FixedLength="true" />
+    <Property Name="FPrjType" Type="String" Nullable="false" MaxLength="8" Unicode="false" FixedLength="true" />
+    <Property Name="FPayType" Type="String" Nullable="false" MaxLength="8" Unicode="false" FixedLength="true" />
+    <Property Name="EffectTime" Type="DateTime" />
+    <Property Name="FailureTime" Type="DateTime" />
+    <Property Name="AccessRuleFlag" Type="Int32" />
+    <Property Name="TradeRuleFlag" Type="Int32" />
+    <Property Name="DelFlag" Type="Byte" />
+  </EntityType>
+  <EntityType Name="V_ODS_Financing">
+    <Key>
+      <PropertyRef Name="FinancingId" />
+      <PropertyRef Name="ProjectCode" />
+      <PropertyRef Name="ProjectName" />
+      <PropertyRef Name="Amount" />
+      <PropertyRef Name="InvestmentInterest" />
+      <PropertyRef Name="CreateTime" />
+      <PropertyRef Name="ProjectStatus" />
+      <PropertyRef Name="Progress" />
+      <PropertyRef Name="FCode" />
+      <PropertyRef Name="FPrjType" />
+      <PropertyRef Name="FPayType" />
+    </Key>
+    <Property Name="FinancingId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ProjectCode" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="ProjectName" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Amount" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="InvestmentInterest" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="CreateTime" Type="DateTime" Nullable="false" />
+    <Property Name="ProjectStatus" Type="Int32" Nullable="false" />
+    <Property Name="Progress" Type="Decimal" Nullable="false" Precision="18" Scale="6" />
+    <Property Name="FCode" Type="String" Nullable="false" MaxLength="16" Unicode="true" FixedLength="false" />
+    <Property Name="FPrjType" Type="Int32" Nullable="false" />
+    <Property Name="FPayType" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="V_ODS_FinancingDetail">
+    <Key>
+      <PropertyRef Name="FinancingId" />
+      <PropertyRef Name="ProjectCode" />
+      <PropertyRef Name="ProjectName" />
+      <PropertyRef Name="Amount" />
+      <PropertyRef Name="PartsCount" />
+      <PropertyRef Name="MinInvestPartsCount" />
+      <PropertyRef Name="InvestmentInterest" />
+      <PropertyRef Name="Duration" />
+      <PropertyRef Name="ValueBegin" />
+      <PropertyRef Name="RepayBegin" />
+      <PropertyRef Name="ProjectBeginTime" />
+      <PropertyRef Name="ReadyBeginTime" />
+      <PropertyRef Name="JMBeginTime" />
+      <PropertyRef Name="CreateTime" />
+      <PropertyRef Name="RemainPartsCount" />
+      <PropertyRef Name="Progress" />
+      <PropertyRef Name="ProjectStatus" />
+      <PropertyRef Name="FCode" />
+      <PropertyRef Name="FPrjType" />
+      <PropertyRef Name="FPayType" />
+    </Key>
+    <Property Name="FinancingId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ProjectCode" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="ProjectName" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Amount" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="PartsCount" Type="Int32" Nullable="false" />
+    <Property Name="MinInvestPartsCount" Type="Int32" Nullable="false" />
+    <Property Name="InvestmentInterest" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="Duration" Type="Int32" Nullable="false" />
+    <Property Name="ValueBegin" Type="DateTime" Nullable="false" />
+    <Property Name="RepayBegin" Type="DateTime" Nullable="false" />
+    <Property Name="ProjectBeginTime" Type="DateTime" Nullable="false" />
+    <Property Name="ReadyBeginTime" Type="DateTime" Nullable="false" />
+    <Property Name="JMBeginTime" Type="DateTime" Nullable="false" />
+    <Property Name="CreateTime" Type="DateTime" Nullable="false" />
+    <Property Name="Useage" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="RemainPartsCount" Type="Int32" Nullable="false" />
+    <Property Name="Progress" Type="Decimal" Nullable="false" Precision="18" Scale="6" />
+    <Property Name="ProjectStatus" Type="Int32" Nullable="false" />
+    <Property Name="FCode" Type="String" Nullable="false" MaxLength="16" Unicode="true" FixedLength="false" />
+    <Property Name="FPrjType" Type="Int32" Nullable="false" />
+    <Property Name="FPayType" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="V_ODS_UserOrderInfo">
+    <Key>
+      <PropertyRef Name="FinancingId" />
+      <PropertyRef Name="ProjectName" />
+      <PropertyRef Name="ProjectCode" />
+      <PropertyRef Name="Amount" />
+      <PropertyRef Name="Duration" />
+      <PropertyRef Name="InvestmentInterest" />
+      <PropertyRef Name="Progress" />
+      <PropertyRef Name="ValueBegin" />
+      <PropertyRef Name="RepayBegin" />
+      <PropertyRef Name="AccountBank" />
+      <PropertyRef Name="AccountName" />
+      <PropertyRef Name="AccountNO" />
+      <PropertyRef Name="IDcard" />
+      <PropertyRef Name="BankProvince" />
+      <PropertyRef Name="BankCity" />
+      <PropertyRef Name="BranchBankName" />
+      <PropertyRef Name="OrderNo" />
+      <PropertyRef Name="PartsCount" />
+      <PropertyRef Name="PayAmount" />
+      <PropertyRef Name="Actualpayments" />
+      <PropertyRef Name="PayStatus" />
+      <PropertyRef Name="CreateUserId" />
+      <PropertyRef Name="Usrnbr" />
+      <PropertyRef Name="IsExcess" />
+      <PropertyRef Name="Mobile" />
+      <PropertyRef Name="OrderFrom" />
+      <PropertyRef Name="UserOrderStatus" />
+    </Key>
+    <Property Name="FinancingId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ProjectName" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="ProjectCode" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Amount" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="Duration" Type="Int32" Nullable="false" />
+    <Property Name="InvestmentInterest" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="Progress" Type="Decimal" Nullable="false" Precision="8" Scale="2" />
+    <Property Name="ValueBegin" Type="DateTime" Nullable="false" />
+    <Property Name="RepayBegin" Type="DateTime" Nullable="false" />
+    <Property Name="ProjectExpireDay" Type="Int32" />
+    <Property Name="ActualToFinancingTime" Type="DateTime" />
+    <Property Name="ActualToInvestmentTime" Type="DateTime" />
+    <Property Name="AccountBank" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="AccountName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="AccountNO" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="IDcard" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="BankProvince" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="BankCity" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="BranchBankName" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="OrderNo" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PartsCount" Type="Int32" Nullable="false" />
+    <Property Name="PayAmount" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="Actualpayments" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="PayStatus" Type="Int32" Nullable="false" />
+    <Property Name="CreateUserId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Usrnbr" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PayUserId" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PayUserName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PayTime" Type="DateTime" />
+    <Property Name="IsExcess" Type="Int32" Nullable="false" />
+    <Property Name="Mobile" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="OrderFrom" Type="Int32" Nullable="false" />
+    <Property Name="UserOrderStatus" Type="Int32" Nullable="false" />
+  </EntityType>
+</Schema>

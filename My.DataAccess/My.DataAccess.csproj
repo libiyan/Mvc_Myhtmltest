@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BF14FA27-D6D6-415B-9F07-CD6F46A3DD36}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>My.DataAccess</RootNamespace>
+    <AssemblyName>My.DataAccess</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\..\lib\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Ucsmy.Framework">
+      <HintPath>..\..\lib\Ucsmy.Framework.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="OrderPayModel\F_BankAccount.cs">
+      <DependentUpon>OrderPayModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderPayModel\F_Financing.cs">
+      <DependentUpon>OrderPayModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderPayModel\F_Guarantee.cs">
+      <DependentUpon>OrderPayModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderPayModel\F_Income.cs">
+      <DependentUpon>OrderPayModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderPayModel\F_Investment_Order.cs">
+      <DependentUpon>OrderPayModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderPayModel\F_Investment_Order_Push.cs">
+      <DependentUpon>OrderPayModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderPayModel\F_Investment_WhiteList.cs">
+      <DependentUpon>OrderPayModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderPayModel\F_Order_CmdRequest.cs">
+      <DependentUpon>OrderPayModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderPayModel\F_Order_RunningNO.cs">
+      <DependentUpon>OrderPayModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderPayModel\F_Order_ServiceLog.cs">
+      <DependentUpon>OrderPayModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderPayModel\F_Project_Content.cs">
+      <DependentUpon>OrderPayModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderPayModel\F_Repay_OrderDetail.cs">
+      <DependentUpon>OrderPayModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderPayModel\OrderPayModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrderPayModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderPayModel\OrderPayModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrderPayModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderPayModel\OrderPayModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrderPayModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="OrderPayModel\V_F_Investment_Order_Push.cs">
+      <DependentUpon>OrderPayModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformModel\ErrorLog.cs">
+      <DependentUpon>PlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformModel\FinanceDic.cs">
+      <DependentUpon>PlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformModel\ODS_BankAccount.cs">
+      <DependentUpon>PlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformModel\ODS_Financing.cs">
+      <DependentUpon>PlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformModel\ODS_Guarantee.cs">
+      <DependentUpon>PlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformModel\ODS_Investment_Order.cs">
+      <DependentUpon>PlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformModel\ODS_Order_RunningNO.cs">
+      <DependentUpon>PlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformModel\ODS_Project_Content.cs">
+      <DependentUpon>PlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformModel\ODS_User.cs">
+      <DependentUpon>PlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformModel\PayStatusNotifyTask.cs">
+      <DependentUpon>PlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformModel\PlatformModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PlatformModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformModel\PlatformModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformModel\PlatformModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PlatformModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformModel\QtUser_SourceUser.cs">
+      <DependentUpon>PlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformModel\SaleInstitution.cs">
+      <DependentUpon>PlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformModel\SaleInstitutionBlackList.cs">
+      <DependentUpon>PlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformModel\SaleInstitutionOrderRecord.cs">
+      <DependentUpon>PlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformModel\SaleInstitutionPayLog.cs">
+      <DependentUpon>PlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformModel\SaleInstitutionPermit.cs">
+      <DependentUpon>PlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformModel\V_ODS_Financing.cs">
+      <DependentUpon>PlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformModel\V_ODS_FinancingDetail.cs">
+      <DependentUpon>PlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformModel\V_ODS_UserOrderInfo.cs">
+      <DependentUpon>PlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueryService.cs" />
+    <Compile Include="UnitService.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="OrderPayModel\OrderPayModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>OrderPayModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="OrderPayModel\OrderPayModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>OrderPayModel.Context.cs</LastGenOutput>
+    </None>
+    <None Include="OrderPayModel\OrderPayModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>OrderPayModel.cs</LastGenOutput>
+    </None>
+    <EntityDeploy Include="PlatformModel\PlatformModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>PlatformModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="PlatformModel\PlatformModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>PlatformModel.Context.cs</LastGenOutput>
+    </None>
+    <None Include="PlatformModel\PlatformModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>PlatformModel.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

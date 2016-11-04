@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FinancePlatformModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="FinancePlatformModelStoreContainer">
+    <EntitySet Name="F_BankAccount" EntityType="FinancePlatformModel.Store.F_BankAccount" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="F_Financing" EntityType="FinancePlatformModel.Store.F_Financing" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="F_Investment_Order" EntityType="FinancePlatformModel.Store.F_Investment_Order" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="F_Project_Content" EntityType="FinancePlatformModel.Store.F_Project_Content" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="F_User" EntityType="FinancePlatformModel.Store.F_User" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="FinaceDic" EntityType="FinancePlatformModel.Store.FinaceDic" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SaleInstitution" EntityType="FinancePlatformModel.Store.SaleInstitution" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SaleInstitutionBackList" EntityType="FinancePlatformModel.Store.SaleInstitutionBackList" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SaleInstitutionPermit" EntityType="FinancePlatformModel.Store.SaleInstitutionPermit" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_F_INVEST_REFERENCE_F_FINANC" Association="FinancePlatformModel.Store.FK_F_INVEST_REFERENCE_F_FINANC">
+      <End Role="F_Financing" EntitySet="F_Financing" />
+      <End Role="F_Investment_Order" EntitySet="F_Investment_Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_F_PROJEC_REFERENCE_F_FINANC" Association="FinancePlatformModel.Store.FK_F_PROJEC_REFERENCE_F_FINANC">
+      <End Role="F_Financing" EntitySet="F_Financing" />
+      <End Role="F_Project_Content" EntitySet="F_Project_Content" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="F_BankAccount">
+    <Key>
+      <PropertyRef Name="AccountId" />
+    </Key>
+    <Property Name="AccountId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="AccountName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="AccountNO" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="AccountBank" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="BranchBankCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="BranchBankName" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="BankCode" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="BankType" Type="int" Nullable="false" />
+    <Property Name="BankProvince" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="BankCity" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="BankProvinceCode" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="BankCityCode" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Brdnbr" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="UserId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="BindType" Type="int" Nullable="false" />
+    <Property Name="BindCode" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CreateTime" Type="datetime" Nullable="false" />
+    <Property Name="IDcard" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Ctftyp" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Sigtim" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Sigdat" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Sigtyp" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CmbcAccountId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Usrnbr" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="AccountFrom" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="F_Financing">
+    <Key>
+      <PropertyRef Name="FinancingId" />
+    </Key>
+    <Property Name="FinancingId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ProjectCode" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="ProjectName" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="Amount" Type="decimal" Nullable="false" Scale="2" />
+    <Property Name="PartsCount" Type="int" Nullable="false" />
+    <Property Name="MinInvestPartsCount" Type="int" Nullable="false" />
+    <Property Name="Progress" Type="decimal" Nullable="false" Precision="8" Scale="2" />
+    <Property Name="BankInterest" Type="decimal" Nullable="false" Scale="2" />
+    <Property Name="InvestmentInterest" Type="decimal" Nullable="false" Scale="2" />
+    <Property Name="YMInterest" Type="decimal" Nullable="false" Scale="2" />
+    <Property Name="Duration" Type="int" Nullable="false" />
+    <Property Name="RepayType" Type="int" Nullable="false" />
+    <Property Name="RepaySourceType" Type="int" Nullable="false" />
+    <Property Name="ValueBegin" Type="datetime" Nullable="false" />
+    <Property Name="RepayBegin" Type="datetime" Nullable="false" />
+    <Property Name="ProjectBeginTime" Type="datetime" Nullable="false" />
+    <Property Name="ReadyBeginTime" Type="datetime" Nullable="false" />
+    <Property Name="JMBeginTime" Type="datetime" Nullable="false" />
+    <Property Name="ToFinancingTime" Type="datetime" Nullable="false" />
+    <Property Name="ActualToFinancingTime" Type="datetime" />
+    <Property Name="ToInvestmentTime" Type="datetime" Nullable="false" />
+    <Property Name="ActualToInvestmentTime" Type="datetime" />
+    <Property Name="ProjectStatus" Type="int" Nullable="false" />
+    <Property Name="CreditLevel" Type="int" Nullable="false" />
+    <Property Name="BindUserId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="BindCompanyId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CreateUserId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CreateUserName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CreateCompanyId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CreateCompanyName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CreateTime" Type="datetime" Nullable="false" />
+    <Property Name="UpdateUserId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="UpdateTime" Type="datetime" Nullable="false" />
+    <Property Name="BindUserName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="BindCompanyName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="AreaCode" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="Year" Type="varchar" Nullable="false" MaxLength="4" />
+    <Property Name="YearIndex" Type="int" Nullable="false" />
+    <Property Name="ProjectType" Type="int" Nullable="false" />
+    <Property Name="SettlementType" Type="int" Nullable="false" />
+    <Property Name="IsShow" Type="bit" Nullable="false" />
+    <Property Name="IsExclusivePublic" Type="bit" Nullable="false" />
+    <Property Name="ExclusiveCode" Type="nvarchar" MaxLength="20" />
+    <Property Name="FCode" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="FPrjType" Type="int" Nullable="false" />
+    <Property Name="FPayType" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="F_Investment_Order">
+    <Key>
+      <PropertyRef Name="OrderNo" />
+    </Key>
+    <Property Name="OrderNo" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="FinancingId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ProjectName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="PartsCount" Type="int" Nullable="false" />
+    <Property Name="PayAmount" Type="decimal" Nullable="false" Scale="2" />
+    <Property Name="PayStatus" Type="int" Nullable="false" />
+    <Property Name="PayTime" Type="datetime" />
+    <Property Name="PayUserId" Type="nvarchar" MaxLength="50" />
+    <Property Name="PayUserName" Type="nvarchar" MaxLength="50" />
+    <Property Name="PayType" Type="int" />
+    <Property Name="PayChannel" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreateUserId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CreateUserName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CreateCompanyId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CreateCompanyName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CreateTime" Type="datetime" Nullable="false" />
+    <Property Name="RunningNO" Type="nvarchar" MaxLength="50" />
+    <Property Name="SendCmdStaus" Type="int" Nullable="false" />
+    <Property Name="Actualpayments" Type="decimal" Nullable="false" Scale="2" />
+    <Property Name="IsExcess" Type="int" Nullable="false" />
+    <Property Name="OrderFrom" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="F_Project_Content">
+    <Key>
+      <PropertyRef Name="Project_ContentId" />
+    </Key>
+    <Property Name="Project_ContentId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="FinancingId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Type" Type="int" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Content" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="F_User">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="Usrnbr" />
+    </Key>
+    <Property Name="UserId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Usrnbr" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Mobile" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="UserName" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="FinaceDic">
+    <Key>
+      <PropertyRef Name="FCode" />
+      <PropertyRef Name="FPrjType" />
+      <PropertyRef Name="FPayType" />
+    </Key>
+    <Property Name="FCode" Type="char" Nullable="false" MaxLength="16" />
+    <Property Name="FPrjType" Type="char" Nullable="false" MaxLength="8" />
+    <Property Name="FPayType" Type="char" Nullable="false" MaxLength="8" />
+    <Property Name="FDesc" Type="nvarchar" MaxLength="32" />
+    <Property Name="InstitutionID" Type="char" MaxLength="16" />
+    <Property Name="ConnectString" Type="nvarchar" MaxLength="255" />
+    <Property Name="AddressUrl" Type="nvarchar" MaxLength="255" />
+    <Property Name="NotifyFlag" Type="tinyint" />
+  </EntityType>
+  <EntityType Name="SaleInstitution">
+    <Key>
+      <PropertyRef Name="SourceID" />
+    </Key>
+    <Property Name="SourceID" Type="nvarchar" Nullable="false" MaxLength="16" />
+    <Property Name="SourceName" Type="nvarchar" MaxLength="64" />
+    <Property Name="EffectTime" Type="datetime" />
+    <Property Name="FailureTime" Type="datetime" />
+    <Property Name="CreateTime" Type="datetime" />
+    <Property Name="CreateUser" Type="nvarchar" MaxLength="64" />
+    <Property Name="DelFlag" Type="tinyint" />
+  </EntityType>
+  <EntityType Name="SaleInstitutionBackList">
+    <Key>
+      <PropertyRef Name="ListID" />
+    </Key>
+    <Property Name="ListID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="SourceID" Type="nvarchar" MaxLength="16" />
+    <Property Name="FinancingId" Type="nvarchar" MaxLength="50" />
+    <Property Name="FCode" Type="char" MaxLength="16" />
+    <Property Name="FPrjType" Type="char" Nullable="false" MaxLength="8" />
+    <Property Name="RuleFlag" Type="int" />
+    <Property Name="DelFlag" Type="tinyint" />
+  </EntityType>
+  <EntityType Name="SaleInstitutionPermit">
+    <Key>
+      <PropertyRef Name="PermitID" />
+    </Key>
+    <Property Name="PermitID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="SourceID" Type="nvarchar" MaxLength="16" />
+    <Property Name="FCode" Type="char" MaxLength="16" />
+    <Property Name="FPrjType" Type="char" Nullable="false" MaxLength="8" />
+    <Property Name="FPayType" Type="char" Nullable="false" MaxLength="8" />
+    <Property Name="EffectTime" Type="datetime" />
+    <Property Name="FailureTime" Type="datetime" />
+    <Property Name="AccessRuleFlag" Type="int" />
+    <Property Name="TradeRuleFlag" Type="int" />
+    <Property Name="DelFlag" Type="tinyint" />
+  </EntityType>
+  <Association Name="FK_F_INVEST_REFERENCE_F_FINANC">
+    <End Role="F_Financing" Type="FinancePlatformModel.Store.F_Financing" Multiplicity="1" />
+    <End Role="F_Investment_Order" Type="FinancePlatformModel.Store.F_Investment_Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="F_Financing">
+        <PropertyRef Name="FinancingId" />
+      </Principal>
+      <Dependent Role="F_Investment_Order">
+        <PropertyRef Name="FinancingId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_F_PROJEC_REFERENCE_F_FINANC">
+    <End Role="F_Financing" Type="FinancePlatformModel.Store.F_Financing" Multiplicity="1" />
+    <End Role="F_Project_Content" Type="FinancePlatformModel.Store.F_Project_Content" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="F_Financing">
+        <PropertyRef Name="FinancingId" />
+      </Principal>
+      <Dependent Role="F_Project_Content">
+        <PropertyRef Name="FinancingId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

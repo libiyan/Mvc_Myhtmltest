@@ -1,0 +1,6 @@
+F:\libi\小练习项目\Mvc_Myhtmltest\WindowsService_Txt\bin\Debug\WindowsService_Txt.exe
+F:\libi\小练习项目\Mvc_Myhtmltest\WindowsService_Txt\bin\Debug\WindowsService_Txt.pdb
+F:\libi\小练习项目\Mvc_Myhtmltest\WindowsService_Txt\obj\x86\Debug\WindowsService_Txt.exe
+F:\libi\小练习项目\Mvc_Myhtmltest\WindowsService_Txt\obj\x86\Debug\WindowsService_Txt.pdb
+F:\libi\小练习项目\Mvc_Myhtmltest\WindowsService_Txt\obj\x86\Debug\WindowsService_Txt.ProjectInstaller.resources
+F:\libi\小练习项目\Mvc_Myhtmltest\WindowsService_Txt\obj\x86\Debug\WindowsService_Txt.csproj.GenerateResource.Cache

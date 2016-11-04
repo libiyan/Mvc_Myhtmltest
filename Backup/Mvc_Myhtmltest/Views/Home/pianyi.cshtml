@@ -1,0 +1,70 @@
+﻿@{
+    ViewBag.Title = "pianyi";
+}
+
+<!doctype html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>＼前端博客</title>
+  <style>
+
+  *{
+   margin:0;
+   padding:0;
+  }
+  #p1 {
+   background: yellow;
+   height: 300px;
+  }
+  #p2 {height: 800px;background:blue;}
+  #p3 {height: 800px;background:green;}
+  #p4 {height: 800px;background:red;}
+  #p4 {height: 800px;background:#ccc;}
+  #p5 {height: 800px;background:#aaa;}
+
+ </style>
+ </head>
+ <body>
+  <div (www.111cn.net)id="btn">
+   <a id="a1" href="#p1">#p1</a>
+   <a id="a1" href="#p2">#p2</a>
+   <a id="a1" href="#p3">#p3</a>
+   <a id="a1" href="#p4">#p4</a>
+   <a id="a1" href="#p5">#p5</a>
+  </div>
+
+ <div id="p1">
+   p1
+  </div>
+  <div id="p2">
+   p2
+  </div>
+  <div id="p3">
+   p3
+  </div>
+  <div id="p4">
+   p4
+  </div>
+  <div id="p5">
+   p5
+  </div>
+ </body>
+ </html>
+@* <script>
+     window.onload = function () {
+         var oBtn = document.querySelector("#btn");
+         var aA = oBtn.querySelectorAll("a");
+         for (var i = 0; i < aA.length; i++) {
+             aA[i].onclick = function (ev) {
+                 var ev = ev || window.event;
+                 var id = this.hash;
+                 var thisId = document.querySelector(id);
+                 document.documentElement.scrollTop = document.body.scrollTop = thisId.offsetTop - oBtn.offsetHeight;
+                 ev.preventDefault();
+             }
+         }
+
+     }
+ </script>*@
+from:http://www.111cn.net/cssdiv/css/61697.htm

@@ -1,0 +1,1708 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CETModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="CETEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CET_Syn" EntityType="CETModel.CET_Syn" />
+    <EntitySet Name="EXP" EntityType="CETModel.EXP" />
+    <EntitySet Name="F_Financing_SMS" EntityType="CETModel.F_Financing_SMS" />
+    <EntitySet Name="PPD_Company" EntityType="CETModel.PPD_Company" />
+    <EntitySet Name="PPD_Contacts" EntityType="CETModel.PPD_Contacts" />
+    <EntitySet Name="PPD_Price_Unit" EntityType="CETModel.PPD_Price_Unit" />
+    <EntitySet Name="PPD_Price_UnitCatalog" EntityType="CETModel.PPD_Price_UnitCatalog" />
+    <EntitySet Name="PPD_Product" EntityType="CETModel.PPD_Product" />
+    <EntitySet Name="PPD_Product_AnswerQuestion" EntityType="CETModel.PPD_Product_AnswerQuestion" />
+    <EntitySet Name="PPD_Product_Attribute" EntityType="CETModel.PPD_Product_Attribute" />
+    <EntitySet Name="PPD_Product_Contents" EntityType="CETModel.PPD_Product_Contents" />
+    <EntitySet Name="PPD_Product_PriceUnit" EntityType="CETModel.PPD_Product_PriceUnit" />
+    <EntitySet Name="PPD_Product_Recommend" EntityType="CETModel.PPD_Product_Recommend" />
+    <EntitySet Name="PPD_Product_SalesWay" EntityType="CETModel.PPD_Product_SalesWay" />
+    <EntitySet Name="PPD_ProductApplication" EntityType="CETModel.PPD_ProductApplication" />
+    <EntitySet Name="PPD_ProductCatalogTemp" EntityType="CETModel.PPD_ProductCatalogTemp" />
+    <EntitySet Name="PPD_ProductGroup" EntityType="CETModel.PPD_ProductGroup" />
+    <EntitySet Name="PPD_ProductGroupTemp" EntityType="CETModel.PPD_ProductGroupTemp" />
+    <EntitySet Name="PPD_ProductSales_Attribute" EntityType="CETModel.PPD_ProductSales_Attribute" />
+    <EntitySet Name="PPD_ProductSales_Package" EntityType="CETModel.PPD_ProductSales_Package" />
+    <EntitySet Name="PPD_ProductTab" EntityType="CETModel.PPD_ProductTab" />
+    <EntitySet Name="PPD_SalesWayPackeTemp" EntityType="CETModel.PPD_SalesWayPackeTemp" />
+    <EntitySet Name="PPD_UserGrade_Discount" EntityType="CETModel.PPD_UserGrade_Discount" />
+    <EntitySet Name="PPM_ProductCatalog" EntityType="CETModel.PPM_ProductCatalog" />
+    <EntitySet Name="SHP_Advert_Info" EntityType="CETModel.SHP_Advert_Info" />
+    <EntitySet Name="SHP_CompanyUsing" EntityType="CETModel.SHP_CompanyUsing" />
+    <EntitySet Name="SynShopexUser" EntityType="CETModel.SynShopexUser" />
+    <EntitySet Name="sysdiagrams" EntityType="CETModel.sysdiagrams" />
+    <EntitySet Name="t_companyinfo_ou" EntityType="CETModel.t_companyinfo_ou" />
+    <EntitySet Name="t_companyinfo_ou_tmp" EntityType="CETModel.t_companyinfo_ou_tmp" />
+    <EntitySet Name="t_userinfo" EntityType="CETModel.t_userinfo" />
+    <EntitySet Name="UM_Administrator" EntityType="CETModel.UM_Administrator" />
+    <EntitySet Name="UM_Advertise" EntityType="CETModel.UM_Advertise" />
+    <EntitySet Name="UM_AdvertiseCategory" EntityType="CETModel.UM_AdvertiseCategory" />
+    <EntitySet Name="UM_Agent_Administrator" EntityType="CETModel.UM_Agent_Administrator" />
+    <EntitySet Name="UM_App" EntityType="CETModel.UM_App" />
+    <EntitySet Name="UM_App_Menu" EntityType="CETModel.UM_App_Menu" />
+    <EntitySet Name="UM_App_Right" EntityType="CETModel.UM_App_Right" />
+    <EntitySet Name="UM_Area" EntityType="CETModel.UM_Area" />
+    <EntitySet Name="UM_Attachment" EntityType="CETModel.UM_Attachment" />
+    <EntitySet Name="UM_Attachment_Entity" EntityType="CETModel.UM_Attachment_Entity" />
+    <EntitySet Name="UM_City" EntityType="CETModel.UM_City" />
+    <EntitySet Name="UM_CmsMsg" EntityType="CETModel.UM_CmsMsg" />
+    <EntitySet Name="UM_CmsType" EntityType="CETModel.UM_CmsType" />
+    <EntitySet Name="UM_Dictionary" EntityType="CETModel.UM_Dictionary" />
+    <EntitySet Name="UM_DictionaryItem" EntityType="CETModel.UM_DictionaryItem" />
+    <EntitySet Name="UM_ErrorLog" EntityType="CETModel.UM_ErrorLog" />
+    <EntitySet Name="UM_Function" EntityType="CETModel.UM_Function" />
+    <EntitySet Name="UM_Menu" EntityType="CETModel.UM_Menu" />
+    <EntitySet Name="UM_MsgType" EntityType="CETModel.UM_MsgType" />
+    <EntitySet Name="UM_Order" EntityType="CETModel.UM_Order" />
+    <EntitySet Name="UM_Order_CashCoupon" EntityType="CETModel.UM_Order_CashCoupon" />
+    <EntitySet Name="UM_Order_Follow_Info" EntityType="CETModel.UM_Order_Follow_Info" />
+    <EntitySet Name="UM_Order_PriceUnit" EntityType="CETModel.UM_Order_PriceUnit" />
+    <EntitySet Name="UM_OrderBill" EntityType="CETModel.UM_OrderBill" />
+    <EntitySet Name="UM_OrderPayRecord" EntityType="CETModel.UM_OrderPayRecord" />
+    <EntitySet Name="UM_Privilege" EntityType="CETModel.UM_Privilege" />
+    <EntitySet Name="UM_Province" EntityType="CETModel.UM_Province" />
+    <EntitySet Name="UM_Role" EntityType="CETModel.UM_Role" />
+    <EntitySet Name="UM_SysLog" EntityType="CETModel.UM_SysLog" />
+    <EntitySet Name="UM_SysModule" EntityType="CETModel.UM_SysModule" />
+    <EntitySet Name="UM_Trial_Order_Temp" EntityType="CETModel.UM_Trial_Order_Temp" />
+    <EntitySet Name="UM_TrialProduct" EntityType="CETModel.UM_TrialProduct" />
+    <EntitySet Name="UM_TrialUser_Trace" EntityType="CETModel.UM_TrialUser_Trace" />
+    <EntitySet Name="UM_User_Agent" EntityType="CETModel.UM_User_Agent" />
+    <EntitySet Name="UM_User_Role" EntityType="CETModel.UM_User_Role" />
+    <EntitySet Name="UUM_Agent" EntityType="CETModel.UUM_Agent" />
+    <EntitySet Name="UUM_AgentNotice" EntityType="CETModel.UUM_AgentNotice" />
+    <EntitySet Name="UUM_AgentNotice_Receive" EntityType="CETModel.UUM_AgentNotice_Receive" />
+    <EntitySet Name="UUM_App" EntityType="CETModel.UUM_App" />
+    <EntitySet Name="UUM_AppClass" EntityType="CETModel.UUM_AppClass" />
+    <EntitySet Name="UUM_CAddrBook" EntityType="CETModel.UUM_CAddrBook" />
+    <EntitySet Name="UUM_CashCoupon" EntityType="CETModel.UUM_CashCoupon" />
+    <EntitySet Name="UUM_CashCoupon_BAK" EntityType="CETModel.UUM_CashCoupon_BAK" />
+    <EntitySet Name="UUM_CmbchinaOU" EntityType="CETModel.UUM_CmbchinaOU" />
+    <EntitySet Name="UUM_CmbchinaUser" EntityType="CETModel.UUM_CmbchinaUser" />
+    <EntitySet Name="UUM_Company" EntityType="CETModel.UUM_Company" />
+    <EntitySet Name="UUM_Company_Member" EntityType="CETModel.UUM_Company_Member" />
+    <EntitySet Name="UUM_CompanyDoc" EntityType="CETModel.UUM_CompanyDoc" />
+    <EntitySet Name="UUM_Competitive_Info" EntityType="CETModel.UUM_Competitive_Info" />
+    <EntitySet Name="UUM_Consume" EntityType="CETModel.UUM_Consume" />
+    <EntitySet Name="UUM_EAccount" EntityType="CETModel.UUM_EAccount" />
+    <EntitySet Name="UUM_EAccount_Order" EntityType="CETModel.UUM_EAccount_Order" />
+    <EntitySet Name="UUM_EclubPackage" EntityType="CETModel.UUM_EclubPackage" />
+    <EntitySet Name="UUM_EPay_Account" EntityType="CETModel.UUM_EPay_Account" />
+    <EntitySet Name="UUM_Group_Member" EntityType="CETModel.UUM_Group_Member" />
+    <EntitySet Name="UUM_LoanBase" EntityType="CETModel.UUM_LoanBase" />
+    <EntitySet Name="UUM_Member_Grade" EntityType="CETModel.UUM_Member_Grade" />
+    <EntitySet Name="UUM_Member_Order" EntityType="CETModel.UUM_Member_Order" />
+    <EntitySet Name="UUM_MemberGrade" EntityType="CETModel.UUM_MemberGrade" />
+    <EntitySet Name="UUM_MemberModify" EntityType="CETModel.UUM_MemberModify" />
+    <EntitySet Name="UUM_PAddrBook" EntityType="CETModel.UUM_PAddrBook" />
+    <EntitySet Name="UUM_PAddrBookType" EntityType="CETModel.UUM_PAddrBookType" />
+    <EntitySet Name="UUM_R_User_App" EntityType="CETModel.UUM_R_User_App" />
+    <EntitySet Name="UUM_Screen" EntityType="CETModel.UUM_Screen" />
+    <EntitySet Name="UUM_SingleMemberApply" EntityType="CETModel.UUM_SingleMemberApply" />
+    <EntitySet Name="UUM_UMemberGrade" EntityType="CETModel.UUM_UMemberGrade" />
+    <EntitySet Name="UUM_User" EntityType="CETModel.UUM_User" />
+    <AssociationSet Name="FK_PPD_PRIC_REFERENCE_PPD_PRIC" Association="CETModel.FK_PPD_PRIC_REFERENCE_PPD_PRIC">
+      <End Role="PPD_Price_UnitCatalog" EntitySet="PPD_Price_UnitCatalog" />
+      <End Role="PPD_Price_Unit" EntitySet="PPD_Price_Unit" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PPD_PROD_REFERENCE_PPD_PRIC" Association="CETModel.FK_PPD_PROD_REFERENCE_PPD_PRIC">
+      <End Role="PPD_Price_Unit" EntitySet="PPD_Price_Unit" />
+      <End Role="PPD_Product_PriceUnit" EntitySet="PPD_Product_PriceUnit" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PPD_PROD_REFERENCE_PPD_PROD" Association="CETModel.FK_PPD_PROD_REFERENCE_PPD_PROD">
+      <End Role="PPD_Product" EntitySet="PPD_Product" />
+      <End Role="PPD_Product_PriceUnit" EntitySet="PPD_Product_PriceUnit" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PPD_Product_SalesWay_PPD_Product" Association="CETModel.FK_PPD_Product_SalesWay_PPD_Product">
+      <End Role="PPD_Product" EntitySet="PPD_Product" />
+      <End Role="PPD_Product_SalesWay" EntitySet="PPD_Product_SalesWay" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PPD_USER_REFERENCE_PPD_PROD" Association="CETModel.FK_PPD_USER_REFERENCE_PPD_PROD">
+      <End Role="PPD_Product" EntitySet="PPD_Product" />
+      <End Role="PPD_UserGrade_Discount" EntitySet="PPD_UserGrade_Discount" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PPD_Product_PriceUnit_PPD_Product_SalesWay" Association="CETModel.FK_PPD_Product_PriceUnit_PPD_Product_SalesWay">
+      <End Role="PPD_Product_SalesWay" EntitySet="PPD_Product_SalesWay" />
+      <End Role="PPD_Product_PriceUnit" EntitySet="PPD_Product_PriceUnit" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PPD_USER_REFERENCE_UUM_USER" Association="CETModel.FK_PPD_USER_REFERENCE_UUM_USER">
+      <End Role="UUM_UMemberGrade" EntitySet="UUM_UMemberGrade" />
+      <End Role="PPD_UserGrade_Discount" EntitySet="PPD_UserGrade_Discount" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UM_ORDER_REFERENCE_UM_ORDER" Association="CETModel.FK_UM_ORDER_REFERENCE_UM_ORDER">
+      <End Role="UM_Order" EntitySet="UM_Order" />
+      <End Role="UM_Order_PriceUnit" EntitySet="UM_Order_PriceUnit" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UUM_Company_Member_UUM_Company" Association="CETModel.FK_UUM_Company_Member_UUM_Company">
+      <End Role="UUM_Company" EntitySet="UUM_Company" />
+      <End Role="UUM_Company_Member" EntitySet="UUM_Company_Member" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UUM_CompanyDoc_UUM_Company" Association="CETModel.FK_UUM_CompanyDoc_UUM_Company">
+      <End Role="UUM_Company" EntitySet="UUM_Company" />
+      <End Role="UUM_CompanyDoc" EntitySet="UUM_CompanyDoc" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UUM_User_UUM_Company" Association="CETModel.FK_UUM_User_UUM_Company">
+      <End Role="UUM_Company" EntitySet="UUM_Company" />
+      <End Role="UUM_User" EntitySet="UUM_User" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UUM_Company_Member_UUM_MemberGrade" Association="CETModel.FK_UUM_Company_Member_UUM_MemberGrade">
+      <End Role="UUM_MemberGrade" EntitySet="UUM_MemberGrade" />
+      <End Role="UUM_Company_Member" EntitySet="UUM_Company_Member" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UUM_Group_Member_UUM_MemberGrade" Association="CETModel.FK_UUM_Group_Member_UUM_MemberGrade">
+      <End Role="UUM_MemberGrade" EntitySet="UUM_MemberGrade" />
+      <End Role="UUM_Group_Member" EntitySet="UUM_Group_Member" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UUM_Group_Member_UUM_User" Association="CETModel.FK_UUM_Group_Member_UUM_User">
+      <End Role="UUM_User" EntitySet="UUM_User" />
+      <End Role="UUM_Group_Member" EntitySet="UUM_Group_Member" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UUM_SingleMemberApply_UUM_Group_Member" Association="CETModel.FK_UUM_SingleMemberApply_UUM_Group_Member">
+      <End Role="UUM_Group_Member" EntitySet="UUM_Group_Member" />
+      <End Role="UUM_SingleMemberApply" EntitySet="UUM_SingleMemberApply" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="CET_Syn">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SynId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="SynDate" Type="DateTime" />
+    <Property Name="SynStatus" Type="Int32" />
+    <Property Name="SynObjType" Type="Int32" />
+    <Property Name="CreateTime" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="EXP">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="USRNBR" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="CORNBR" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="LGNNAM" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="F_Financing_SMS">
+    <Key>
+      <PropertyRef Name="FinancingId" />
+      <PropertyRef Name="ProjectCode" />
+      <PropertyRef Name="ProjectName" />
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="CreateTime" />
+    </Key>
+    <Property Name="FinancingId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ProjectCode" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ProjectName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Mobile" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Email" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ValueBegin" Type="DateTime" />
+    <Property Name="UserId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CreateTime" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PPD_Company">
+    <Key>
+      <PropertyRef Name="CompanyId" />
+    </Key>
+    <Property Name="CompanyId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CompanyName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CredibilityGrade" Type="Int32" Nullable="false" />
+    <Property Name="Industry" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="SalesProduct" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="Contacts" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Tel" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Web" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Fax" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Province" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="City" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="District" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="Address" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Desc" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="CreateTime" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PPD_Contacts">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyId" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Telephone" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="MobilePhone" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Email" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="PPD_Price_Unit">
+    <Key>
+      <PropertyRef Name="UnitId" />
+    </Key>
+    <Property Name="UnitId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CatalogId" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="UnitName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Creator" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CreateTime" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="PPD_Price_UnitCatalog" Relationship="CETModel.FK_PPD_PRIC_REFERENCE_PPD_PRIC" FromRole="PPD_Price_Unit" ToRole="PPD_Price_UnitCatalog" />
+    <NavigationProperty Name="PPD_Product_PriceUnit" Relationship="CETModel.FK_PPD_PROD_REFERENCE_PPD_PRIC" FromRole="PPD_Price_Unit" ToRole="PPD_Product_PriceUnit" />
+  </EntityType>
+  <EntityType Name="PPD_Price_UnitCatalog">
+    <Key>
+      <PropertyRef Name="CatalogId" />
+    </Key>
+    <Property Name="CatalogId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CatalogName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Creator" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CreateTime" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="PPD_Price_Unit" Relationship="CETModel.FK_PPD_PRIC_REFERENCE_PPD_PRIC" FromRole="PPD_Price_UnitCatalog" ToRole="PPD_Price_Unit" />
+  </EntityType>
+  <EntityType Name="PPD_Product">
+    <Key>
+      <PropertyRef Name="ProductId" />
+    </Key>
+    <Property Name="ProductId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ApplicationNo" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CompanyId" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ProductName" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="VersionOwner" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="VersionNo" Type="Int32" />
+    <Property Name="DevelopmentTechnology" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="DataBase" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="ProductLogo" Type="String" MaxLength="512" Unicode="true" FixedLength="false" />
+    <Property Name="CatalogId" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="TechnologyFramework" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="SuccesfullCase" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="ProductUrl" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="TryURL" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="ProductDesc" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="CreateTime" Type="DateTime" />
+    <Property Name="MarketTime" Type="DateTime" />
+    <Property Name="IsTry" Type="Boolean" Nullable="false" />
+    <Property Name="TrialWay" Type="Int32" />
+    <Property Name="TrialWayValue" Type="Int32" />
+    <Property Name="ProductStatus" Type="Int32" Nullable="false" />
+    <Property Name="UpperCarriageTime" Type="DateTime" />
+    <Property Name="UnderCarriageTime" Type="DateTime" />
+    <Property Name="AduitTime" Type="DateTime" />
+    <Property Name="CooperativeDeadline" Type="DateTime" />
+    <Property Name="DefaultSalesWayHTML" Type="String" MaxLength="2000" Unicode="true" FixedLength="false" />
+    <Property Name="Pcode" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="OpenWay" Type="Int32" />
+    <Property Name="ProductDailUrl" Type="String" MaxLength="512" Unicode="true" FixedLength="false" />
+    <Property Name="BuyUrl" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <Property Name="RechargeUrl" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <Property Name="ScreenshotUrl" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <Property Name="BannerImageUrl" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <Property Name="ApplyWay" Type="Int32" Nullable="false" />
+    <Property Name="BuyType" Type="Int32" Nullable="false" />
+    <Property Name="MaxDay" Type="Int32" Nullable="false" />
+    <Property Name="MaxNum" Type="Int32" Nullable="false" />
+    <Property Name="IsFree" Type="Boolean" />
+    <Property Name="IsFix" Type="Int32" Nullable="false" />
+    <Property Name="IsOpen" Type="Int32" Nullable="false" />
+    <Property Name="IsSend" Type="Int32" Nullable="false" />
+    <Property Name="ViewCount" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="PPD_Product_PriceUnit" Relationship="CETModel.FK_PPD_PROD_REFERENCE_PPD_PROD" FromRole="PPD_Product" ToRole="PPD_Product_PriceUnit" />
+    <NavigationProperty Name="PPD_Product_SalesWay" Relationship="CETModel.FK_PPD_Product_SalesWay_PPD_Product" FromRole="PPD_Product" ToRole="PPD_Product_SalesWay" />
+    <NavigationProperty Name="PPD_UserGrade_Discount" Relationship="CETModel.FK_PPD_USER_REFERENCE_PPD_PROD" FromRole="PPD_Product" ToRole="PPD_UserGrade_Discount" />
+  </EntityType>
+  <EntityType Name="PPD_Product_AnswerQuestion">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ProductID" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Question" Type="String" MaxLength="4000" Unicode="true" FixedLength="false" />
+    <Property Name="Answer" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="PublishedDate" Type="DateTime" />
+    <Property Name="ReplyDate" Type="DateTime" />
+    <Property Name="QuestionState" Type="Int32" />
+    <Property Name="IsDelete" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PPD_Product_Attribute">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProductID" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="IsIndexGroom" Type="Int32" Nullable="false" />
+    <Property Name="IsLeftGroom" Type="Int32" Nullable="false" />
+    <Property Name="ProductOrder" Type="Int32" />
+    <Property Name="CataId" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="PPD_Product_Contents">
+    <Key>
+      <PropertyRef Name="ProductContentId" />
+    </Key>
+    <Property Name="ProductContentId" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Title" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Contents" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="ProductId" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="EditTime" Type="DateTime" />
+    <Property Name="Sort" Type="Int32" />
+  </EntityType>
+  <EntityType Name="PPD_Product_PriceUnit">
+    <Key>
+      <PropertyRef Name="PriceUnitId" />
+    </Key>
+    <Property Name="PriceUnitId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ProductId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="SalesWayId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="UnitId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="UnitName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="UnitValue" Type="Int32" Nullable="false" />
+    <Property Name="Min" Type="Int32" Nullable="false" />
+    <Property Name="IsCustom" Type="Int32" Nullable="false" />
+    <Property Name="Sort" Type="Int32" />
+    <NavigationProperty Name="PPD_Price_Unit" Relationship="CETModel.FK_PPD_PROD_REFERENCE_PPD_PRIC" FromRole="PPD_Product_PriceUnit" ToRole="PPD_Price_Unit" />
+    <NavigationProperty Name="PPD_Product" Relationship="CETModel.FK_PPD_PROD_REFERENCE_PPD_PROD" FromRole="PPD_Product_PriceUnit" ToRole="PPD_Product" />
+    <NavigationProperty Name="PPD_Product_SalesWay" Relationship="CETModel.FK_PPD_Product_PriceUnit_PPD_Product_SalesWay" FromRole="PPD_Product_PriceUnit" ToRole="PPD_Product_SalesWay" />
+  </EntityType>
+  <EntityType Name="PPD_Product_Recommend">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProductId" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PType" Type="Int32" />
+    <Property Name="Sort" Type="Int32" />
+  </EntityType>
+  <EntityType Name="PPD_Product_SalesWay">
+    <Key>
+      <PropertyRef Name="SalesWayId" />
+    </Key>
+    <Property Name="SalesWayId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ProductId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Price" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="MinAmount" Type="Int32" />
+    <Property Name="SalesWay" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PriceUnit" Type="String" MaxLength="50" Unicode="true" FixedLength="true" />
+    <Property Name="Description" Type="String" MaxLength="300" Unicode="true" FixedLength="false" />
+    <Property Name="IsPackage" Type="Int32" Nullable="false" />
+    <Property Name="Sort" Type="Int32" />
+    <NavigationProperty Name="PPD_Product" Relationship="CETModel.FK_PPD_Product_SalesWay_PPD_Product" FromRole="PPD_Product_SalesWay" ToRole="PPD_Product" />
+    <NavigationProperty Name="PPD_Product_PriceUnit" Relationship="CETModel.FK_PPD_Product_PriceUnit_PPD_Product_SalesWay" FromRole="PPD_Product_SalesWay" ToRole="PPD_Product_PriceUnit" />
+  </EntityType>
+  <EntityType Name="PPD_ProductApplication">
+    <Key>
+      <PropertyRef Name="ApplicationNo" />
+    </Key>
+    <Property Name="ApplicationNo" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="UserId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CompanyId" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ApplyDateTime" Type="DateTime" Nullable="false" />
+    <Property Name="ApplicationStatus" Type="Int32" Nullable="false" />
+    <Property Name="Remark" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="PPD_ProductCatalogTemp">
+    <Key>
+      <PropertyRef Name="ProCataId" />
+    </Key>
+    <Property Name="ProCataId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ProductId" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CatalogId" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="OrderBy" Type="Int32" />
+  </EntityType>
+  <EntityType Name="PPD_ProductGroup">
+    <Key>
+      <PropertyRef Name="GroupID" />
+    </Key>
+    <Property Name="GroupID" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="GroupName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Icon" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Sort" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PPD_ProductGroupTemp">
+    <Key>
+      <PropertyRef Name="ProductGroupID" />
+    </Key>
+    <Property Name="ProductGroupID" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ProductID" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="GroupID" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="PPD_ProductSales_Attribute">
+    <Key>
+      <PropertyRef Name="AttributeId" />
+    </Key>
+    <Property Name="AttributeId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="SalesWayId" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="AttributeName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="AttributeHtml" Type="String" Nullable="false" MaxLength="1000" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="PPD_ProductSales_Package">
+    <Key>
+      <PropertyRef Name="PackageId" />
+    </Key>
+    <Property Name="PackageId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PackageTotal" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="PackageNumber" Type="Int32" Nullable="false" />
+    <Property Name="PackageUnit" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="SelectQX" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="PackageDisplay" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="ProductId" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Sort" Type="Int32" />
+  </EntityType>
+  <EntityType Name="PPD_ProductTab">
+    <Key>
+      <PropertyRef Name="TabID" />
+    </Key>
+    <Property Name="TabID" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="TabName" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="TabUrl" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="ProductId" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="Descript" Type="String" MaxLength="512" Unicode="true" FixedLength="false" />
+    <Property Name="IsRelativeUrl" Type="Int32" />
+  </EntityType>
+  <EntityType Name="PPD_SalesWayPackeTemp">
+    <Key>
+      <PropertyRef Name="SalesWayPackeTempId" />
+    </Key>
+    <Property Name="SalesWayPackeTempId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="productId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="packageId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="PPD_UserGrade_Discount">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProductId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="GradeId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Discount" Type="Decimal" Nullable="false" Precision="4" Scale="2" />
+    <NavigationProperty Name="PPD_Product" Relationship="CETModel.FK_PPD_USER_REFERENCE_PPD_PROD" FromRole="PPD_UserGrade_Discount" ToRole="PPD_Product" />
+    <NavigationProperty Name="UUM_UMemberGrade" Relationship="CETModel.FK_PPD_USER_REFERENCE_UUM_USER" FromRole="PPD_UserGrade_Discount" ToRole="UUM_UMemberGrade" />
+  </EntityType>
+  <EntityType Name="PPM_ProductCatalog">
+    <Key>
+      <PropertyRef Name="CatalogId" />
+    </Key>
+    <Property Name="CatalogId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ParentId" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CatalogName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CatalogLevel" Type="String" Nullable="false" MaxLength="300" Unicode="true" FixedLength="false" />
+    <Property Name="Sort" Type="Int32" />
+    <Property Name="PCode" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="CataLogo" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="SHP_Advert_Info">
+    <Key>
+      <PropertyRef Name="AdvertID" />
+    </Key>
+    <Property Name="AdvertID" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ImgName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="AdvertImgPath" Type="String" MaxLength="300" Unicode="true" FixedLength="false" />
+    <Property Name="AdvertImgSeat" Type="Int32" />
+    <Property Name="AdvertImgRemark" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="AdvertImgOrder" Type="Int32" />
+    <Property Name="CreateDate" Type="DateTime" />
+    <Property Name="URL" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="SHP_CompanyUsing">
+    <Key>
+      <PropertyRef Name="UsingId" />
+    </Key>
+    <Property Name="UsingId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="title" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="URL" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="productID" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="imgPath" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ImgOrder" Type="Int32" />
+    <Property Name="Remark" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="SynShopexUser">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CORNBR" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CreateTime" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="t_companyinfo_ou">
+    <Key>
+      <PropertyRef Name="rn" />
+      <PropertyRef Name="id" />
+      <PropertyRef Name="cornbr" />
+      <PropertyRef Name="cornam" />
+      <PropertyRef Name="companyid" />
+    </Key>
+    <Property Name="rn" Type="Int32" Nullable="false" />
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="cornbr" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="cornam" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="companyid" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="t_companyinfo_ou_tmp">
+    <Key>
+      <PropertyRef Name="rn" />
+      <PropertyRef Name="id" />
+      <PropertyRef Name="cornbr" />
+      <PropertyRef Name="cornam" />
+      <PropertyRef Name="companyid" />
+    </Key>
+    <Property Name="rn" Type="Int32" Nullable="false" />
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="cornbr" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="cornam" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="companyid" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="t_userinfo">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="username" />
+      <PropertyRef Name="companyid" />
+      <PropertyRef Name="realname" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="username" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="companyid" Type="Int32" Nullable="false" />
+    <Property Name="realname" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="UM_Administrator">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="LoginId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Pwd" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Telephone" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Email" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Mobile" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="IsSuperAdmin" Type="Int32" Nullable="false" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UM_Advertise">
+    <Key>
+      <PropertyRef Name="AdvertiseID" />
+    </Key>
+    <Property Name="AdvertiseID" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="AdvertiseName" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="CategoryID" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="AdvertiseUrl" Type="String" MaxLength="4000" Unicode="true" FixedLength="false" />
+    <Property Name="AdvertiseImage" Type="String" MaxLength="512" Unicode="true" FixedLength="false" />
+    <Property Name="Descript" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="IsOpen" Type="Int32" Nullable="false" />
+    <Property Name="CreateTime" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UM_AdvertiseCategory">
+    <Key>
+      <PropertyRef Name="CategoryID" />
+    </Key>
+    <Property Name="CategoryID" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="Name" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="Descript" Type="String" MaxLength="512" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="UM_Agent_Administrator">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="AgentID" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="UserId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="UM_App">
+    <Key>
+      <PropertyRef Name="AppId" />
+    </Key>
+    <Property Name="AppId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="AppName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="EnKey" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="URL" Type="String" MaxLength="300" Unicode="true" FixedLength="false" />
+    <Property Name="IsStop" Type="Int32" />
+    <Property Name="CreateTime" Type="DateTime" />
+    <Property Name="Creator" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="UM_App_Menu">
+    <Key>
+      <PropertyRef Name="MenuId" />
+    </Key>
+    <Property Name="MenuId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="MenuName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="AppId" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="URL" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <Property Name="ParentMenuId" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PublishUrl" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <Property Name="Sort" Type="Int32" />
+    <Property Name="Remark" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="UM_App_Right">
+    <Key>
+      <PropertyRef Name="RightId" />
+    </Key>
+    <Property Name="RightId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="UserId" Type="Int32" />
+    <Property Name="AppId" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="UM_Area">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="areaID" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="area" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="father" Type="String" MaxLength="6" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="UM_Attachment">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Creator" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="LastModifier" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CreatedTime" Type="DateTime" Nullable="false" />
+    <Property Name="LastModTime" Type="DateTime" Nullable="false" />
+    <Property Name="Title" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="FileName" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="MimeType" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="FileSize" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Remark" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Downloads" Type="Int32" />
+  </EntityType>
+  <EntityType Name="UM_Attachment_Entity">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AttachmentId" Type="Int32" Nullable="false" />
+    <Property Name="EntityId" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="EntityType" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="UM_City">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="cityID" Type="String" MaxLength="6" Unicode="false" FixedLength="false" />
+    <Property Name="city" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="father" Type="String" MaxLength="6" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="UM_CmsMsg">
+    <Key>
+      <PropertyRef Name="MsgId" />
+    </Key>
+    <Property Name="MsgId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Title" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Content" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="To" Type="String" Nullable="false" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <Property Name="Cc" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <Property Name="CreateTime" Type="DateTime" Nullable="false" />
+    <Property Name="ReadySendTime" Type="DateTime" />
+    <Property Name="SendType" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+    <Property Name="SendDateTime" Type="DateTime" />
+    <Property Name="SendResult" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <Property Name="SystemId" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="UM_CmsType">
+    <Key>
+      <PropertyRef Name="MsgCode" />
+    </Key>
+    <Property Name="MsgCode" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="CmsTypeName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="IsToCustomer" Type="Int32" Nullable="false" />
+    <Property Name="MsgType" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Title" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Msg" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Mobile" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <Property Name="ToEmail" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <Property Name="CcEmail" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <Property Name="CreateTime" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UM_Dictionary">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Keyword" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="UM_DictionaryItem">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="DictionaryID" Type="Int32" Nullable="false" />
+    <Property Name="IsAvailable" Type="Int32" Nullable="false" />
+    <Property Name="Sort" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UM_ErrorLog">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="LogMessage" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="LogException" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="LogDate" Type="DateTime" />
+    <Property Name="Source" Type="String" MaxLength="2000" Unicode="true" FixedLength="false" />
+    <Property Name="LogLevel" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="UserId" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="LogModule" Type="Int32" />
+    <Property Name="ServerIp" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="UM_Function">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="MenuID" Type="Int32" Nullable="false" />
+    <Property Name="ControlID" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="SortNum" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UM_Menu">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Name" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Desciption" Type="String" MaxLength="400" Unicode="true" FixedLength="false" />
+    <Property Name="ParentID" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Visible" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="SortNumber" Type="Int32" />
+    <Property Name="URL" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="SystemId" Type="Int32" />
+    <Property Name="IsActionPage" Type="Int32" />
+    <Property Name="ShortCutIcon" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="SysCategory" Type="Int32" />
+  </EntityType>
+  <EntityType Name="UM_MsgType">
+    <Key>
+      <PropertyRef Name="MsgTypeCode" />
+      <PropertyRef Name="MsgTypeName" />
+    </Key>
+    <Property Name="MsgTypeCode" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="MsgTypeName" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="UM_Order">
+    <Key>
+      <PropertyRef Name="OrderNo" />
+    </Key>
+    <Property Name="OrderNo" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ProductId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="CompanyId" Type="Int32" />
+    <Property Name="ProductName" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="OrderAmount" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="OrderDate" Type="DateTime" Nullable="false" />
+    <Property Name="OrderType" Type="Int32" Nullable="false" />
+    <Property Name="OrderStatus" Type="Int32" Nullable="false" />
+    <Property Name="TakeDate" Type="DateTime" />
+    <Property Name="FailureDate" Type="DateTime" />
+    <Property Name="Number" Type="Int32" />
+    <Property Name="Price" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="SalesUnit" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Surplus" Type="Int32" />
+    <Property Name="SelectValue" Type="Int32" />
+    <Property Name="PayDate" Type="DateTime" />
+    <Property Name="IsSum" Type="Int32" Nullable="false" />
+    <Property Name="completedState" Type="Int32" />
+    <Property Name="Remark" Type="String" MaxLength="2000" Unicode="true" FixedLength="false" />
+    <Property Name="OrderPayType" Type="Int32" Nullable="false" />
+    <Property Name="OrderFrom" Type="Int32" Nullable="false" />
+    <Property Name="RunningNO" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="IsOnline" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="UM_Order_PriceUnit" Relationship="CETModel.FK_UM_ORDER_REFERENCE_UM_ORDER" FromRole="UM_Order" ToRole="UM_Order_PriceUnit" />
+  </EntityType>
+  <EntityType Name="UM_Order_CashCoupon">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CashCouponID" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="OrderNo" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="UM_Order_Follow_Info">
+    <Key>
+      <PropertyRef Name="FollowId" />
+    </Key>
+    <Property Name="FollowId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="FollowDate" Type="DateTime" Nullable="false" />
+    <Property Name="FollowUserId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="FollowContent" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <Property Name="OrderNo" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="FollowCateatDate" Type="DateTime" Nullable="false" />
+    <Property Name="FollowType" Type="Int32" Nullable="false" />
+    <Property Name="FollowStatus" Type="Int32" Nullable="false" />
+    <Property Name="ext1" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="ext2" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="UM_Order_PriceUnit">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="OrderNo" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="UnitName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="UnitValue" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="UM_Order" Relationship="CETModel.FK_UM_ORDER_REFERENCE_UM_ORDER" FromRole="UM_Order_PriceUnit" ToRole="UM_Order" />
+  </EntityType>
+  <EntityType Name="UM_OrderBill">
+    <Key>
+      <PropertyRef Name="BillId" />
+    </Key>
+    <Property Name="BillId" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="BillRise" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="BillToAddress" Type="String" Nullable="false" MaxLength="300" Unicode="true" FixedLength="false" />
+    <Property Name="BillGetUser" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CreateDate" Type="DateTime" Nullable="false" />
+    <Property Name="OrderNo" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Phone" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Mobile" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="BillRiseType" Type="Int32" Nullable="false" />
+    <Property Name="CompanyId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UM_OrderPayRecord">
+    <Key>
+      <PropertyRef Name="OrderPayRecord" />
+    </Key>
+    <Property Name="OrderPayRecord" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="OrderNo" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Amount" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="PayAccount" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="PayOnline" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="UM_Privilege">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="MasterValue" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="AccessValue" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Operation" Type="Int32" Nullable="false" />
+    <Property Name="MasterCategory" Type="Int32" Nullable="false" />
+    <Property Name="AccessCategory" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UM_Province">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="provinceID" Type="String" MaxLength="6" Unicode="false" FixedLength="false" />
+    <Property Name="province" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="UM_Role">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="400" Unicode="true" FixedLength="false" />
+    <Property Name="Note" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="UM_SysLog">
+    <Key>
+      <PropertyRef Name="SysLogId" />
+    </Key>
+    <Property Name="SysLogId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SysCode" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="LogType" Type="Int32" Nullable="false" />
+    <Property Name="RefId" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="LogContent" Type="String" Nullable="false" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="LogTime" Type="DateTime" Nullable="false" />
+    <Property Name="UserLoginId" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="UM_SysModule">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="APIKey" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="AppUrl" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="CallBackUrl" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="LogOutUrl" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="UM_Trial_Order_Temp">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="orderId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="trialId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="UM_TrialProduct">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ProductId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CompanyId" Type="Int32" Nullable="false" />
+    <Property Name="ApplyCount" Type="Int32" />
+    <Property Name="ApplyDay" Type="Int32" />
+    <Property Name="CreateDate" Type="DateTime" Nullable="false" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+    <Property Name="IsDelete" Type="Int32" Nullable="false" />
+    <Property Name="Remark" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="UM_TrialUser_Trace">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CreateTime" Type="DateTime" Nullable="false" />
+    <Property Name="Creator" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="UserId" Type="Int32" />
+    <Property Name="Remark" Type="String" Nullable="false" MaxLength="500" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="UM_User_Agent">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="AgentType" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="AgentID" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="UserAutoGuid" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="OrderNo" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="Descript" Type="String" MaxLength="512" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="UM_User_Role">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="UserID" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="RoleID" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="UUM_Agent">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="UserName" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="PassWord" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="Isvailable" Type="Int32" />
+    <Property Name="ValidateCode" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="CompanyName" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Address" Type="String" MaxLength="350" Unicode="false" FixedLength="false" />
+    <Property Name="MobileTel" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Fax" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="regTime" Type="DateTime" Nullable="false" />
+    <Property Name="UCSName" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="DeputyName" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Telephone" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="QQ" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="Email" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="MSN" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+    <Property Name="Remark" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="DistributorID" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="UUM_AgentNotice">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Title" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Content" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="CreateDate" Type="DateTime" Nullable="false" />
+    <Property Name="Creator" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="IsDelete" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UUM_AgentNotice_Receive">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="NoticeID" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="AgentID" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="IsRead" Type="Int32" Nullable="false" />
+    <Property Name="ReadDate" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="UUM_App">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="150" Unicode="true" FixedLength="false" />
+    <Property Name="ParentID" Type="Int32" Nullable="false" />
+    <Property Name="AppClassID" Type="Int32" Nullable="false" />
+    <Property Name="IsLeaf" Type="Int32" Nullable="false" />
+    <Property Name="LinkPath" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="IconPath" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Sort" Type="Int32" Nullable="false" />
+    <Property Name="CreateDate" Type="DateTime" Nullable="false" />
+    <Property Name="Creator" Type="Int32" Nullable="false" />
+    <Property Name="CompanyID" Type="Int32" Nullable="false" />
+    <Property Name="AppStatus" Type="Boolean" />
+    <Property Name="TempletContent" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Pcode" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="UUM_AppClass">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="150" Unicode="true" FixedLength="false" />
+    <Property Name="LinkPath" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="ParentID" Type="Int32" Nullable="false" />
+    <Property Name="CreatDate" Type="DateTime" Nullable="false" />
+    <Property Name="Creator" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UUM_CAddrBook">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="150" Unicode="true" FixedLength="false" />
+    <Property Name="UUM_UserName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="OrganizationID" Type="Int32" Nullable="false" />
+    <Property Name="Depart" Type="String" MaxLength="150" Unicode="true" FixedLength="false" />
+    <Property Name="Email" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Mobile" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Phone" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Fax" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Address" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="Creator" Type="Int32" Nullable="false" />
+    <Property Name="CreateDate" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UUM_CashCoupon">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CashCouponId" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="AgentId" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Price" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="BeginTime" Type="DateTime" Nullable="false" />
+    <Property Name="EndTime" Type="DateTime" Nullable="false" />
+    <Property Name="UpdaTime" Type="DateTime" />
+    <Property Name="State" Type="Int32" Nullable="false" />
+    <Property Name="FoundName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="UUM_CashCoupon_BAK">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CashCouponId" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="AgentId" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Price" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="BeginTime" Type="DateTime" Nullable="false" />
+    <Property Name="EndTime" Type="DateTime" Nullable="false" />
+    <Property Name="State" Type="Int32" Nullable="false" />
+    <Property Name="FoundName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="UUM_CmbchinaOU">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CORNBR" Type="String" MaxLength="50" Unicode="true" FixedLength="true" />
+    <Property Name="CORNAM" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="CompanyId" Type="Int32" Nullable="false" />
+    <Property Name="PVCNAM" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="CTYNAM" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="TELCOD" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="FAXCOD" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="CORADR" Type="String" MaxLength="80" Unicode="false" FixedLength="false" />
+    <Property Name="OPNFLG" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+  </EntityType>
+  <EntityType Name="UUM_CmbchinaUser">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="USRNBR" Type="String" MaxLength="50" Unicode="true" FixedLength="true" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="CORNBR" Type="String" MaxLength="50" Unicode="true" FixedLength="true" />
+    <Property Name="USRNAM" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="LGNNAM" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="GENDER" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="true" />
+    <Property Name="USRSTS" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="true" />
+    <Property Name="USRMOB" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="USRTEL" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="USREML" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="USRTYP" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="UUM_Company">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AutoGuid" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="UserLoginName" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="UcsmyName" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="UserPass" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="NickName" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="FullName" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Email" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+    <Property Name="regTime" Type="DateTime" Nullable="false" />
+    <Property Name="LastTime" Type="DateTime" />
+    <Property Name="LastIp" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Fax" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="QQ" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="ChiefUser" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="MSN" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="ProvinceCity" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Address" Type="String" MaxLength="350" Unicode="false" FixedLength="false" />
+    <Property Name="Telephone" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="MobileTel" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Integral" Type="Int32" Nullable="false" />
+    <Property Name="HomePage" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Logo" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Note" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="UserTotal" Type="Int32" Nullable="false" />
+    <Property Name="Is_Sms" Type="Int32" Nullable="false" />
+    <Property Name="Is_SmsCountLimit" Type="Int32" Nullable="false" />
+    <Property Name="Sms_Account" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Sms_Password" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Sms_Count" Type="Int32" Nullable="false" />
+    <Property Name="Sms_SendCount" Type="Int32" Nullable="false" />
+    <Property Name="Is_VideoMeeting" Type="Int32" Nullable="false" />
+    <Property Name="Is_CallCenter" Type="Int32" Nullable="false" />
+    <Property Name="IndustryID" Type="Int32" Nullable="false" />
+    <Property Name="StausActive" Type="Boolean" />
+    <Property Name="SynDataStatus" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+    <Property Name="StrID" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="BusinessLimit" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="OperativeBank" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="CompanyPosition" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="PublicizeImg" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="UUM_Company_Member" Relationship="CETModel.FK_UUM_Company_Member_UUM_Company" FromRole="UUM_Company" ToRole="UUM_Company_Member" />
+    <NavigationProperty Name="UUM_CompanyDoc" Relationship="CETModel.FK_UUM_CompanyDoc_UUM_Company" FromRole="UUM_Company" ToRole="UUM_CompanyDoc" />
+    <NavigationProperty Name="UUM_User" Relationship="CETModel.FK_UUM_User_UUM_Company" FromRole="UUM_Company" ToRole="UUM_User" />
+  </EntityType>
+  <EntityType Name="UUM_Company_Member">
+    <Key>
+      <PropertyRef Name="AutoID" />
+    </Key>
+    <Property Name="AutoID" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CompanyID" Type="Int32" Nullable="false" />
+    <Property Name="MemberGradeID" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="License" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="OrgCode" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="IsAudit" Type="Int32" Nullable="false" />
+    <Property Name="CreateDate" Type="DateTime" Nullable="false" />
+    <Property Name="UpdateDate" Type="DateTime" Nullable="false" />
+    <Property Name="AuditDate" Type="DateTime" />
+    <Property Name="LicenseChangeDate" Type="DateTime" />
+    <Property Name="AuditContent" Type="String" MaxLength="2000" Unicode="true" FixedLength="false" />
+    <Property Name="LicenseUpdateUserId" Type="Int32" />
+    <Property Name="PrintCount" Type="Int32" Nullable="false" />
+    <Property Name="LicenseAuditDate" Type="DateTime" />
+    <NavigationProperty Name="UUM_Company" Relationship="CETModel.FK_UUM_Company_Member_UUM_Company" FromRole="UUM_Company_Member" ToRole="UUM_Company" />
+    <NavigationProperty Name="UUM_MemberGrade" Relationship="CETModel.FK_UUM_Company_Member_UUM_MemberGrade" FromRole="UUM_Company_Member" ToRole="UUM_MemberGrade" />
+  </EntityType>
+  <EntityType Name="UUM_CompanyDoc">
+    <Key>
+      <PropertyRef Name="CompanyDocId" />
+    </Key>
+    <Property Name="CompanyDocId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyId" Type="Int32" Nullable="false" />
+    <Property Name="DocSource" Type="String" Nullable="false" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="DocType" Type="Byte" Nullable="false" />
+    <Property Name="DocStatus" Type="Byte" Nullable="false" />
+    <Property Name="DocDescription" Type="String" MaxLength="2000" Unicode="true" FixedLength="false" />
+    <Property Name="CreateDate" Type="DateTime" Nullable="false" />
+    <Property Name="UpdateDate" Type="DateTime" Nullable="false" />
+    <Property Name="CreateUser" Type="Int32" Nullable="false" />
+    <Property Name="UpdateUser" Type="Int32" Nullable="false" />
+    <Property Name="AuditAdminId" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="AuditAdminName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="AuditDate" Type="DateTime" />
+    <Property Name="AuditContent" Type="String" MaxLength="2000" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="UUM_Company" Relationship="CETModel.FK_UUM_CompanyDoc_UUM_Company" FromRole="UUM_CompanyDoc" ToRole="UUM_Company" />
+  </EntityType>
+  <EntityType Name="UUM_Competitive_Info">
+    <Key>
+      <PropertyRef Name="CompetitiveId" />
+    </Key>
+    <Property Name="CompetitiveId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CompanyName" Type="String" Nullable="false" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="CompetitiveUserName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CompetitivePhone" Type="String" Nullable="false" MaxLength="11" Unicode="true" FixedLength="false" />
+    <Property Name="CompetitiveAddress" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="CompetitiveMsg" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="CompetitiveDate" Type="DateTime" Nullable="false" />
+    <Property Name="JpAmount" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="SalesAmount" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="SQAmount" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="Zzc" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="Zfz" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="Cwfy" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="Jynx" Type="Int32" />
+    <Property Name="JynxDesc" Type="String" MaxLength="100" Unicode="true" FixedLength="true" />
+    <Property Name="Yyfc" Type="Int32" />
+    <Property Name="Cqjz" Type="Int32" />
+    <Property Name="Yysx" Type="Int32" />
+    <Property Name="QtGrzc" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <Property Name="JpProductType" Type="Int32" />
+    <Property Name="JpProduct" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="IsJp" Type="Int32" Nullable="false" />
+    <Property Name="StarGrade" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UUM_Consume">
+    <Key>
+      <PropertyRef Name="AutoId" />
+    </Key>
+    <Property Name="AutoId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Amount" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="PayAccount" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="PayOnline" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="CompanyId" Type="Int32" Nullable="false" />
+    <Property Name="BusinessType" Type="Int32" Nullable="false" />
+    <Property Name="ConsumeType" Type="Int32" Nullable="false" />
+    <Property Name="ConsumeTime" Type="DateTime" Nullable="false" />
+    <Property Name="Remark" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="UUM_EAccount">
+    <Key>
+      <PropertyRef Name="AutoId" />
+    </Key>
+    <Property Name="AutoId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AccountId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="AccountPassword" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CompanyId" Type="Int32" Nullable="false" />
+    <Property Name="Balance" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="MoneyOut" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="MoneyIn" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="CreateTime" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UUM_EAccount_Order">
+    <Key>
+      <PropertyRef Name="orderCode" />
+    </Key>
+    <Property Name="orderCode" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="orderTime" Type="DateTime" Nullable="false" />
+    <Property Name="signType" Type="Int32" Nullable="false" />
+    <Property Name="orderId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="orderAmount" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="ext1" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <Property Name="ext2" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <Property Name="bgUrl" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="orderStata" Type="Int32" Nullable="false" />
+    <Property Name="CompanyId" Type="Int32" Nullable="false" />
+    <Property Name="merchantsId" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="orderType" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UUM_EclubPackage">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Price" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="YearLimit" Type="Int32" Nullable="false" />
+    <Property Name="Level" Type="Int32" Nullable="false" />
+    <Property Name="MemberGrade" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="UUM_EPay_Account">
+    <Key>
+      <PropertyRef Name="UserAutoGuid" />
+    </Key>
+    <Property Name="EAN" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="UserAutoGuid" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="UUM_Group_Member">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CompanyAutoID" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="ToMemberGradeID" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ApplyMemberID" Type="Int32" />
+    <Property Name="ApplyUserID" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ApplyUserName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="ApplyDate" Type="DateTime" />
+    <Property Name="AuditUserID" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="AuditUserName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="AuditDate" Type="DateTime" />
+    <Property Name="GroupStatus" Type="Int32" />
+    <Property Name="Descript" Type="String" MaxLength="512" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="UUM_MemberGrade" Relationship="CETModel.FK_UUM_Group_Member_UUM_MemberGrade" FromRole="UUM_Group_Member" ToRole="UUM_MemberGrade" />
+    <NavigationProperty Name="UUM_User" Relationship="CETModel.FK_UUM_Group_Member_UUM_User" FromRole="UUM_Group_Member" ToRole="UUM_User" />
+    <NavigationProperty Name="UUM_SingleMemberApply" Relationship="CETModel.FK_UUM_SingleMemberApply_UUM_Group_Member" FromRole="UUM_Group_Member" ToRole="UUM_SingleMemberApply" />
+  </EntityType>
+  <EntityType Name="UUM_LoanBase">
+    <Key>
+      <PropertyRef Name="LoanBaseID" />
+    </Key>
+    <Property Name="LoanBaseID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyID" Type="Int32" Nullable="false" />
+    <Property Name="TotalAssets" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="TotalLiabilities" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="SalesRevenue" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="GrossProfit" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OperationTime" Type="Int32" Nullable="false" />
+    <Property Name="IsEstate" Type="Int32" Nullable="false" />
+    <Property Name="IsLocal" Type="Int32" Nullable="false" />
+    <Property Name="IsOtherCredit" Type="Int32" Nullable="false" />
+    <Property Name="PersonalAssets" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="UUM_Member_Grade">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyId" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="GradeId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="UpdateTime" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UUM_Member_Order">
+    <Key>
+      <PropertyRef Name="OrderNo" />
+    </Key>
+    <Property Name="OrderNo" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="MemberGradeID" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="MemberGradeName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CompanyID" Type="Int32" Nullable="false" />
+    <Property Name="UserID" Type="Int32" Nullable="false" />
+    <Property Name="OrderAmount" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="OrderDate" Type="DateTime" Nullable="false" />
+    <Property Name="OrderStatus" Type="Int32" Nullable="false" />
+    <Property Name="Price" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="PayDate" Type="DateTime" />
+    <Property Name="ProxyCode" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="UUM_MemberGrade">
+    <Key>
+      <PropertyRef Name="MemberGradeId" />
+    </Key>
+    <Property Name="MemberGradeId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="MemberGradeName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="GradeLevel" Type="Int32" Nullable="false" />
+    <Property Name="Discount" Type="Double" Nullable="false" />
+    <Property Name="Price" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="YearLimit" Type="Int32" Nullable="false" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+    <Property Name="GroupNum" Type="Int32" />
+    <Property Name="Remark" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="UUM_Company_Member" Relationship="CETModel.FK_UUM_Company_Member_UUM_MemberGrade" FromRole="UUM_MemberGrade" ToRole="UUM_Company_Member" />
+    <NavigationProperty Name="UUM_Group_Member" Relationship="CETModel.FK_UUM_Group_Member_UUM_MemberGrade" FromRole="UUM_MemberGrade" ToRole="UUM_Group_Member" />
+  </EntityType>
+  <EntityType Name="UUM_MemberModify">
+    <Key>
+      <PropertyRef Name="AutoID" />
+    </Key>
+    <Property Name="AutoID" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CompanyID" Type="Int32" Nullable="false" />
+    <Property Name="CompanyName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="MemberGradeID" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="MemberName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Action" Type="Int32" Nullable="false" />
+    <Property Name="OldMemberGradeID" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="OldMemberName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CreateDate" Type="DateTime" Nullable="false" />
+    <Property Name="MemberType" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UUM_PAddrBook">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="NickName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Enterprise" Type="String" MaxLength="150" Unicode="true" FixedLength="false" />
+    <Property Name="Email" Type="String" MaxLength="150" Unicode="true" FixedLength="false" />
+    <Property Name="Mobile" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Phone" Type="String" MaxLength="150" Unicode="true" FixedLength="false" />
+    <Property Name="Fax" Type="String" MaxLength="150" Unicode="true" FixedLength="false" />
+    <Property Name="Address" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="Type" Type="Int32" Nullable="false" />
+    <Property Name="Remark" Type="String" MaxLength="400" Unicode="true" FixedLength="false" />
+    <Property Name="Creator" Type="Int32" Nullable="false" />
+    <Property Name="CreateDate" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UUM_PAddrBookType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="150" Unicode="true" FixedLength="false" />
+    <Property Name="UserID" Type="Int32" Nullable="false" />
+    <Property Name="Remark" Type="String" MaxLength="400" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="UUM_R_User_App">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="150" Unicode="true" FixedLength="false" />
+    <Property Name="IconPath" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="LinkPath" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="UserID" Type="Int32" />
+    <Property Name="AppID" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="Sort" Type="Int32" Nullable="false" />
+    <Property Name="ScreenID" Type="Int32" Nullable="false" />
+    <Property Name="Type" Type="Int32" Nullable="false" />
+    <Property Name="CollectType" Type="Int32" />
+  </EntityType>
+  <EntityType Name="UUM_Screen">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ScreenName" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="UserID" Type="Int32" />
+    <Property Name="Description" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="IsCollect" Type="Int32" />
+  </EntityType>
+  <EntityType Name="UUM_SingleMemberApply">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Group_MemberID" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CompanyName" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="MobleTel" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Status" Type="Int32" />
+    <Property Name="ApplyUserID" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ApplyUserName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="AuditDate" Type="DateTime" />
+    <Property Name="Descript" Type="String" MaxLength="512" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="UUM_Group_Member" Relationship="CETModel.FK_UUM_SingleMemberApply_UUM_Group_Member" FromRole="UUM_SingleMemberApply" ToRole="UUM_Group_Member" />
+  </EntityType>
+  <EntityType Name="UUM_UMemberGrade">
+    <Key>
+      <PropertyRef Name="GradeId" />
+    </Key>
+    <Property Name="GradeId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="GradeName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Grade" Type="Int32" Nullable="false" />
+    <Property Name="Price" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="CreateTime" Type="DateTime" Nullable="false" />
+    <Property Name="Creator" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CreatorId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ImageUrl" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="YearLimit" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="PPD_UserGrade_Discount" Relationship="CETModel.FK_PPD_USER_REFERENCE_UUM_USER" FromRole="UUM_UMemberGrade" ToRole="PPD_UserGrade_Discount" />
+  </EntityType>
+  <EntityType Name="UUM_User">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AutoGuid" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="UserName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="RealName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Password" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="DealPassword" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="LoginNum" Type="Int32" Nullable="false" />
+    <Property Name="LastLoginTime" Type="DateTime" />
+    <Property Name="Phone" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Mobile" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Address" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="IDCard" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Email" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="PortalType" Type="Int32" Nullable="false" />
+    <Property Name="CompanyID" Type="Int32" Nullable="false" />
+    <Property Name="Remark" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="CreateTime" Type="DateTime" Nullable="false" />
+    <Property Name="UpdateTime" Type="DateTime" Nullable="false" />
+    <Property Name="SkinID" Type="Int32" Nullable="false" />
+    <Property Name="PageSize" Type="Int32" Nullable="false" />
+    <Property Name="MyIcon" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="LastLoginIP" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="StartDate" Type="DateTime" />
+    <Property Name="ExpiryDate" Type="DateTime" />
+    <Property Name="IsVedioMeeting" Type="Int32" Nullable="false" />
+    <Property Name="IsAdmin" Type="Int32" Nullable="false" />
+    <Property Name="Level" Type="Int32" Nullable="false" />
+    <Property Name="IsSms" Type="Int32" Nullable="false" />
+    <Property Name="SmsCount" Type="Int32" Nullable="false" />
+    <Property Name="IMLogin" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="IsAvailable" Type="Int32" Nullable="false" />
+    <Property Name="IsEmail" Type="Int32" Nullable="false" />
+    <Property Name="EmpCode" Type="String" MaxLength="20" Unicode="true" FixedLength="true" />
+    <Property Name="User_Log" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="StrID" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="UUM_Company" Relationship="CETModel.FK_UUM_User_UUM_Company" FromRole="UUM_User" ToRole="UUM_Company" />
+    <NavigationProperty Name="UUM_Group_Member" Relationship="CETModel.FK_UUM_Group_Member_UUM_User" FromRole="UUM_User" ToRole="UUM_Group_Member" />
+  </EntityType>
+  <Association Name="FK_PPD_PRIC_REFERENCE_PPD_PRIC">
+    <End Role="PPD_Price_UnitCatalog" Type="CETModel.PPD_Price_UnitCatalog" Multiplicity="0..1" />
+    <End Role="PPD_Price_Unit" Type="CETModel.PPD_Price_Unit" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PPD_Price_UnitCatalog">
+        <PropertyRef Name="CatalogId" />
+      </Principal>
+      <Dependent Role="PPD_Price_Unit">
+        <PropertyRef Name="CatalogId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PPD_PROD_REFERENCE_PPD_PRIC">
+    <End Role="PPD_Price_Unit" Type="CETModel.PPD_Price_Unit" Multiplicity="1" />
+    <End Role="PPD_Product_PriceUnit" Type="CETModel.PPD_Product_PriceUnit" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PPD_Price_Unit">
+        <PropertyRef Name="UnitId" />
+      </Principal>
+      <Dependent Role="PPD_Product_PriceUnit">
+        <PropertyRef Name="UnitId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PPD_PROD_REFERENCE_PPD_PROD">
+    <End Role="PPD_Product" Type="CETModel.PPD_Product" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="PPD_Product_PriceUnit" Type="CETModel.PPD_Product_PriceUnit" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PPD_Product">
+        <PropertyRef Name="ProductId" />
+      </Principal>
+      <Dependent Role="PPD_Product_PriceUnit">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PPD_Product_SalesWay_PPD_Product">
+    <End Role="PPD_Product" Type="CETModel.PPD_Product" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="PPD_Product_SalesWay" Type="CETModel.PPD_Product_SalesWay" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PPD_Product">
+        <PropertyRef Name="ProductId" />
+      </Principal>
+      <Dependent Role="PPD_Product_SalesWay">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PPD_USER_REFERENCE_PPD_PROD">
+    <End Role="PPD_Product" Type="CETModel.PPD_Product" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="PPD_UserGrade_Discount" Type="CETModel.PPD_UserGrade_Discount" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PPD_Product">
+        <PropertyRef Name="ProductId" />
+      </Principal>
+      <Dependent Role="PPD_UserGrade_Discount">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PPD_Product_PriceUnit_PPD_Product_SalesWay">
+    <End Role="PPD_Product_SalesWay" Type="CETModel.PPD_Product_SalesWay" Multiplicity="1" />
+    <End Role="PPD_Product_PriceUnit" Type="CETModel.PPD_Product_PriceUnit" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PPD_Product_SalesWay">
+        <PropertyRef Name="SalesWayId" />
+      </Principal>
+      <Dependent Role="PPD_Product_PriceUnit">
+        <PropertyRef Name="SalesWayId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PPD_USER_REFERENCE_UUM_USER">
+    <End Role="UUM_UMemberGrade" Type="CETModel.UUM_UMemberGrade" Multiplicity="1" />
+    <End Role="PPD_UserGrade_Discount" Type="CETModel.PPD_UserGrade_Discount" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UUM_UMemberGrade">
+        <PropertyRef Name="GradeId" />
+      </Principal>
+      <Dependent Role="PPD_UserGrade_Discount">
+        <PropertyRef Name="GradeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UM_ORDER_REFERENCE_UM_ORDER">
+    <End Role="UM_Order" Type="CETModel.UM_Order" Multiplicity="1" />
+    <End Role="UM_Order_PriceUnit" Type="CETModel.UM_Order_PriceUnit" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UM_Order">
+        <PropertyRef Name="OrderNo" />
+      </Principal>
+      <Dependent Role="UM_Order_PriceUnit">
+        <PropertyRef Name="OrderNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UUM_Company_Member_UUM_Company">
+    <End Role="UUM_Company" Type="CETModel.UUM_Company" Multiplicity="1" />
+    <End Role="UUM_Company_Member" Type="CETModel.UUM_Company_Member" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UUM_Company">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="UUM_Company_Member">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UUM_CompanyDoc_UUM_Company">
+    <End Role="UUM_Company" Type="CETModel.UUM_Company" Multiplicity="1" />
+    <End Role="UUM_CompanyDoc" Type="CETModel.UUM_CompanyDoc" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UUM_Company">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="UUM_CompanyDoc">
+        <PropertyRef Name="CompanyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UUM_User_UUM_Company">
+    <End Role="UUM_Company" Type="CETModel.UUM_Company" Multiplicity="1" />
+    <End Role="UUM_User" Type="CETModel.UUM_User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UUM_Company">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="UUM_User">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UUM_Company_Member_UUM_MemberGrade">
+    <End Role="UUM_MemberGrade" Type="CETModel.UUM_MemberGrade" Multiplicity="1" />
+    <End Role="UUM_Company_Member" Type="CETModel.UUM_Company_Member" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UUM_MemberGrade">
+        <PropertyRef Name="MemberGradeId" />
+      </Principal>
+      <Dependent Role="UUM_Company_Member">
+        <PropertyRef Name="MemberGradeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UUM_Group_Member_UUM_MemberGrade">
+    <End Role="UUM_MemberGrade" Type="CETModel.UUM_MemberGrade" Multiplicity="0..1" />
+    <End Role="UUM_Group_Member" Type="CETModel.UUM_Group_Member" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UUM_MemberGrade">
+        <PropertyRef Name="MemberGradeId" />
+      </Principal>
+      <Dependent Role="UUM_Group_Member">
+        <PropertyRef Name="ToMemberGradeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UUM_Group_Member_UUM_User">
+    <End Role="UUM_User" Type="CETModel.UUM_User" Multiplicity="0..1" />
+    <End Role="UUM_Group_Member" Type="CETModel.UUM_Group_Member" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UUM_User">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="UUM_Group_Member">
+        <PropertyRef Name="ApplyMemberID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UUM_SingleMemberApply_UUM_Group_Member">
+    <End Role="UUM_Group_Member" Type="CETModel.UUM_Group_Member" Multiplicity="0..1" />
+    <End Role="UUM_SingleMemberApply" Type="CETModel.UUM_SingleMemberApply" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UUM_Group_Member">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="UUM_SingleMemberApply">
+        <PropertyRef Name="Group_MemberID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FinancePlatformModelStoreContainer" CdmEntityContainer="FinancePlatformEntity">
+    <EntitySetMapping Name="F_BankAccount">
+      <EntityTypeMapping TypeName="FinancePlatformModel.F_BankAccount">
+        <MappingFragment StoreEntitySet="F_BankAccount">
+          <ScalarProperty Name="AccountId" ColumnName="AccountId" />
+          <ScalarProperty Name="AccountName" ColumnName="AccountName" />
+          <ScalarProperty Name="AccountNO" ColumnName="AccountNO" />
+          <ScalarProperty Name="AccountBank" ColumnName="AccountBank" />
+          <ScalarProperty Name="BranchBankCode" ColumnName="BranchBankCode" />
+          <ScalarProperty Name="BranchBankName" ColumnName="BranchBankName" />
+          <ScalarProperty Name="BankCode" ColumnName="BankCode" />
+          <ScalarProperty Name="BankType" ColumnName="BankType" />
+          <ScalarProperty Name="BankProvince" ColumnName="BankProvince" />
+          <ScalarProperty Name="BankCity" ColumnName="BankCity" />
+          <ScalarProperty Name="BankProvinceCode" ColumnName="BankProvinceCode" />
+          <ScalarProperty Name="BankCityCode" ColumnName="BankCityCode" />
+          <ScalarProperty Name="Brdnbr" ColumnName="Brdnbr" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="BindType" ColumnName="BindType" />
+          <ScalarProperty Name="BindCode" ColumnName="BindCode" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="IDcard" ColumnName="IDcard" />
+          <ScalarProperty Name="Ctftyp" ColumnName="Ctftyp" />
+          <ScalarProperty Name="Sigtim" ColumnName="Sigtim" />
+          <ScalarProperty Name="Sigdat" ColumnName="Sigdat" />
+          <ScalarProperty Name="Sigtyp" ColumnName="Sigtyp" />
+          <ScalarProperty Name="CmbcAccountId" ColumnName="CmbcAccountId" />
+          <ScalarProperty Name="Usrnbr" ColumnName="Usrnbr" />
+          <ScalarProperty Name="AccountFrom" ColumnName="AccountFrom" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_Financing">
+      <EntityTypeMapping TypeName="FinancePlatformModel.F_Financing">
+        <MappingFragment StoreEntitySet="F_Financing">
+          <ScalarProperty Name="FinancingId" ColumnName="FinancingId" />
+          <ScalarProperty Name="ProjectCode" ColumnName="ProjectCode" />
+          <ScalarProperty Name="ProjectName" ColumnName="ProjectName" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="PartsCount" ColumnName="PartsCount" />
+          <ScalarProperty Name="MinInvestPartsCount" ColumnName="MinInvestPartsCount" />
+          <ScalarProperty Name="Progress" ColumnName="Progress" />
+          <ScalarProperty Name="BankInterest" ColumnName="BankInterest" />
+          <ScalarProperty Name="InvestmentInterest" ColumnName="InvestmentInterest" />
+          <ScalarProperty Name="YMInterest" ColumnName="YMInterest" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="RepayType" ColumnName="RepayType" />
+          <ScalarProperty Name="RepaySourceType" ColumnName="RepaySourceType" />
+          <ScalarProperty Name="ValueBegin" ColumnName="ValueBegin" />
+          <ScalarProperty Name="RepayBegin" ColumnName="RepayBegin" />
+          <ScalarProperty Name="ProjectBeginTime" ColumnName="ProjectBeginTime" />
+          <ScalarProperty Name="ReadyBeginTime" ColumnName="ReadyBeginTime" />
+          <ScalarProperty Name="JMBeginTime" ColumnName="JMBeginTime" />
+          <ScalarProperty Name="ToFinancingTime" ColumnName="ToFinancingTime" />
+          <ScalarProperty Name="ActualToFinancingTime" ColumnName="ActualToFinancingTime" />
+          <ScalarProperty Name="ToInvestmentTime" ColumnName="ToInvestmentTime" />
+          <ScalarProperty Name="ActualToInvestmentTime" ColumnName="ActualToInvestmentTime" />
+          <ScalarProperty Name="ProjectStatus" ColumnName="ProjectStatus" />
+          <ScalarProperty Name="CreditLevel" ColumnName="CreditLevel" />
+          <ScalarProperty Name="BindUserId" ColumnName="BindUserId" />
+          <ScalarProperty Name="BindCompanyId" ColumnName="BindCompanyId" />
+          <ScalarProperty Name="CreateUserId" ColumnName="CreateUserId" />
+          <ScalarProperty Name="CreateUserName" ColumnName="CreateUserName" />
+          <ScalarProperty Name="CreateCompanyId" ColumnName="CreateCompanyId" />
+          <ScalarProperty Name="CreateCompanyName" ColumnName="CreateCompanyName" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="UpdateUserId" ColumnName="UpdateUserId" />
+          <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
+          <ScalarProperty Name="BindUserName" ColumnName="BindUserName" />
+          <ScalarProperty Name="BindCompanyName" ColumnName="BindCompanyName" />
+          <ScalarProperty Name="AreaCode" ColumnName="AreaCode" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="YearIndex" ColumnName="YearIndex" />
+          <ScalarProperty Name="ProjectType" ColumnName="ProjectType" />
+          <ScalarProperty Name="SettlementType" ColumnName="SettlementType" />
+          <ScalarProperty Name="IsShow" ColumnName="IsShow" />
+          <ScalarProperty Name="IsExclusivePublic" ColumnName="IsExclusivePublic" />
+          <ScalarProperty Name="ExclusiveCode" ColumnName="ExclusiveCode" />
+          <ScalarProperty Name="FCode" ColumnName="FCode" />
+          <ScalarProperty Name="FPrjType" ColumnName="FPrjType" />
+          <ScalarProperty Name="FPayType" ColumnName="FPayType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_Investment_Order">
+      <EntityTypeMapping TypeName="FinancePlatformModel.F_Investment_Order">
+        <MappingFragment StoreEntitySet="F_Investment_Order">
+          <ScalarProperty Name="OrderNo" ColumnName="OrderNo" />
+          <ScalarProperty Name="FinancingId" ColumnName="FinancingId" />
+          <ScalarProperty Name="ProjectName" ColumnName="ProjectName" />
+          <ScalarProperty Name="PartsCount" ColumnName="PartsCount" />
+          <ScalarProperty Name="PayAmount" ColumnName="PayAmount" />
+          <ScalarProperty Name="PayStatus" ColumnName="PayStatus" />
+          <ScalarProperty Name="PayTime" ColumnName="PayTime" />
+          <ScalarProperty Name="PayUserId" ColumnName="PayUserId" />
+          <ScalarProperty Name="PayUserName" ColumnName="PayUserName" />
+          <ScalarProperty Name="PayType" ColumnName="PayType" />
+          <ScalarProperty Name="PayChannel" ColumnName="PayChannel" />
+          <ScalarProperty Name="CreateUserId" ColumnName="CreateUserId" />
+          <ScalarProperty Name="CreateUserName" ColumnName="CreateUserName" />
+          <ScalarProperty Name="CreateCompanyId" ColumnName="CreateCompanyId" />
+          <ScalarProperty Name="CreateCompanyName" ColumnName="CreateCompanyName" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="RunningNO" ColumnName="RunningNO" />
+          <ScalarProperty Name="SendCmdStaus" ColumnName="SendCmdStaus" />
+          <ScalarProperty Name="Actualpayments" ColumnName="Actualpayments" />
+          <ScalarProperty Name="IsExcess" ColumnName="IsExcess" />
+          <ScalarProperty Name="OrderFrom" ColumnName="OrderFrom" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_Project_Content">
+      <EntityTypeMapping TypeName="FinancePlatformModel.F_Project_Content">
+        <MappingFragment StoreEntitySet="F_Project_Content">
+          <ScalarProperty Name="Project_ContentId" ColumnName="Project_ContentId" />
+          <ScalarProperty Name="FinancingId" ColumnName="FinancingId" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_User">
+      <EntityTypeMapping TypeName="FinancePlatformModel.F_User">
+        <MappingFragment StoreEntitySet="F_User">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Usrnbr" ColumnName="Usrnbr" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FinaceDic">
+      <EntityTypeMapping TypeName="FinancePlatformModel.FinaceDic">
+        <MappingFragment StoreEntitySet="FinaceDic">
+          <ScalarProperty Name="FCode" ColumnName="FCode" />
+          <ScalarProperty Name="FPrjType" ColumnName="FPrjType" />
+          <ScalarProperty Name="FPayType" ColumnName="FPayType" />
+          <ScalarProperty Name="FDesc" ColumnName="FDesc" />
+          <ScalarProperty Name="InstitutionID" ColumnName="InstitutionID" />
+          <ScalarProperty Name="ConnectString" ColumnName="ConnectString" />
+          <ScalarProperty Name="AddressUrl" ColumnName="AddressUrl" />
+          <ScalarProperty Name="NotifyFlag" ColumnName="NotifyFlag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SaleInstitution">
+      <EntityTypeMapping TypeName="FinancePlatformModel.SaleInstitution">
+        <MappingFragment StoreEntitySet="SaleInstitution">
+          <ScalarProperty Name="SourceID" ColumnName="SourceID" />
+          <ScalarProperty Name="SourceName" ColumnName="SourceName" />
+          <ScalarProperty Name="EffectTime" ColumnName="EffectTime" />
+          <ScalarProperty Name="FailureTime" ColumnName="FailureTime" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="CreateUser" ColumnName="CreateUser" />
+          <ScalarProperty Name="DelFlag" ColumnName="DelFlag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SaleInstitutionBackList">
+      <EntityTypeMapping TypeName="FinancePlatformModel.SaleInstitutionBackList">
+        <MappingFragment StoreEntitySet="SaleInstitutionBackList">
+          <ScalarProperty Name="ListID" ColumnName="ListID" />
+          <ScalarProperty Name="SourceID" ColumnName="SourceID" />
+          <ScalarProperty Name="FinancingId" ColumnName="FinancingId" />
+          <ScalarProperty Name="FCode" ColumnName="FCode" />
+          <ScalarProperty Name="FPrjType" ColumnName="FPrjType" />
+          <ScalarProperty Name="RuleFlag" ColumnName="RuleFlag" />
+          <ScalarProperty Name="DelFlag" ColumnName="DelFlag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SaleInstitutionPermit">
+      <EntityTypeMapping TypeName="FinancePlatformModel.SaleInstitutionPermit">
+        <MappingFragment StoreEntitySet="SaleInstitutionPermit">
+          <ScalarProperty Name="PermitID" ColumnName="PermitID" />
+          <ScalarProperty Name="SourceID" ColumnName="SourceID" />
+          <ScalarProperty Name="FCode" ColumnName="FCode" />
+          <ScalarProperty Name="FPrjType" ColumnName="FPrjType" />
+          <ScalarProperty Name="FPayType" ColumnName="FPayType" />
+          <ScalarProperty Name="EffectTime" ColumnName="EffectTime" />
+          <ScalarProperty Name="FailureTime" ColumnName="FailureTime" />
+          <ScalarProperty Name="AccessRuleFlag" ColumnName="AccessRuleFlag" />
+          <ScalarProperty Name="TradeRuleFlag" ColumnName="TradeRuleFlag" />
+          <ScalarProperty Name="DelFlag" ColumnName="DelFlag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
